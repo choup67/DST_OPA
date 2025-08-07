@@ -1,10 +1,46 @@
-/*
 -- Utilisation du datawarehouse QUERY
 USE WAREHOUSE QUERY;
 
---Utilisation de la database OPA et du schéma Binance
+--Utilisation de la database RAW_DATA et du schéma Coingecko
+USE DATABASE RAW_DATA;
+USE SCHEMA Coingecko;
+
+-- Création de la table asset_info
+CREATE TABLE IF NOT EXISTS asset_info (
+    coingecko_id VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    symbol VARCHAR(255) NOT NULL PRIMARY KEY,
+    market_cap_rank INT NOT NULL,
+    asset_plateform VARCHAR(255) NOT NULL,
+    token_type VARCHAR(255) NOT NULL,
+    homepage VARCHAR(255) NOT NULL,
+    categories VARCHAR(255) NOT NULL,
+    supply_circulating DECIMAL(38, 18),
+    supply_total DECIMAL(38, 18),
+    supply_max DECIMAL(38, 18)
+);
+
+--Utilisation de la database RAW_DATA et du schéma Binance
 USE DATABASE RAW_DATA;
 USE SCHEMA binance;
+
+-- Création de la table exchange_info
+CREATE TABLE IF NOT EXISTS exchange_info (
+    symbol VARCHAR(20) NOT NULL PRIMARY KEY,
+    base_asset VARCHAR(255) NOT NULL,
+    quote_asset VARCHAR(255) NOT NULL,
+    status VARCHAR(10) NOT NULL,
+    minPrice DECIMAL(20, 8) NOT NULL,
+    maxPrice DECIMAL(20, 8) NOT NULL,
+    tickSize DECIMAL(20, 8) NOT NULL,
+    minQty DECIMAL(20, 8) NOT NULL,
+    maxQty DECIMAL(20, 8) NOT NULL,
+    stepSize DECIMAL(20, 8) NOT NULL,
+    minNotional DECIMAL(20, 8) NOT NULL,
+    maxNotional DECIMAL(20, 8) NOT NULL,
+    FOREIGN KEY (base_asset) REFERENCES RAW_DATA.Coingecko.asset_info(symbol),
+    FOREIGN KEY (quote_asset) REFERENCES RAW_DATA.Coingecko.asset_info(symbol)
+);
 
 -- Création de la table kline
 CREATE TABLE IF NOT EXISTS kline (
@@ -20,46 +56,11 @@ CREATE TABLE IF NOT EXISTS kline (
     number_of_trades INT NOT NULL,
     taker_buy_base_asset_volume VARCHAR NOT NULL,
     taker_buy_quote_asset_volume VARCHAR NOT NULL,
-    symbol VARCHAR(20) NOT NULL
+    symbol VARCHAR(20) NOT NULL FOREIGN KEY REFERENCES exchange_info(symbol)
 );
 
--- Création de la table exchange_info
-CREATE TABLE IF NOT EXISTS exchange_info (
-    symbol VARCHAR(20) NOT NULL PRIMARY KEY,
-    base_asset VARCHAR(20) NOT NULL,
-    quote_asset VARCHAR(20) NOT NULL,
-    status VARCHAR(10) NOT NULL,
-    minPrice DECIMAL(20, 8) NOT NULL,
-    maxPrice DECIMAL(20, 8) NOT NULL,
-    tickSize DECIMAL(20, 8) NOT NULL,
-    minQty DECIMAL(20, 8) NOT NULL,
-    maxQty DECIMAL(20, 8) NOT NULL,
-    stepSize DECIMAL(20, 8) NOT NULL,
-    minNotional DECIMAL(20, 8) NOT NULL,
-    maxNotional DECIMAL(20, 8) NOT NULL
-);
 
---Utilisation de la database OPA et du schéma Coingecko
-USE DATABASE RAW_DATA;
-USE SCHEMA Coingecko;
-
--- Création de la table asset_info
-CREATE TABLE IF NOT EXISTS asset_info (
-    coingecko_id INT NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    asset VARCHAR(255) NOT NULL PRIMARY KEY,
-    market_cap_rank INT NOT NULL,
-    asset_plateform VARCHAR(255) NOT NULL,
-    token_type VARCHAR(255) NOT NULL,
-    homepage VARCHAR(255) NOT NULL,
-    categories VARCHAR(255) NOT NULL,
-    supply_circulating DECIMAL(38, 18),
-    supply_total DECIMAL(38, 18),
-    supply_max DECIMAL(38, 18),
-    category_type VARCHAR(255) NOT NULL,
-);
-
--- Utilisation de la database OPA et du schéma gdrive
+-- Utilisation de la database RAW_DATA et du schéma gitrepo
 USE DATABASE RAW_DATA;
 USE SCHEMA gitrepo;
 
@@ -76,21 +77,3 @@ CREATE TABLE IF NOT EXISTS market_feeling_score (
     market_feeling_label VARCHAR(50) NOT NULL,
     market_feeling_score VARCHAR(50) NOT NULL
 );
-
--- Création de la table calendar
-CREATE TABLE IF NOT EXISTS calendar (
-    date_full DATE,
-    month INT,
-    day INT,
-    year INT,
-    quarter_id INT,
-    month_year_id INT,
-    month_year VARCHAR(7),
-    weekday_number INT,
-    weekday VARCHAR(10),
-    quarter VARCHAR(10),
-    quarter_year_id INT,
-    quarter_year VARCHAR(10)
-);
-
- */
