@@ -1,0 +1,9 @@
+{
+ "snowflake.enableFileAssociations": true,
+ "snowflake.sqlFilesGlobPattern": "LOAD/**/*.sql",
+ "files.associations": {
+  "**/DBT_PROJECT/**/*.sql": "jinja-sql",
+  "**/LOAD/**/*.sql": "snowflake-sql",
+  "**/EXTRACT/**/*.sql": "snowflake-sql"
+ }
+}
