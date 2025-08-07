@@ -12,9 +12,6 @@ test-paths: ["DBT_PROJECT/tests"]
 macro-paths: ["DBT_PROJECT/macros"]
 snapshot-paths: ["DBT_PROJECT/snapshots"]
 
-target-path: "DBT_PROJECT/target"
-clean-targets: ["DBT_PROJECT/target", "DBT_PROJECT/dbt_modules"]
-
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
