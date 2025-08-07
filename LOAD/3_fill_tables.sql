@@ -1,3 +1,6 @@
+-- Utilisation du datawarehouse QUERY
+USE WAREHOUSE QUERY;
+
 -- Utilisation de la database RAW_DATA et du schéma calendar
 USE DATABASE RAW_DATA;
 USE SCHEMA calendar;
