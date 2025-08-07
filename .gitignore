@@ -1,5 +1,5 @@
 __pycache__/
 .venv/
-.env
+DBT_PROJECT/.env
 target/
 DBT_PROJECT/target/
