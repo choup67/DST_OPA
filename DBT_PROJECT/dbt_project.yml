@@ -5,12 +5,12 @@ name: opa_dbt
 version: '1.0'
 profile: opa_profile
 
-model-paths: ["DBT_PROJECT/models"]
-seed-paths: ["DBT_PROJECT/seeds"]
-analysis-paths: ["DBT_PROJECT/analysis"]
-test-paths: ["DBT_PROJECT/tests"]
-macro-paths: ["DBT_PROJECT/macros"]
-snapshot-paths: ["DBT_PROJECT/snapshots"]
+model-paths: ["models"]
+seed-paths: ["seeds"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
 
 
 # Configuring models
