@@ -1,0 +1,10 @@
+﻿symbol_type;market_feeling_label;market_feeling_score
+crypto_fiat;sortie marché;10
+fiat_fiat;neutre;20
+stablecoin_fiat;prise de profit;30
+crypto_stablecoin;sécurisation;40
+stablecoin_stablecoin;stabilité;50
+fiat_stablecoin;attente;60
+crypto_crypto;rotation;70
+stablecoin_crypto;entrée marché;80
+fiat_crypto;investissement;90
