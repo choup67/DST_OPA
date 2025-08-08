@@ -31,3 +31,17 @@ USE DATABASE DBT;
 CREATE SCHEMA IF NOT EXISTS DBT.staging;
 CREATE SCHEMA IF NOT EXISTS DBT.intermediate;
 CREATE SCHEMA IF NOT EXISTS DBT.mart;
+
+---Création du stage interne pour le chargement des données
+-- Utilisation du datawarehouse QUERY
+USE WAREHOUSE QUERY;
+-- Utilisation de la database RAW_DATA et du schéma calendar
+USE DATABASE RAW_DATA;
+USE SCHEMA GITREPO;
+
+-- création du stage interne
+CREATE OR REPLACE STAGE my_stage
+  FILE_FORMAT = CLASSIC_CSV
+  COMMENT = 'Stage for loading data from CSV files';
+
+LIST @my_stage;
