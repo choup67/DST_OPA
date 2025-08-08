@@ -77,3 +77,7 @@ CREATE TABLE IF NOT EXISTS market_feeling_score (
     market_feeling_label VARCHAR(50) NOT NULL,
     market_feeling_score VARCHAR(50) NOT NULL
 );
+--modification de la table market_feeling_score pour modifier le type de la colonne symbol_type et augmenter le nombre de caractères
+--besoin de faire ça suite à une erreur lors du remplissage de la table
+ALTER TABLE market_feeling_score
+    MODIFY COLUMN symbol_type VARCHAR(255);
