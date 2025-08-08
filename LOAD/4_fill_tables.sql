@@ -48,3 +48,8 @@ USE SCHEMA GITREPO;
 COPY INTO FIAT_INFO
 FROM @MY_STAGE/table_fiat.csv
 FILE_FORMAT = CLASSIC_CSV;
+
+-- Remplissage de la table MARKET_FEELING_SCORE depuis le fichier dans le stage
+COPY INTO MARKET_FEELING_SCORE
+FROM @MY_STAGE/market_feeling_score.csv
+FILE_FORMAT = CLASSIC_CSV;
