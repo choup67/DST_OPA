@@ -3,18 +3,18 @@ USE WAREHOUSE QUERY;
 
 --Utilisation de la database RAW_DATA et du schéma Coingecko
 USE DATABASE RAW_DATA;
-USE SCHEMA Coingecko;
+USE SCHEMA coingecko;
 
--- Création de la table asset_info
+-- Création de la table assetinfo
 CREATE TABLE IF NOT EXISTS asset_info (
     coingecko_id VARCHAR(255) NOT NULL,
     name VARCHAR(255) NOT NULL,
     symbol VARCHAR(255) NOT NULL PRIMARY KEY,
     market_cap_rank INT NOT NULL,
-    asset_plateform VARCHAR(255) NOT NULL,
+    asset_platform VARCHAR(255),
     token_type VARCHAR(255) NOT NULL,
-    homepage VARCHAR(255) NOT NULL,
-    categories VARCHAR(255) NOT NULL,
+    homepage VARCHAR(),
+    categories VARCHAR() NOT NULL,
     supply_circulating DECIMAL(38, 18),
     supply_total DECIMAL(38, 18),
     supply_max DECIMAL(38, 18)
@@ -24,11 +24,11 @@ CREATE TABLE IF NOT EXISTS asset_info (
 USE DATABASE RAW_DATA;
 USE SCHEMA binance;
 
--- Création de la table exchange_info
+-- Création de la table exchangeinfo
 CREATE TABLE IF NOT EXISTS exchange_info (
     symbol VARCHAR(20) NOT NULL PRIMARY KEY,
-    base_asset VARCHAR(255) NOT NULL,
-    quote_asset VARCHAR(255) NOT NULL,
+    baseAsset VARCHAR(255) NOT NULL,
+    quoteAsset VARCHAR(255) NOT NULL,
     status VARCHAR(10) NOT NULL,
     minPrice DECIMAL(20, 8) NOT NULL,
     maxPrice DECIMAL(20, 8) NOT NULL,
@@ -38,8 +38,8 @@ CREATE TABLE IF NOT EXISTS exchange_info (
     stepSize DECIMAL(20, 8) NOT NULL,
     minNotional DECIMAL(20, 8) NOT NULL,
     maxNotional DECIMAL(20, 8) NOT NULL,
-    FOREIGN KEY (base_asset) REFERENCES RAW_DATA.Coingecko.asset_info(symbol),
-    FOREIGN KEY (quote_asset) REFERENCES RAW_DATA.Coingecko.asset_info(symbol)
+    FOREIGN KEY (baseAsset) REFERENCES RAW_DATA.coingecko.asset_info(symbol),
+    FOREIGN KEY (quoteAsset) REFERENCES RAW_DATA.coingecko.asset_info(symbol)
 );
 
 -- Création de la table kline
@@ -62,8 +62,8 @@ CREATE TABLE IF NOT EXISTS kline (
 
 -- Utilisation de la database RAW_DATA et du schéma gitrepo
 USE DATABASE RAW_DATA;
+CREATE SCHEMA gitrepo;
 USE SCHEMA gitrepo;
-
 -- Création de la table fiat_info
 CREATE TABLE IF NOT EXISTS fiat_info (
     fiat_name VARCHAR(50) NOT NULL,

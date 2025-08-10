@@ -12,17 +12,17 @@ CREATE SCHEMA IF NOT EXISTS RAW_DATA.calendar;
 USE SCHEMA RAW_DATA.stage;
 CREATE OR REPLACE FILE FORMAT RAW_DATA.STAGE.CLASSIC_CSV
   TYPE = CSV
-  SET COMPRESSION = 'AUTO'                --Compression automatique si applicable (utile si les fichiers sont compressés comme .gz, .bz2, etc.)
+  COMPRESSION = 'AUTO'                --Compression automatique si applicable (utile si les fichiers sont compressés comme .gz, .bz2, etc.)
   RECORD_DELIMITER = '\n'                 --Chaque ligne dans le fichier représente un enregistrement. Les lignes sont séparées par des sauts de ligne (\n).
   FIELD_DELIMITER = ','                   --Les champs sont séparés par une virgule (typique des fichiers CSV).
   SKIP_HEADER = 1                         --Ignore la première ligne du fichier, souvent utilisée pour les en-têtes de colonnes.
   DATE_FORMAT = 'AUTO'        
   TIMESTAMP_FORMAT = 'AUTO'               --Auto-détection des formats de date et timestamp selon les valeurs du fichier.
-  FIELD_OPTIONALLY_ENCLOSED_BY = 'NONE'   --Les champs ne sont pas entourés de guillemets (ex. pas de "texte" ou 'texte' autour des valeurs).
   TRIM_SPACE = FALSE                      --Ne pas supprimer les espaces autour des valeurs des champs.
   ERROR_ON_COLUMN_COUNT_MISMATCH = TRUE   --Génère une erreur si le nombre de colonnes dans un enregistrement ne correspond pas au schéma attendu.
   ESCAPE = 'NONE'                         --Aucun caractère d’échappement utilisé dans les champs entre guillemets.
   ESCAPE_UNENCLOSED_FIELD = '\134'        --Définit \ (code ASCII 134 en octal) comme caractère d’échappement pour les champs non entourés.
+  FIELD_OPTIONALLY_ENCLOSED_BY = '"'      --Categories dans coingeck contient des virgules, on peut les entourer de guillemets.
   NULL_IF = ('\\N');                      --Si une valeur est \N, elle sera interprétée comme NULL.
 
 

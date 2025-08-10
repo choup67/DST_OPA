@@ -41,7 +41,7 @@ FROM dates;
 USE WAREHOUSE QUERY;
 -- Utilisation de la database RAW_DATA et du schéma calendar
 USE DATABASE RAW_DATA;
-USE SCHEMA GITREPO;
+USE SCHEMA STAGE;
 
 -- Remplissage de la table depuis le fichier dans le stage
 COPY INTO FIAT_INFO
@@ -52,3 +52,28 @@ FILE_FORMAT = CLASSIC_CSV;
 COPY INTO MARKET_FEELING_SCORE
 FROM @MY_STAGE/market_feeling_score.csv
 FILE_FORMAT = CLASSIC_CSV;
+
+-- Remplissage de la table asset_info depuis le fichier dans le stage
+-- Verification avant chargement
+COPY INTO RAW_DATA.coingecko.asset_info
+FROM @OPA_STAGE/coingecko_top100_token_info.csv
+FILE_FORMAT = CLASSIC_CSV
+VALIDATION_MODE = 'RETURN_ERRORS';
+-- chargement
+COPY INTO RAW_DATA.coingecko.asset_info
+FROM @OPA_STAGE/coingecko_top100_token_info.csv
+FILE_FORMAT = CLASSIC_CSV
+ON_ERROR = 'ABORT_STATEMENT'
+FORCE = TRUE; 
+
+-- Verification avant chargement
+COPY INTO RAW_DATA.binance.exchange_info
+FROM @OPA_STAGE/binance_exchange_info.csv
+FILE_FORMAT = CLASSIC_CSV
+VALIDATION_MODE = 'RETURN_ERRORS';
+-- chargement
+COPY INTO RAW_DATA.binance.exchange_info
+FROM @OPA_STAGE/binance_exchange_info.csv
+FILE_FORMAT = CLASSIC_CSV
+ON_ERROR = 'ABORT_STATEMENT'
+FORCE = TRUE;
