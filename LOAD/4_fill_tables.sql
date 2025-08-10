@@ -77,3 +77,33 @@ FROM @OPA_STAGE/binance_exchange_info.csv
 FILE_FORMAT = CLASSIC_CSV
 ON_ERROR = 'ABORT_STATEMENT'
 FORCE = TRUE;
+
+-- Remplissage de la table kline depuis le fichier dans le stage
+-- Verification avant chargement
+COPY INTO RAW_DATA.binance.kline
+FROM @OPA_STAGE/binance_klines.csv
+FILE_FORMAT = CLASSIC_CSV
+VALIDATION_MODE = 'RETURN_ERRORS';
+
+-- chargement
+COPY INTO RAW_DATA.BINANCE.KLINE (
+  open_time,
+  open,
+  high,
+  low,
+  close,
+  volume,
+  close_time,
+  quote_asset_volume,
+  number_of_trades,
+  taker_buy_base_asset_volume,
+  taker_buy_quote_asset_volume,
+  ignore,
+  symbol
+)
+FROM @OPA_STAGE/binance_klines.csv
+FILE_FORMAT = CLASSIC_CSV
+ON_ERROR = 'ABORT_STATEMENT'
+FORCE = TRUE;
+
+TRUNCATE TABLE RAW_DATA.BINANCE.KLINE;
