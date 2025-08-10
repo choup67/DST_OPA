@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+from pathlib import Path
 
 def get_exchange_info():
     url = 'https://api.binance.com/api/v3/exchangeInfo'
@@ -26,7 +27,14 @@ def get_exchange_info():
             'maxNotional': filtres.get('NOTIONAL', {}).get('maxNotional'),
         })
     
-    return pd.DataFrame(data)
+    df = pd.DataFrame(data)
 
-get_exchange_info_df = get_exchange_info()
-print(get_exchange_info_df.head())
+    # Chemin vers UTILS/DATA
+    data_dir = Path(__file__).resolve().parent.parent / "UTILS" / "DATA"
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    csv_path = data_dir / "binance_exchange_info.csv"
+    df.to_csv(csv_path, index=False, encoding='utf-8')
+    print(f"CSV sauvegardé : {csv_path}")
+
+    return df
