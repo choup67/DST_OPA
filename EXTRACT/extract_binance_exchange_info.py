@@ -4,7 +4,7 @@ from pathlib import Path
 
 def get_exchange_info():
     url = 'https://api.binance.com/api/v3/exchangeInfo'
-    response = requests.get(url)
+    response = requests.get(url, timeout=30)
     response.raise_for_status()
     
     pairs = response.json().get('symbols', [])
