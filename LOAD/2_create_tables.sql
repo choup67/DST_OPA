@@ -9,7 +9,7 @@ USE SCHEMA coingecko;
 CREATE TABLE IF NOT EXISTS asset_info (
     coingecko_id VARCHAR(255) NOT NULL,
     name VARCHAR(255) NOT NULL,
-    symbol VARCHAR(255) NOT NULL PRIMARY KEY,
+    asset VARCHAR(255) NOT NULL PRIMARY KEY,
     market_cap_rank INT NOT NULL,
     asset_platform VARCHAR(255),
     token_type VARCHAR(255) NOT NULL,
