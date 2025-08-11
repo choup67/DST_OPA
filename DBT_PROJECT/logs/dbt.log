@@ -3079,3 +3079,23 @@ Compilation Error
 [0m19:20:10.027826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB25A7E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB2A473E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AA058FE70>]}
 [0m19:20:10.028058 [debug] [MainThread]: Flushing usage events
 [0m19:20:10.416101 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:28:29.076496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265DA4801A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265DB4CFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265DB4CFB10>]}
+
+
+============================== 19:28:29.079393 | d14cc5d7-e81d-4394-9931-33f802e206b7 ==============================
+[0m19:28:29.079393 [info ] [MainThread]: Running with dbt=1.10.5
+[0m19:28:29.080016 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:/Users/rivie/PROJETS/DST_OPA/DBT_PROJECT/profiles', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\rivie\\PROJETS\\DST_OPA\\DBT_PROJECT\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select stg_binance__kline', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:28:29.795678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd14cc5d7-e81d-4394-9931-33f802e206b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265DA7C3BB0>]}
+[0m19:28:29.833956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd14cc5d7-e81d-4394-9931-33f802e206b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265ED49ABE0>]}
+[0m19:28:29.835045 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m19:28:30.075736 [debug] [MainThread]: checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b, vars: {}, profile: , target: , version: 1.10.5
+[0m19:28:30.076536 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:28:30.077045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd14cc5d7-e81d-4394-9931-33f802e206b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265ED890050>]}
+[0m19:28:30.734401 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'stg_binance__exchange_info' in the 'models' section of file 'models\staging\schema.yml'
+[0m19:28:30.894679 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.OPA.int_binance__exchange_info' (models\intermediate\binance\int_binance__exchange_info.sql) depends on a node named 'stg_binance__exchange_info' which was not found
+[0m19:28:30.896294 [debug] [MainThread]: Command `dbt run` failed at 19:28:30.896192 after 1.92 seconds
+[0m19:28:30.896565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265ED4F7E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265ED9933E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265DB4AFE70>]}
+[0m19:28:30.896813 [debug] [MainThread]: Flushing usage events
+[0m19:28:31.284957 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -3,3 +3,4 @@ __pycache__/
 DBT_PROJECT/.env
 target/
 DBT_PROJECT/target/
+DBT_PROJECT/logs/
