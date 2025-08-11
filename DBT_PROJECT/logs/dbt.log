@@ -1,0 +1,948 @@
+[0m09:21:07.647057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108137230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090ff750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090ff890>]}
+
+
+============================== 09:21:07.664705 | 392ed4d8-3d48-47f5-9302-8d2e8f388601 ==============================
+[0m09:21:07.664705 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:21:07.665173 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/ellie/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:21:07.704450 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:21:07.704844 [info ] [MainThread]: python version: 3.13.3
+[0m09:21:07.705163 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m09:21:07.705445 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m09:21:09.094341 [info ] [MainThread]: Using profiles dir at /Users/ellie/.dbt
+[0m09:21:09.094604 [info ] [MainThread]: Using profiles.yml file at /Users/ellie/.dbt/profiles.yml
+[0m09:21:09.094748 [info ] [MainThread]: Using dbt_project.yml file at /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/dbt_project.yml
+[0m09:21:09.094899 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m09:21:09.097562 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.494725, "process_in_blocks": "0", "process_kernel_time": 0.489455, "process_mem_max_rss": "221298688", "process_out_blocks": "0", "process_user_time": 2.265478}
+[0m09:21:09.097908 [debug] [MainThread]: Command `dbt debug` failed at 09:21:09.097860 after 1.50 seconds
+[0m09:21:09.098078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd4fce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd02c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd34e20>]}
+[0m09:21:09.098265 [debug] [MainThread]: Flushing usage events
+[0m09:21:09.534254 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:26:44.325475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fb6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a37c50>]}
+
+
+============================== 09:26:44.327929 | ade8cda0-ab8d-4cc0-a23e-7dbffcf966f9 ==============================
+[0m09:26:44.327929 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:26:44.328215 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': './profiles', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:26:44.333682 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:26:44.333819 [info ] [MainThread]: python version: 3.13.3
+[0m09:26:44.333977 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m09:26:44.334176 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m09:26:44.337226 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_USER'
+[0m09:26:44.339000 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.04210521, "process_in_blocks": "0", "process_kernel_time": 0.096307, "process_mem_max_rss": "107446272", "process_out_blocks": "0", "process_user_time": 0.489804}
+[0m09:26:44.339200 [debug] [MainThread]: Command `dbt debug` failed at 09:26:44.339163 after 0.04 seconds
+[0m09:26:44.339329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a73bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c216d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111abfac0>]}
+[0m09:26:44.339470 [debug] [MainThread]: Flushing usage events
+[0m09:26:44.757523 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:30:03.456020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b56510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1183379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118337c50>]}
+
+
+============================== 09:30:03.458351 | 421c92cc-5f37-487c-b567-845fbcde4447 ==============================
+[0m09:30:03.458351 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:30:03.458610 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': './profiles', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:30:03.464568 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:30:03.464699 [info ] [MainThread]: python version: 3.13.3
+[0m09:30:03.464865 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m09:30:03.465021 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m09:30:03.857270 [info ] [MainThread]: Using profiles dir at ./profiles
+[0m09:30:03.857492 [info ] [MainThread]: Using profiles.yml file at ./profiles/profiles.yml
+[0m09:30:03.857616 [info ] [MainThread]: Using dbt_project.yml file at /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/dbt_project.yml
+[0m09:30:03.858148 [info ] [MainThread]: adapter type: snowflake
+[0m09:30:03.858292 [info ] [MainThread]: adapter version: 1.10.0
+[0m09:30:03.858414 [info ] [MainThread]: Configuration:
+[0m09:30:03.858518 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:30:03.858622 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:30:03.858722 [info ] [MainThread]: Required dependencies:
+[0m09:30:03.858846 [debug] [MainThread]: Executing "git --help"
+[0m09:30:03.875755 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:30:03.876158 [debug] [MainThread]: STDERR: "b''"
+[0m09:30:03.876308 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:30:03.876439 [info ] [MainThread]: Connection:
+[0m09:30:03.876585 [info ] [MainThread]:   account: hbvyxoa-li66752
+[0m09:30:03.876694 [info ] [MainThread]:   user: CHOUP67
+[0m09:30:03.876793 [info ] [MainThread]:   database: DBT
+[0m09:30:03.876890 [info ] [MainThread]:   warehouse: QUERY
+[0m09:30:03.876988 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m09:30:03.877083 [info ] [MainThread]:   schema: STAGING
+[0m09:30:03.877183 [info ] [MainThread]:   authenticator: None
+[0m09:30:03.877280 [info ] [MainThread]:   oauth_client_id: None
+[0m09:30:03.877376 [info ] [MainThread]:   query_tag: None
+[0m09:30:03.877471 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:30:03.877568 [info ] [MainThread]:   host: None
+[0m09:30:03.877663 [info ] [MainThread]:   port: None
+[0m09:30:03.877762 [info ] [MainThread]:   proxy_host: None
+[0m09:30:03.877857 [info ] [MainThread]:   proxy_port: None
+[0m09:30:03.877950 [info ] [MainThread]:   protocol: None
+[0m09:30:03.878043 [info ] [MainThread]:   connect_retries: 1
+[0m09:30:03.878139 [info ] [MainThread]:   connect_timeout: None
+[0m09:30:03.878234 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:30:03.878335 [info ] [MainThread]:   retry_all: False
+[0m09:30:03.878432 [info ] [MainThread]:   insecure_mode: False
+[0m09:30:03.878524 [info ] [MainThread]:   reuse_connections: True
+[0m09:30:03.878620 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:30:03.878917 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m09:30:03.931105 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:30:03.956365 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:30:03.956546 [debug] [MainThread]: On debug: select 1 as id
+[0m09:30:03.956658 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:30:04.631684 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.675 seconds
+[0m09:30:04.632288 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:30:04.632473 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:30:04.632603 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/dbt_project.yml> not found
+
+[0m09:30:04.635798 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.2060243, "process_in_blocks": "0", "process_kernel_time": 0.196922, "process_mem_max_rss": "198983680", "process_out_blocks": "0", "process_user_time": 0.845129}
+[0m09:30:04.636086 [debug] [MainThread]: Command `dbt debug` failed at 09:30:04.636028 after 1.21 seconds
+[0m09:30:04.636263 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:30:04.636395 [debug] [MainThread]: On debug: Close
+[0m09:30:04.713258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e8b7a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e233890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e8aebe0>]}
+[0m09:30:04.713536 [debug] [MainThread]: Flushing usage events
+[0m09:30:05.151722 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:32:32.882760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039de510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e4f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e4fc50>]}
+
+
+============================== 09:32:32.885059 | 9bfd1067-bf42-4bd6-9669-34f5a3ddf737 ==============================
+[0m09:32:32.885059 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:32:32.885311 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:32:32.890565 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:32:32.890700 [info ] [MainThread]: python version: 3.13.3
+[0m09:32:32.890878 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m09:32:32.891069 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m09:32:32.892436 [info ] [MainThread]: Using profiles dir at ./profiles
+[0m09:32:32.892568 [info ] [MainThread]: Using profiles.yml file at ./profiles/profiles.yml
+[0m09:32:32.892679 [info ] [MainThread]: Using dbt_project.yml file at /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/dbt_project.yml
+[0m09:32:32.925470 [info ] [MainThread]: Configuration:
+[0m09:32:32.925692 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m09:32:32.925812 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m09:32:32.925921 [info ] [MainThread]: Required dependencies:
+[0m09:32:32.926075 [debug] [MainThread]: Executing "git --help"
+[0m09:32:32.936140 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:32:32.936552 [debug] [MainThread]: STDERR: "b''"
+[0m09:32:32.936675 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:32:32.936798 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m09:32:32.936914 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:32:32.937019 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'OPA'
+
+
+[0m09:32:32.938768 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.083886705, "process_in_blocks": "0", "process_kernel_time": 0.086987, "process_mem_max_rss": "110804992", "process_out_blocks": "0", "process_user_time": 0.501606}
+[0m09:32:32.938987 [debug] [MainThread]: Command `dbt debug` failed at 09:32:32.938946 after 0.08 seconds
+[0m09:32:32.939173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10412f230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fe20f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ed5370>]}
+[0m09:32:32.939332 [debug] [MainThread]: Flushing usage events
+[0m09:32:33.387852 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:35:28.516035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bba510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10702b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10702bc50>]}
+
+
+============================== 09:35:28.518446 | e0740f00-1588-49b7-81ff-6e923b0fdda7 ==============================
+[0m09:35:28.518446 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:35:28.518714 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:35:28.523915 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:35:28.524059 [info ] [MainThread]: python version: 3.13.3
+[0m09:35:28.524197 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m09:35:28.524350 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m09:35:28.527887 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_DEFAULT_SCHEMA'
+[0m09:35:28.529600 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.041595165, "process_in_blocks": "0", "process_kernel_time": 0.084216, "process_mem_max_rss": "107790336", "process_out_blocks": "0", "process_user_time": 0.46572}
+[0m09:35:28.529786 [debug] [MainThread]: Command `dbt debug` failed at 09:35:28.529752 after 0.04 seconds
+[0m09:35:28.529916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107154510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107115eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071609e0>]}
+[0m09:35:28.530048 [debug] [MainThread]: Flushing usage events
+[0m09:35:28.962687 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:35:51.811351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10344a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048bb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048bbc50>]}
+
+
+============================== 09:35:51.813726 | e14efe70-7f59-43c8-9034-e4cc3443382d ==============================
+[0m09:35:51.813726 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:35:51.813999 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': './profiles', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m09:35:51.819599 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:35:51.819764 [info ] [MainThread]: python version: 3.13.3
+[0m09:35:51.819954 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m09:35:51.820098 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m09:35:51.823002 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_DEFAULT_SCHEMA'
+[0m09:35:51.824719 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.040420543, "process_in_blocks": "0", "process_kernel_time": 0.088148, "process_mem_max_rss": "109395968", "process_out_blocks": "0", "process_user_time": 0.477394}
+[0m09:35:51.825172 [debug] [MainThread]: Command `dbt debug` failed at 09:35:51.825118 after 0.04 seconds
+[0m09:35:51.825344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049e4510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049a5eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049f09e0>]}
+[0m09:35:51.825510 [debug] [MainThread]: Flushing usage events
+[0m09:35:52.227227 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:36:42.140731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039d6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e479d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e47c50>]}
+
+
+============================== 09:36:42.143215 | 0aa3a2bc-003d-43db-a4bb-1c32f15a83d5 ==============================
+[0m09:36:42.143215 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:36:42.143508 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': './profiles', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m09:36:42.149176 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:36:42.149344 [info ] [MainThread]: python version: 3.13.3
+[0m09:36:42.149504 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m09:36:42.149635 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m09:36:42.152554 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_DEFAULT_SCHEMA'
+[0m09:36:42.154162 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.0406905, "process_in_blocks": "0", "process_kernel_time": 0.091837, "process_mem_max_rss": "108298240", "process_out_blocks": "0", "process_user_time": 0.474762}
+[0m09:36:42.154345 [debug] [MainThread]: Command `dbt debug` failed at 09:36:42.154312 after 0.04 seconds
+[0m09:36:42.154474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f70510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f31eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f7c9e0>]}
+[0m09:36:42.154609 [debug] [MainThread]: Flushing usage events
+[0m09:36:42.535754 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:36:56.040889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b0e510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f7f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f7fc50>]}
+
+
+============================== 09:36:56.043100 | 84125407-744c-4732-8af6-26b6c4da921f ==============================
+[0m09:36:56.043100 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:36:56.043516 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:36:56.047946 [info ] [MainThread]: dbt version: 1.10.6
+[0m09:36:56.048096 [info ] [MainThread]: python version: 3.13.3
+[0m09:36:56.048240 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m09:36:56.048360 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m09:36:56.443523 [info ] [MainThread]: Using profiles dir at ./profiles
+[0m09:36:56.443751 [info ] [MainThread]: Using profiles.yml file at ./profiles/profiles.yml
+[0m09:36:56.443887 [info ] [MainThread]: Using dbt_project.yml file at /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/dbt_project.yml
+[0m09:36:56.444295 [info ] [MainThread]: adapter type: snowflake
+[0m09:36:56.444448 [info ] [MainThread]: adapter version: 1.10.0
+[0m09:36:56.477298 [info ] [MainThread]: Configuration:
+[0m09:36:56.477529 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:36:56.477658 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m09:36:56.477774 [info ] [MainThread]: Required dependencies:
+[0m09:36:56.477928 [debug] [MainThread]: Executing "git --help"
+[0m09:36:56.488124 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:36:56.488517 [debug] [MainThread]: STDERR: "b''"
+[0m09:36:56.488662 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:36:56.488800 [info ] [MainThread]: Connection:
+[0m09:36:56.488950 [info ] [MainThread]:   account: HBVYXOA-LI66752
+[0m09:36:56.489057 [info ] [MainThread]:   user: CHOUP67
+[0m09:36:56.489176 [info ] [MainThread]:   database: RAW_DATA
+[0m09:36:56.489274 [info ] [MainThread]:   warehouse: QUERY
+[0m09:36:56.489368 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m09:36:56.489683 [info ] [MainThread]:   schema: STAGE
+[0m09:36:56.489820 [info ] [MainThread]:   authenticator: None
+[0m09:36:56.489927 [info ] [MainThread]:   oauth_client_id: None
+[0m09:36:56.490031 [info ] [MainThread]:   query_tag: None
+[0m09:36:56.490131 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:36:56.490232 [info ] [MainThread]:   host: None
+[0m09:36:56.490329 [info ] [MainThread]:   port: None
+[0m09:36:56.490426 [info ] [MainThread]:   proxy_host: None
+[0m09:36:56.490521 [info ] [MainThread]:   proxy_port: None
+[0m09:36:56.490614 [info ] [MainThread]:   protocol: None
+[0m09:36:56.490709 [info ] [MainThread]:   connect_retries: 1
+[0m09:36:56.490801 [info ] [MainThread]:   connect_timeout: None
+[0m09:36:56.490892 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:36:56.490987 [info ] [MainThread]:   retry_all: False
+[0m09:36:56.491079 [info ] [MainThread]:   insecure_mode: False
+[0m09:36:56.491172 [info ] [MainThread]:   reuse_connections: True
+[0m09:36:56.491266 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:36:56.491600 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m09:36:56.543490 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:36:56.560911 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:36:56.561077 [debug] [MainThread]: On debug: select 1 as id
+[0m09:36:56.561182 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:36:57.162303 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.601 seconds
+[0m09:36:57.163700 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:36:57.164122 [info ] [MainThread]: [32mAll checks passed![0m
+[0m09:36:57.169831 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.1544276, "process_in_blocks": "0", "process_kernel_time": 0.173467, "process_mem_max_rss": "193019904", "process_out_blocks": "0", "process_user_time": 0.802469}
+[0m09:36:57.170432 [debug] [MainThread]: Command `dbt debug` succeeded at 09:36:57.170315 after 1.16 seconds
+[0m09:36:57.170764 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:36:57.171040 [debug] [MainThread]: On debug: Close
+[0m09:36:57.249537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4e0770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6aa8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae93680>]}
+[0m09:36:57.250247 [debug] [MainThread]: Flushing usage events
+[0m09:36:57.667330 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:38:17.053330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037fe510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c6f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c6fc50>]}
+
+
+============================== 09:38:17.055655 | 963be0db-0c11-4030-9906-eb87567210ed ==============================
+[0m09:38:17.055655 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:38:17.055923 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'version_check': 'True', 'profiles_dir': './profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt parse', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:38:17.496161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '963be0db-0c11-4030-9906-eb87567210ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fd9a70>]}
+[0m09:38:17.515911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '963be0db-0c11-4030-9906-eb87567210ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c406b0>]}
+[0m09:38:17.516378 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m09:38:17.573495 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m09:38:17.596329 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m09:38:17.596547 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m09:38:17.596702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '963be0db-0c11-4030-9906-eb87567210ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f6f150>]}
+[0m09:38:17.934466 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.mart
+- models.OPA.intermediate
+[0m09:38:17.936173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '963be0db-0c11-4030-9906-eb87567210ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fed5e0>]}
+[0m09:38:17.937594 [info ] [MainThread]: Performance info: /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/perf_info.json
+[0m09:38:17.958305 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m09:38:17.959293 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m09:38:17.961027 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 0.9361777, "process_in_blocks": "0", "process_kernel_time": 0.178576, "process_mem_max_rss": "185958400", "process_out_blocks": "0", "process_user_time": 1.122075}
+[0m09:38:17.961285 [debug] [MainThread]: Command `dbt parse` succeeded at 09:38:17.961248 after 0.94 seconds
+[0m09:38:17.961433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c6be70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dfe5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ff7e10>]}
+[0m09:38:17.961567 [debug] [MainThread]: Flushing usage events
+[0m09:38:18.384633 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:39:46.937715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fd6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054479d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105447c50>]}
+
+
+============================== 09:39:46.940141 | 2135f1dd-fbc3-450a-ad07-b2c45dde9379 ==============================
+[0m09:39:46.940141 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:39:46.940389 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt parse', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:39:47.391473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2135f1dd-fbc3-450a-ad07-b2c45dde9379', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047ada70>]}
+[0m09:39:47.410897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2135f1dd-fbc3-450a-ad07-b2c45dde9379', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10940c6b0>]}
+[0m09:39:47.411425 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m09:39:47.466910 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m09:39:47.503721 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m09:39:47.503937 [debug] [MainThread]: Partial parsing: added file: OPA://macros/generate_schema_name.sql
+[0m09:39:47.504750 [info ] [MainThread]: Unable to do partial parsing because change detected to override macro. Starting full parse.
+[0m09:39:47.822190 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.intermediate
+- models.OPA.mart
+[0m09:39:47.823893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2135f1dd-fbc3-450a-ad07-b2c45dde9379', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109740350>]}
+[0m09:39:47.825413 [info ] [MainThread]: Performance info: /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/perf_info.json
+[0m09:39:47.845586 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m09:39:47.846818 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m09:39:47.849113 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 0.93968594, "process_in_blocks": "0", "process_kernel_time": 0.184101, "process_mem_max_rss": "186646528", "process_out_blocks": "0", "process_user_time": 1.112245}
+[0m09:39:47.849387 [debug] [MainThread]: Command `dbt parse` succeeded at 09:39:47.849346 after 0.94 seconds
+[0m09:39:47.849547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ca23f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ca34d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105443e70>]}
+[0m09:39:47.849679 [debug] [MainThread]: Flushing usage events
+[0m09:39:48.297448 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:45:59.901448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fb2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094239d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109423c50>]}
+
+
+============================== 09:45:59.904339 | 26a04b45-3513-48c5-a75d-feeefd126985 ==============================
+[0m09:45:59.904339 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:45:59.904601 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'version_check': 'True', 'profiles_dir': './profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select tag:stg', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:46:00.360323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '26a04b45-3513-48c5-a75d-feeefd126985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108789a70>]}
+[0m09:46:00.379733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '26a04b45-3513-48c5-a75d-feeefd126985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3e86b0>]}
+[0m09:46:00.380269 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m09:46:00.435773 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m09:46:00.458515 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m09:46:00.458738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '26a04b45-3513-48c5-a75d-feeefd126985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d71f250>]}
+[0m09:46:00.790393 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.intermediate
+- models.OPA.mart
+[0m09:46:00.792137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '26a04b45-3513-48c5-a75d-feeefd126985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7aa3f0>]}
+[0m09:46:00.812371 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m09:46:00.813466 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m09:46:00.828655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '26a04b45-3513-48c5-a75d-feeefd126985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d93eeb0>]}
+[0m09:46:00.828845 [info ] [MainThread]: Found 2 models, 478 macros
+[0m09:46:00.828978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26a04b45-3513-48c5-a75d-feeefd126985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d73fc70>]}
+[0m09:46:00.829524 [info ] [MainThread]: 
+[0m09:46:00.829658 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m09:46:00.829766 [info ] [MainThread]: 
+[0m09:46:00.829955 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:46:00.830283 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m09:46:00.852610 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m09:46:00.852774 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m09:46:00.852878 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:46:01.356877 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.504 seconds
+[0m09:46:01.364155 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_STAGING)
+[0m09:46:01.377520 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m09:46:01.377910 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m09:46:01.471355 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.093 seconds
+[0m09:46:01.473579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26a04b45-3513-48c5-a75d-feeefd126985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9a6f90>]}
+[0m09:46:01.478181 [debug] [Thread-1 (]: Began running node model.OPA.stg__hello
+[0m09:46:01.478846 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg__hello ................................. [RUN]
+[0m09:46:01.479349 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now model.OPA.stg__hello)
+[0m09:46:01.479672 [debug] [Thread-1 (]: Began compiling node model.OPA.stg__hello
+[0m09:46:01.485019 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg__hello"
+[0m09:46:01.486016 [debug] [Thread-1 (]: Began executing node model.OPA.stg__hello
+[0m09:46:01.508810 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg__hello"
+[0m09:46:01.509096 [debug] [Thread-1 (]: On model.OPA.stg__hello: select * from (
+        select 1 as hello
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg__hello"} */
+[0m09:46:01.563456 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.054 seconds
+[0m09:46:01.568458 [debug] [Thread-1 (]: Writing runtime sql for node "model.OPA.stg__hello"
+[0m09:46:01.569333 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg__hello"
+[0m09:46:01.569572 [debug] [Thread-1 (]: On model.OPA.stg__hello: create or replace   view DBT.STAGING.stg__hello
+  
+    
+    
+(
+  
+    "HELLO" COMMENT $$$$
+  
+)
+
+  
+  
+  
+  as (
+    select 1 as hello
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg__hello"} */;
+[0m09:46:01.779717 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.210 seconds
+[0m09:46:01.790648 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26a04b45-3513-48c5-a75d-feeefd126985', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113060680>]}
+[0m09:46:01.790981 [info ] [Thread-1 (]: 1 of 1 OK created sql view model STAGING.stg__hello ............................ [[32mSUCCESS 1[0m in 0.31s]
+[0m09:46:01.791254 [debug] [Thread-1 (]: Finished running node model.OPA.stg__hello
+[0m09:46:01.792008 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:46:01.792191 [debug] [MainThread]: Connection 'model.OPA.stg__hello' was left open.
+[0m09:46:01.792346 [debug] [MainThread]: On model.OPA.stg__hello: Close
+[0m09:46:01.852409 [info ] [MainThread]: 
+[0m09:46:01.852762 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.02 seconds (1.02s).
+[0m09:46:01.853202 [debug] [MainThread]: Command end result
+[0m09:46:01.864846 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m09:46:01.865765 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m09:46:01.868615 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m09:46:01.868775 [info ] [MainThread]: 
+[0m09:46:01.868969 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:46:01.869114 [info ] [MainThread]: 
+[0m09:46:01.869278 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m09:46:01.871578 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.9998698, "process_in_blocks": "0", "process_kernel_time": 0.211485, "process_mem_max_rss": "204292096", "process_out_blocks": "0", "process_user_time": 1.271634}
+[0m09:46:01.871838 [debug] [MainThread]: Command `dbt run` succeeded at 09:46:01.871790 after 2.00 seconds
+[0m09:46:01.872031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1130ce530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de92cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d885450>]}
+[0m09:46:01.872210 [debug] [MainThread]: Flushing usage events
+[0m09:46:02.301253 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:56:37.561735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108072510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094e39d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094e3c50>]}
+
+
+============================== 09:56:37.564078 | 077a94d1-c070-4c9c-b0e0-68669e3983c4 ==============================
+[0m09:56:37.564078 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:56:37.564351 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'profiles_dir': './profiles', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt parse', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:56:37.987807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '077a94d1-c070-4c9c-b0e0-68669e3983c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10884da70>]}
+[0m09:56:38.007358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '077a94d1-c070-4c9c-b0e0-68669e3983c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4a86b0>]}
+[0m09:56:38.007813 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m09:56:38.062753 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m09:56:38.099785 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m09:56:38.100024 [debug] [MainThread]: Partial parsing: added file: OPA://models/staging/src__raw_data.yml
+[0m09:56:38.162155 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.mart
+- models.OPA.intermediate
+[0m09:56:38.165616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '077a94d1-c070-4c9c-b0e0-68669e3983c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7e0750>]}
+[0m09:56:38.167332 [info ] [MainThread]: Performance info: /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/perf_info.json
+[0m09:56:38.190796 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m09:56:38.191929 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m09:56:38.193721 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 0.6599387, "process_in_blocks": "0", "process_kernel_time": 0.180673, "process_mem_max_rss": "184893440", "process_out_blocks": "0", "process_user_time": 0.87083}
+[0m09:56:38.193920 [debug] [MainThread]: Command `dbt parse` succeeded at 09:56:38.193882 after 0.66 seconds
+[0m09:56:38.194077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e44050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d485130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094dfe70>]}
+[0m09:56:38.194210 [debug] [MainThread]: Flushing usage events
+[0m09:56:38.607885 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:59:26.638533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046b6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d37c50>]}
+
+
+============================== 09:59:26.641030 | 215f55c8-4882-4198-8662-fdfef3f74337 ==============================
+[0m09:59:26.641030 [info ] [MainThread]: Running with dbt=1.10.6
+[0m09:59:26.641304 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_binance__exchange_info', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:59:27.065132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '215f55c8-4882-4198-8662-fdfef3f74337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ca1a70>]}
+[0m09:59:27.084851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '215f55c8-4882-4198-8662-fdfef3f74337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11313c6b0>]}
+[0m09:59:27.085296 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m09:59:27.140250 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m09:59:27.181799 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:59:27.182052 [debug] [MainThread]: Partial parsing: updated file: OPA://models/staging/binance/STG_binance__exchange_info.sql
+[0m09:59:27.263422 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.intermediate
+- models.OPA.mart
+[0m09:59:27.268119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '215f55c8-4882-4198-8662-fdfef3f74337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113672050>]}
+[0m09:59:27.293864 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m09:59:27.294920 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m09:59:27.303111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '215f55c8-4882-4198-8662-fdfef3f74337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11312a4e0>]}
+[0m09:59:27.303290 [info ] [MainThread]: Found 2 models, 6 sources, 478 macros
+[0m09:59:27.303420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '215f55c8-4882-4198-8662-fdfef3f74337', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113a22cf0>]}
+[0m09:59:27.303646 [warn ] [MainThread]: The selection criterion 'stg_binance__exchange_info' does not match any enabled nodes
+[0m09:59:27.304049 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:59:27.304261 [debug] [MainThread]: Command end result
+[0m09:59:27.312924 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m09:59:27.313546 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m09:59:27.314907 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m09:59:27.316907 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.7072315, "process_in_blocks": "0", "process_kernel_time": 0.17635, "process_mem_max_rss": "187858944", "process_out_blocks": "0", "process_user_time": 0.905603}
+[0m09:59:27.317147 [debug] [MainThread]: Command `dbt run` succeeded at 09:59:27.317113 after 0.71 seconds
+[0m09:59:27.317300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113a47ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b4cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113a4ad50>]}
+[0m09:59:27.317440 [debug] [MainThread]: Flushing usage events
+[0m09:59:27.727082 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:01:25.383022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ae2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f539d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f53c50>]}
+
+
+============================== 10:01:25.385388 | 1d449c7e-d117-4945-b2e0-8c019fff245c ==============================
+[0m10:01:25.385388 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:01:25.385658 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt parse', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:01:25.806768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1d449c7e-d117-4945-b2e0-8c019fff245c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042bda70>]}
+[0m10:01:25.826301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1d449c7e-d117-4945-b2e0-8c019fff245c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a4c6b0>]}
+[0m10:01:25.827281 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:01:25.881681 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:01:25.924610 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:01:25.924788 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:01:25.926737 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.mart
+- models.OPA.intermediate
+[0m10:01:25.937193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1d449c7e-d117-4945-b2e0-8c019fff245c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e76250>]}
+[0m10:01:25.938628 [info ] [MainThread]: Performance info: /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/perf_info.json
+[0m10:01:25.986838 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:01:25.987924 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:01:25.989731 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 0.63481766, "process_in_blocks": "0", "process_kernel_time": 0.180967, "process_mem_max_rss": "185139200", "process_out_blocks": "0", "process_user_time": 0.844744}
+[0m10:01:25.990037 [debug] [MainThread]: Command `dbt parse` succeeded at 10:01:25.990000 after 0.64 seconds
+[0m10:01:25.990191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a15130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a164e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f4fe70>]}
+[0m10:01:25.990336 [debug] [MainThread]: Flushing usage events
+[0m10:01:26.409735 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:03:13.864236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ea6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106337c50>]}
+
+
+============================== 10:03:13.866570 | 8c7d71cc-57a5-4b7f-a079-a649cc61225f ==============================
+[0m10:03:13.866570 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:03:13.866851 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ls --select path:models/staging/binance', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:03:14.286974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c7d71cc-57a5-4b7f-a079-a649cc61225f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10529da70>]}
+[0m10:03:14.306762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c7d71cc-57a5-4b7f-a079-a649cc61225f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11cb3c7c0>]}
+[0m10:03:14.307805 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:03:14.363693 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:03:14.405252 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m10:03:14.405454 [debug] [MainThread]: Partial parsing: added file: OPA://models/staging/binance/stg_binance__exchange_info.sql
+[0m10:03:14.405563 [debug] [MainThread]: Partial parsing: deleted file: OPA://models/staging/binance/STG_binance__exchange_info.sql
+[0m10:03:14.485808 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.mart
+- models.OPA.intermediate
+[0m10:03:14.490460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c7d71cc-57a5-4b7f-a079-a649cc61225f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ce76250>]}
+[0m10:03:14.515710 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:03:14.517047 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:03:14.525336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c7d71cc-57a5-4b7f-a079-a649cc61225f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11cb2bc50>]}
+[0m10:03:14.525517 [info ] [MainThread]: Found 2 models, 6 sources, 478 macros
+[0m10:03:14.525652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c7d71cc-57a5-4b7f-a079-a649cc61225f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d926350>]}
+[0m10:03:14.526027 [info ] [MainThread]: OPA.staging.binance.stg_binance__exchange_info
+[0m10:03:14.527704 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 0.69158065, "process_in_blocks": "0", "process_kernel_time": 0.180222, "process_mem_max_rss": "186449920", "process_out_blocks": "0", "process_user_time": 0.9171}
+[0m10:03:14.527942 [debug] [MainThread]: Command `dbt ls` succeeded at 10:03:14.527909 after 0.69 seconds
+[0m10:03:14.528136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d94a680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10624cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d94e450>]}
+[0m10:03:14.528317 [debug] [MainThread]: Flushing usage events
+[0m10:03:14.950853 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:03:21.942798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c6a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050db9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050dbc50>]}
+
+
+============================== 10:03:21.944397 | 0b38f92a-4ef3-48eb-acf3-0bd73b92d18e ==============================
+[0m10:03:21.944397 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:03:21.944657 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'profiles_dir': './profiles', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt ls --select path:models/staging/binance', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:03:22.224907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b38f92a-4ef3-48eb-acf3-0bd73b92d18e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104445a70>]}
+[0m10:03:22.244901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b38f92a-4ef3-48eb-acf3-0bd73b92d18e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090f87c0>]}
+[0m10:03:22.245216 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:03:22.297022 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:03:22.332465 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:03:22.332636 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:03:22.334561 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.mart
+- models.OPA.intermediate
+[0m10:03:22.345054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b38f92a-4ef3-48eb-acf3-0bd73b92d18e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10942e250>]}
+[0m10:03:22.372251 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:03:22.372989 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:03:22.377042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b38f92a-4ef3-48eb-acf3-0bd73b92d18e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090e7c50>]}
+[0m10:03:22.377214 [info ] [MainThread]: Found 2 models, 6 sources, 478 macros
+[0m10:03:22.377355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b38f92a-4ef3-48eb-acf3-0bd73b92d18e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109033770>]}
+[0m10:03:22.377742 [info ] [MainThread]: OPA.staging.binance.stg_binance__exchange_info
+[0m10:03:22.379355 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 0.46148753, "process_in_blocks": "0", "process_kernel_time": 0.12385, "process_mem_max_rss": "182960128", "process_out_blocks": "0", "process_user_time": 0.844942}
+[0m10:03:22.379697 [debug] [MainThread]: Command `dbt ls` succeeded at 10:03:22.379659 after 0.46 seconds
+[0m10:03:22.379848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109617450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ff0f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096296d0>]}
+[0m10:03:22.379976 [debug] [MainThread]: Flushing usage events
+[0m10:03:22.760102 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:04:01.314370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b66510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fd79d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fd7c50>]}
+
+
+============================== 10:04:01.316658 | 73a3986a-c59a-4d51-923e-601d2aa64674 ==============================
+[0m10:04:01.316658 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:04:01.316907 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_binance__exchange_info', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:04:01.715086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '73a3986a-c59a-4d51-923e-601d2aa64674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10633da70>]}
+[0m10:04:01.734912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '73a3986a-c59a-4d51-923e-601d2aa64674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af886b0>]}
+[0m10:04:01.735981 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:04:01.791582 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:04:01.833275 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:04:01.833428 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:04:01.835374 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.OPA.mart
+- models.OPA.intermediate
+[0m10:04:01.845893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '73a3986a-c59a-4d51-923e-601d2aa64674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2bcc50>]}
+[0m10:04:01.872922 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:04:01.873873 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:04:01.881878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '73a3986a-c59a-4d51-923e-601d2aa64674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af764e0>]}
+[0m10:04:01.882052 [info ] [MainThread]: Found 2 models, 6 sources, 478 macros
+[0m10:04:01.882181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '73a3986a-c59a-4d51-923e-601d2aa64674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10afbfbd0>]}
+[0m10:04:01.882748 [info ] [MainThread]: 
+[0m10:04:01.882884 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m10:04:01.882990 [info ] [MainThread]: 
+[0m10:04:01.883183 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:04:01.883507 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m10:04:01.905590 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m10:04:01.905770 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m10:04:01.905878 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:04:02.440245 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.534 seconds
+[0m10:04:02.447974 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_STAGING)
+[0m10:04:02.461638 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m10:04:02.462067 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m10:04:02.568875 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.106 seconds
+[0m10:04:02.571973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '73a3986a-c59a-4d51-923e-601d2aa64674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4ef040>]}
+[0m10:04:02.575675 [debug] [Thread-1 (]: Began running node model.OPA.stg_binance__exchange_info
+[0m10:04:02.576301 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg_binance__exchange_info ................. [RUN]
+[0m10:04:02.576836 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now model.OPA.stg_binance__exchange_info)
+[0m10:04:02.577213 [debug] [Thread-1 (]: Began compiling node model.OPA.stg_binance__exchange_info
+[0m10:04:02.584336 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg_binance__exchange_info"
+[0m10:04:02.585279 [debug] [Thread-1 (]: Began executing node model.OPA.stg_binance__exchange_info
+[0m10:04:02.608465 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_binance__exchange_info"
+[0m10:04:02.608787 [debug] [Thread-1 (]: On model.OPA.stg_binance__exchange_info: select * from (
+        select *
+from "RAW_DATA"."BINANCE"."EXCHANGE_INFO"
+limit 10
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_binance__exchange_info"} */
+[0m10:04:03.323088 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.714 seconds
+[0m10:04:03.333223 [debug] [Thread-1 (]: Writing runtime sql for node "model.OPA.stg_binance__exchange_info"
+[0m10:04:03.334887 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_binance__exchange_info"
+[0m10:04:03.335287 [debug] [Thread-1 (]: On model.OPA.stg_binance__exchange_info: create or replace   view DBT.STAGING.stg_binance__exchange_info
+  
+    
+    
+(
+  
+    "SYMBOL" COMMENT $$$$, 
+  
+    "BASEASSET" COMMENT $$$$, 
+  
+    "QUOTEASSET" COMMENT $$$$, 
+  
+    "STATUS" COMMENT $$$$, 
+  
+    "MINPRICE" COMMENT $$$$, 
+  
+    "MAXPRICE" COMMENT $$$$, 
+  
+    "TICKSIZE" COMMENT $$$$, 
+  
+    "MINQTY" COMMENT $$$$, 
+  
+    "MAXQTY" COMMENT $$$$, 
+  
+    "STEPSIZE" COMMENT $$$$, 
+  
+    "MINNOTIONAL" COMMENT $$$$, 
+  
+    "MAXNOTIONAL" COMMENT $$$$
+  
+)
+
+  
+  
+  
+  as (
+    select *
+from "RAW_DATA"."BINANCE"."EXCHANGE_INFO"
+limit 10
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_binance__exchange_info"} */;
+[0m10:04:03.567356 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.232 seconds
+[0m10:04:03.589345 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '73a3986a-c59a-4d51-923e-601d2aa64674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba6dc10>]}
+[0m10:04:03.590022 [info ] [Thread-1 (]: 1 of 1 OK created sql view model STAGING.stg_binance__exchange_info ............ [[32mSUCCESS 1[0m in 1.01s]
+[0m10:04:03.590551 [debug] [Thread-1 (]: Finished running node model.OPA.stg_binance__exchange_info
+[0m10:04:03.592270 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:04:03.592533 [debug] [MainThread]: Connection 'model.OPA.stg_binance__exchange_info' was left open.
+[0m10:04:03.592774 [debug] [MainThread]: On model.OPA.stg_binance__exchange_info: Close
+[0m10:04:03.659381 [info ] [MainThread]: 
+[0m10:04:03.660198 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.78 seconds (1.78s).
+[0m10:04:03.661100 [debug] [MainThread]: Command end result
+[0m10:04:03.680730 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:04:03.681994 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:04:03.687265 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m10:04:03.687542 [info ] [MainThread]: 
+[0m10:04:03.687884 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:04:03.688052 [info ] [MainThread]: 
+[0m10:04:03.688220 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m10:04:03.691601 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.4027514, "process_in_blocks": "0", "process_kernel_time": 0.197469, "process_mem_max_rss": "198950912", "process_out_blocks": "0", "process_user_time": 1.006756}
+[0m10:04:03.692160 [debug] [MainThread]: Command `dbt run` succeeded at 10:04:03.691987 after 2.40 seconds
+[0m10:04:03.692471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10baf8b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10babba70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10babb430>]}
+[0m10:04:03.692689 [debug] [MainThread]: Flushing usage events
+[0m10:04:04.088226 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:06:53.879275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1035f6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a679d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a67c50>]}
+
+
+============================== 10:06:53.881732 | 19831aee-a131-4ab5-96c1-78f7a387cfaa ==============================
+[0m10:06:53.881732 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:06:53.881979 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select int_binance__exchange_info fact_binance__exchange_info', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:06:54.329672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '19831aee-a131-4ab5-96c1-78f7a387cfaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103dd1a70>]}
+[0m10:06:54.350958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '19831aee-a131-4ab5-96c1-78f7a387cfaa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a2c6b0>]}
+[0m10:06:54.351840 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:06:54.417637 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:06:54.463603 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m10:06:54.463883 [debug] [MainThread]: Partial parsing: added file: OPA://models/intermediate/int_binance_exchange_info.sql
+[0m10:06:54.464028 [debug] [MainThread]: Partial parsing: added file: OPA://models/mart/fact_binance__exchange_info.sql
+[0m10:06:54.531022 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.OPA.int_binance_exchange_info' (models/intermediate/int_binance_exchange_info.sql) depends on a node named 'int_binance__exchange_info' which was not found
+[0m10:06:54.533174 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.68248963, "process_in_blocks": "0", "process_kernel_time": 0.18462, "process_mem_max_rss": "186613760", "process_out_blocks": "0", "process_user_time": 0.870881}
+[0m10:06:54.533476 [debug] [MainThread]: Command `dbt run` failed at 10:06:54.533437 after 0.68 seconds
+[0m10:06:54.533663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d66c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d66650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e0f2f0>]}
+[0m10:06:54.533823 [debug] [MainThread]: Flushing usage events
+[0m10:06:54.956438 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:07:31.073024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107aae510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f1f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f1fc50>]}
+
+
+============================== 10:07:31.076381 | 88b731bb-9929-43d7-8e1a-8c667d74e44f ==============================
+[0m10:07:31.076381 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:07:31.076716 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select int_binance__exchange_info fact_binance__exchange_info', 'send_anonymous_usage_stats': 'True'}
+[0m10:07:31.536807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88b731bb-9929-43d7-8e1a-8c667d74e44f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108289a70>]}
+[0m10:07:31.560886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '88b731bb-9929-43d7-8e1a-8c667d74e44f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a83c6b0>]}
+[0m10:07:31.561568 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:07:31.622294 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:07:31.670757 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m10:07:31.671033 [debug] [MainThread]: Partial parsing: added file: OPA://models/intermediate/int_binance__exchange_info.sql
+[0m10:07:31.671168 [debug] [MainThread]: Partial parsing: added file: OPA://models/mart/fact_binance__exchange_info.sql
+[0m10:07:31.761022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '88b731bb-9929-43d7-8e1a-8c667d74e44f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ad7a050>]}
+[0m10:07:31.786404 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:07:31.787407 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:07:31.795323 [error] [MainThread]: Encountered an error:
+Found a cycle: model.OPA.int_binance__exchange_info
+[0m10:07:31.797509 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 373, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 390, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/cli/main.py", line 586, in run
+    results = task.run()
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/task/runnable.py", line 583, in run
+    self._runtime_initialize()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/task/compile.py", line 133, in _runtime_initialize
+    super()._runtime_initialize()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/task/runnable.py", line 170, in _runtime_initialize
+    self.compile_manifest()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/task/base.py", line 135, in compile_manifest
+    self.graph = self.compiler.compile(self.manifest)
+                 ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/compilation.py", line 662, in compile
+    linker.link_graph(manifest)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/ellie/Documents/Dev/DataScientest/OPA/.venv/lib/python3.13/site-packages/dbt/compilation.py", line 206, in link_graph
+    raise RuntimeError("Found a cycle: {}".format(cycle))
+RuntimeError: Found a cycle: model.OPA.int_binance__exchange_info
+
+[0m10:07:31.799680 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.75522286, "process_in_blocks": "0", "process_kernel_time": 0.198016, "process_mem_max_rss": "186204160", "process_out_blocks": "0", "process_user_time": 0.963091}
+[0m10:07:31.799931 [debug] [MainThread]: Command `dbt run` failed at 10:07:31.799896 after 0.76 seconds
+[0m10:07:31.800078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a82a4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12b029d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f1be70>]}
+[0m10:07:31.800216 [debug] [MainThread]: Flushing usage events
+[0m10:07:32.173327 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:09:13.396519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090b6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab37c50>]}
+
+
+============================== 10:09:13.398861 | fd020bdc-b430-42bd-a2b7-40ad7b731a26 ==============================
+[0m10:09:13.398861 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:09:13.399109 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt clean', 'send_anonymous_usage_stats': 'True'}
+[0m10:09:13.458526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fd020bdc-b430-42bd-a2b7-40ad7b731a26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a9da70>]}
+[0m10:09:13.468908 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.09980046, "process_in_blocks": "0", "process_kernel_time": 0.093432, "process_mem_max_rss": "110952448", "process_out_blocks": "0", "process_user_time": 0.500507}
+[0m10:09:13.469104 [debug] [MainThread]: Command `dbt clean` succeeded at 10:09:13.469066 after 0.10 seconds
+[0m10:09:13.469239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abbcf30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abbce20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad0d550>]}
+[0m10:09:13.469366 [debug] [MainThread]: Flushing usage events
+[0m10:09:13.895279 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:09:14.586064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1033a2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048139d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104813c50>]}
+
+
+============================== 10:09:14.587722 | 57ac1d7d-5563-47b7-bac8-c2cbe74eb04e ==============================
+[0m10:09:14.587722 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:09:14.587976 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'profiles_dir': './profiles', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt parse', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:09:15.025075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '57ac1d7d-5563-47b7-bac8-c2cbe74eb04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b7da70>]}
+[0m10:09:15.044839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '57ac1d7d-5563-47b7-bac8-c2cbe74eb04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087d86b0>]}
+[0m10:09:15.046244 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:09:15.103376 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:09:15.103749 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:09:15.103906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '57ac1d7d-5563-47b7-bac8-c2cbe74eb04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108657c50>]}
+[0m10:09:15.498234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '57ac1d7d-5563-47b7-bac8-c2cbe74eb04e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087b7a70>]}
+[0m10:09:15.499728 [info ] [MainThread]: Performance info: /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/perf_info.json
+[0m10:09:15.524933 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:09:15.526068 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:09:15.527628 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 0.9659869, "process_in_blocks": "0", "process_kernel_time": 0.159928, "process_mem_max_rss": "190185472", "process_out_blocks": "0", "process_user_time": 1.165983}
+[0m10:09:15.527812 [debug] [MainThread]: Command `dbt parse` succeeded at 10:09:15.527775 after 0.97 seconds
+[0m10:09:15.527972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10480fe70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089a25f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c0bee0>]}
+[0m10:09:15.528104 [debug] [MainThread]: Flushing usage events
+[0m10:09:15.928617 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:09:16.773343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10366a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104adb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104adbc50>]}
+
+
+============================== 10:09:16.776309 | eb5c9ade-59a3-4012-b5fc-3115197bd37f ==============================
+[0m10:09:16.776309 [info ] [MainThread]: Running with dbt=1.10.6
+[0m10:09:16.776605 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select int_binance__exchange_info fact_binance__exchange_info', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:09:17.164300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eb5c9ade-59a3-4012-b5fc-3115197bd37f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e45a70>]}
+[0m10:09:17.184449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eb5c9ade-59a3-4012-b5fc-3115197bd37f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11123c6b0>]}
+[0m10:09:17.184759 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m10:09:17.237861 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m10:09:17.275754 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:09:17.275932 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:09:17.288368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'eb5c9ade-59a3-4012-b5fc-3115197bd37f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111672250>]}
+[0m10:09:17.316096 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:09:17.316884 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:09:17.323102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'eb5c9ade-59a3-4012-b5fc-3115197bd37f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11122a4e0>]}
+[0m10:09:17.323299 [info ] [MainThread]: Found 4 models, 6 sources, 478 macros
+[0m10:09:17.323439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb5c9ade-59a3-4012-b5fc-3115197bd37f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111273690>]}
+[0m10:09:17.324075 [info ] [MainThread]: 
+[0m10:09:17.324216 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m10:09:17.324328 [info ] [MainThread]: 
+[0m10:09:17.324527 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:09:17.326159 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m10:09:17.331350 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m10:09:17.349730 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m10:09:17.349947 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m10:09:17.350083 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m10:09:17.350240 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m10:09:17.350377 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:09:17.350500 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:09:18.222345 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.872 seconds
+[0m10:09:18.442603 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.092 seconds
+[0m10:09:18.446015 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_MART)
+[0m10:09:18.452548 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_INTERMEDIATE)
+[0m10:09:18.463086 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m10:09:18.463704 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m10:09:18.464093 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_STAGING'
+[0m10:09:18.464341 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m10:09:18.464619 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m10:09:18.465956 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m10:09:18.466572 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m10:09:18.466822 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:09:18.549825 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.083 seconds
+[0m10:09:18.550236 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.084 seconds
+[0m10:09:18.758377 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.291 seconds
+[0m10:09:18.762020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb5c9ade-59a3-4012-b5fc-3115197bd37f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111897110>]}
+[0m10:09:18.765819 [debug] [Thread-1 (]: Began running node model.OPA.int_binance__exchange_info
+[0m10:09:18.766518 [info ] [Thread-1 (]: 1 of 2 START sql view model INTERMEDIATE.int_binance__exchange_info ............ [RUN]
+[0m10:09:18.767015 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_MART, now model.OPA.int_binance__exchange_info)
+[0m10:09:18.767422 [debug] [Thread-1 (]: Began compiling node model.OPA.int_binance__exchange_info
+[0m10:09:18.774874 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.int_binance__exchange_info"
+[0m10:09:18.776131 [debug] [Thread-1 (]: Began executing node model.OPA.int_binance__exchange_info
+[0m10:09:18.805453 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.int_binance__exchange_info"
+[0m10:09:18.805767 [debug] [Thread-1 (]: On model.OPA.int_binance__exchange_info: select * from (
+        select *
+from DBT.STAGING.stg_binance__exchange_info
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.int_binance__exchange_info"} */
+[0m10:09:19.201813 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.396 seconds
+[0m10:09:19.212360 [debug] [Thread-1 (]: Writing runtime sql for node "model.OPA.int_binance__exchange_info"
+[0m10:09:19.214326 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.int_binance__exchange_info"
+[0m10:09:19.214732 [debug] [Thread-1 (]: On model.OPA.int_binance__exchange_info: create or replace   view DBT.INTERMEDIATE.int_binance__exchange_info
+  
+    
+    
+(
+  
+    "SYMBOL" COMMENT $$$$, 
+  
+    "BASEASSET" COMMENT $$$$, 
+  
+    "QUOTEASSET" COMMENT $$$$, 
+  
+    "STATUS" COMMENT $$$$, 
+  
+    "MINPRICE" COMMENT $$$$, 
+  
+    "MAXPRICE" COMMENT $$$$, 
+  
+    "TICKSIZE" COMMENT $$$$, 
+  
+    "MINQTY" COMMENT $$$$, 
+  
+    "MAXQTY" COMMENT $$$$, 
+  
+    "STEPSIZE" COMMENT $$$$, 
+  
+    "MINNOTIONAL" COMMENT $$$$, 
+  
+    "MAXNOTIONAL" COMMENT $$$$
+  
+)
+
+  
+  
+  
+  as (
+    select *
+from DBT.STAGING.stg_binance__exchange_info
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.int_binance__exchange_info"} */;
+[0m10:09:19.534541 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.319 seconds
+[0m10:09:19.558607 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eb5c9ade-59a3-4012-b5fc-3115197bd37f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111ce0650>]}
+[0m10:09:19.559219 [info ] [Thread-1 (]: 1 of 2 OK created sql view model INTERMEDIATE.int_binance__exchange_info ....... [[32mSUCCESS 1[0m in 0.79s]
+[0m10:09:19.559677 [debug] [Thread-1 (]: Finished running node model.OPA.int_binance__exchange_info
+[0m10:09:19.560297 [debug] [Thread-2 (]: Began running node model.OPA.fact_binance__exchange_info
+[0m10:09:19.560723 [info ] [Thread-2 (]: 2 of 2 START sql table model MART.fact_binance__exchange_info .................. [RUN]
+[0m10:09:19.561147 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DBT_INTERMEDIATE, now model.OPA.fact_binance__exchange_info)
+[0m10:09:19.561439 [debug] [Thread-2 (]: Began compiling node model.OPA.fact_binance__exchange_info
+[0m10:09:19.563316 [debug] [Thread-2 (]: Writing injected SQL for node "model.OPA.fact_binance__exchange_info"
+[0m10:09:19.563986 [debug] [Thread-2 (]: Began executing node model.OPA.fact_binance__exchange_info
+[0m10:09:19.579021 [debug] [Thread-2 (]: Writing runtime sql for node "model.OPA.fact_binance__exchange_info"
+[0m10:09:19.579680 [debug] [Thread-2 (]: Using snowflake connection "model.OPA.fact_binance__exchange_info"
+[0m10:09:19.579883 [debug] [Thread-2 (]: On model.OPA.fact_binance__exchange_info: create or replace transient table DBT.MART.fact_binance__exchange_info
+    
+    
+    
+    as (select *
+from DBT.INTERMEDIATE.int_binance__exchange_info
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.fact_binance__exchange_info"} */;
+[0m10:09:20.427062 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.847 seconds
+[0m10:09:20.429811 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'eb5c9ade-59a3-4012-b5fc-3115197bd37f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112101b20>]}
+[0m10:09:20.430619 [info ] [Thread-2 (]: 2 of 2 OK created sql table model MART.fact_binance__exchange_info ............. [[32mSUCCESS 1[0m in 0.87s]
+[0m10:09:20.431247 [debug] [Thread-2 (]: Finished running node model.OPA.fact_binance__exchange_info
+[0m10:09:20.433117 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:09:20.433585 [debug] [MainThread]: Connection 'model.OPA.int_binance__exchange_info' was left open.
+[0m10:09:20.434067 [debug] [MainThread]: On model.OPA.int_binance__exchange_info: Close
+[0m10:09:20.505137 [debug] [MainThread]: Connection 'model.OPA.fact_binance__exchange_info' was left open.
+[0m10:09:20.505746 [debug] [MainThread]: On model.OPA.fact_binance__exchange_info: Close
+[0m10:09:20.587733 [debug] [MainThread]: Connection 'list_DBT_STAGING' was left open.
+[0m10:09:20.588289 [debug] [MainThread]: On list_DBT_STAGING: Close
+[0m10:09:20.678328 [info ] [MainThread]: 
+[0m10:09:20.678946 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 3.35 seconds (3.35s).
+[0m10:09:20.679821 [debug] [MainThread]: Command end result
+[0m10:09:20.698341 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m10:09:20.699764 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m10:09:20.703618 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m10:09:20.703827 [info ] [MainThread]: 
+[0m10:09:20.704070 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:09:20.704252 [info ] [MainThread]: 
+[0m10:09:20.704447 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m10:09:20.707289 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.9660115, "process_in_blocks": "0", "process_kernel_time": 0.218572, "process_mem_max_rss": "203735040", "process_out_blocks": "0", "process_user_time": 1.266412}
+[0m10:09:20.707581 [debug] [MainThread]: Command `dbt run` succeeded at 10:09:20.707529 after 3.97 seconds
+[0m10:09:20.707812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113718b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112137e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028cdc50>]}
+[0m10:09:20.708031 [debug] [MainThread]: Flushing usage events
+[0m10:09:21.104338 [debug] [MainThread]: An error was encountered while trying to flush usage events

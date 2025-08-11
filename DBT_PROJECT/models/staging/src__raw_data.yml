@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: binance
+    database: RAW_DATA
+    schema: BINANCE
+    quoting: {database: true, schema: true, identifier: true}
+    tables:
+      - name: KLINE
+      - name: EXCHANGE_INFO
+
+  - name: coingecko
+    database: RAW_DATA
+    schema: COINGECKO
+    quoting: {database: true, schema: true, identifier: true}
+    tables:
+      - name: ASSET_INFO
+
+  - name: calendar
+    database: RAW_DATA
+    schema: CALENDAR
+    quoting: {database: true, schema: true, identifier: true}
+    tables:
+      - name: CALENDAR
+
+  - name: gitrepo
+    database: RAW_DATA
+    schema: GITREPO
+    quoting: {database: true, schema: true, identifier: true}
+    tables:
+      - name: FIAT_INFO
+      - name: MARKET_FEELING_SCORE

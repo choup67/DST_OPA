@@ -1,0 +1,25 @@
+name: "OPA"
+version: "1.0.0"
+config-version: 2
+profile: "OPA"
+
+models:
+  OPA:
+    +persist_docs:
+      relation: true
+      columns: true
+
+    staging:
+      +schema: STAGING
+      +materialized: view
+      +tags: ['stg']
+
+    intermediate:
+      +schema: INTERMEDIATE
+      +materialized: view
+      +tags: ['int']
+
+    mart:
+      +schema: MART
+      +materialized: table
+      +tags: ['mrt']
