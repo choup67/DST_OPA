@@ -44,13 +44,13 @@ USE DATABASE RAW_DATA;
 USE SCHEMA STAGE;
 
 -- Remplissage de la table depuis le fichier dans le stage
-COPY INTO FIAT_INFO
-FROM @MY_STAGE/table_fiat.csv
+COPY INTO RAW_DATA.GITREPO.FIAT_INFO
+FROM @OPA_STAGE/table_fiat.csv
 FILE_FORMAT = CLASSIC_CSV;
 
 -- Remplissage de la table MARKET_FEELING_SCORE depuis le fichier dans le stage
-COPY INTO MARKET_FEELING_SCORE
-FROM @MY_STAGE/market_feeling_score.csv
+COPY INTO RAW_DATA.GITREPO.MARKET_FEELING_SCORE
+FROM @OPA_STAGE/market_feeling_score.csv
 FILE_FORMAT = CLASSIC_CSV;
 
 -- Remplissage de la table asset_info depuis le fichier dans le stage
