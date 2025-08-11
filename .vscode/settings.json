@@ -5,5 +5,8 @@
     "**/DBT_PROJECT/**/*.sql": "jinja-sql",
     "**/LOAD/**/*.sql": "snowflake-sql",
     "**/EXTRACT/**/*.sql": "snowflake-sql"
-  }
+  },
+  "dbtPowerUser.projectRoot": "${workspaceFolder}/DBT_PROJECT",
+  "dbtPowerUser.profilesDir": "${workspaceFolder}/DBT_PROJECT/profiles",
+  "dotenv.enableAutoload": true
 }
