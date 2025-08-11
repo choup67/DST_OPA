@@ -54,11 +54,11 @@ CREATE TABLE IF NOT EXISTS kline (
     close_time INT NOT NULL,
     quote_asset_volume VARCHAR NOT NULL,
     number_of_trades INT NOT NULL,
-    taker_buy_base_asset_volume VARCHAR NOT NULL,
-    taker_buy_quote_asset_volume VARCHAR NOT NULL,
+    taker_buy_base_asset_volume VARCHAR,
+    taker_buy_quote_asset_volume VARCHAR,
+    ignore VARCHAR,
     symbol VARCHAR(20) NOT NULL FOREIGN KEY REFERENCES exchange_info(symbol)
 );
-
 
 -- Utilisation de la database RAW_DATA et du schéma gitrepo
 USE DATABASE RAW_DATA;

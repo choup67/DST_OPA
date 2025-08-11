@@ -6,11 +6,13 @@ from EXTRACT.extract_coingecko_coins import extract_coingecko_top100
 from EXTRACT.extract_binance_exchange_info import get_exchange_info 
 from UTILS.FONCTIONS.connexions import connect_to_snowflake
 from UTILS.FONCTIONS.load_csv_to_stage import load_csv_to_stage
+from EXTRACT.extract_binance_klines import extract_klines
 
 if __name__ == "__main__":
     print("Extraction des données")
     # extract_binance_exchange_info()
     # extract_coingecko_top100()
+    extract_klines(interval="1d", limit=1000)
     print("Chargement des fichiers dans le stage OPA_STAGE")
     conn = connect_to_snowflake(schema="STAGE")
     try:

@@ -1,33 +1,39 @@
 import requests
 import pandas as pd
 from time import sleep
+from pathlib import Path
 
-#récupération de la liste des paires
-df_list = pd.DataFrame(requests.get('https://api.binance.us/api/v3/ticker/price').json())
-# Extraction des symboles de la liste de pairs
-pairs_list = []
-for i in range(len(df_list)):
-    pairs_list.append(df_list['symbol'][i])
-
-# Définition de la fonction pour récupérer les données des klines
-# Note: intervalle de 1d pour une granularité quotidienne
-def recup_klines(pair):
-    url = f'https://api.binance.us/api/v3/klines?symbol={pair}&interval=1d&limit=1000'
+def extract_klines(interval="1d", limit=1000):
+    """Récupère les données Klines pour toutes les paires Binance."""
+    # Récupération directe des symboles
+    pairs_list = [
+        item["symbol"]
+        for item in requests.get('https://api.binance.us/api/v3/ticker/price').json()
+    ]
+    
     columns = [
         "open_time", "open", "high", "low", "close", "volume",
         "close_time", "quote_asset_volume", "number_of_trades",
         "taker_buy_base_asset_volume", "taker_buy_quote_asset_volume", "ignore"
     ]
-    response = requests.get(url)
-    data = pd.DataFrame(response.json(), columns=columns)
-    data["symbol"] = pair
-    return data
+    
+    all_data = []
+    for pair in pairs_list:
+        url = f'https://api.binance.us/api/v3/klines?symbol={pair}&interval={interval}&limit={limit}'
+        resp = requests.get(url).json()
+        if resp:  # Évite les paires vides
+            df = pd.DataFrame(resp, columns=columns)
+            df["symbol"] = pair
+            all_data.append(df)
+    
+    klines_data = pd.concat(all_data, ignore_index=True) if all_data else pd.DataFrame()
 
-# Récupération des données pour chaque symbole
-klines_data = pd.concat(
-    [recup_klines(pair) for pair in pairs_list if not recup_klines(pair).empty],
-    ignore_index=True
-) if pairs_list else pd.DataFrame()
+    # Chemin vers UTILS/DATA
+    data_dir = Path(__file__).resolve().parent.parent / "UTILS" / "DATA"
+    data_dir.mkdir(parents=True, exist_ok=True)
 
-# Affichage des résultats
-print(klines_data.head() if not klines_data.empty else "Aucune donnée récupérée.")
+    csv_path = data_dir / "binance_klines.csv"
+    klines_data.to_csv(csv_path, index=False, encoding='utf-8')
+    print(f"CSV sauvegardé : {csv_path}")
+
+    return klines_data
