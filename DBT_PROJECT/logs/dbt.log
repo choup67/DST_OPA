@@ -1008,3 +1008,1992 @@ from DBT.INTERMEDIATE.int_binance__exchange_info
 [0m10:30:50.837395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F2557820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F2981490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240F23C3DF0>]}
 [0m10:30:50.837830 [debug] [MainThread]: Flushing usage events
 [0m10:30:51.216960 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:57:02.573715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bfe510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10906b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10906bc50>]}
+
+
+============================== 11:57:02.576251 | 81284144-d5f0-4315-b884-1a9f1c8049a2 ==============================
+[0m11:57:02.576251 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:57:02.576521 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': './profiles', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:57:02.583921 [info ] [MainThread]: dbt version: 1.10.6
+[0m11:57:02.584098 [info ] [MainThread]: python version: 3.13.3
+[0m11:57:02.584212 [info ] [MainThread]: python path: /Users/ellie/Documents/Dev/DataScientest/OPA/.venv/bin/python3.13
+[0m11:57:02.584320 [info ] [MainThread]: os info: macOS-15.5-arm64-arm-64bit-Mach-O
+[0m11:57:03.213869 [info ] [MainThread]: Using profiles dir at ./profiles
+[0m11:57:03.214086 [info ] [MainThread]: Using profiles.yml file at ./profiles/profiles.yml
+[0m11:57:03.214213 [info ] [MainThread]: Using dbt_project.yml file at /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/dbt_project.yml
+[0m11:57:03.214819 [info ] [MainThread]: adapter type: snowflake
+[0m11:57:03.214935 [info ] [MainThread]: adapter version: 1.10.0
+[0m11:57:03.247586 [info ] [MainThread]: Configuration:
+[0m11:57:03.247831 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:57:03.247958 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:57:03.248074 [info ] [MainThread]: Required dependencies:
+[0m11:57:03.248235 [debug] [MainThread]: Executing "git --help"
+[0m11:57:03.264410 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:57:03.264817 [debug] [MainThread]: STDERR: "b''"
+[0m11:57:03.264958 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:57:03.265096 [info ] [MainThread]: Connection:
+[0m11:57:03.265226 [info ] [MainThread]:   account: HBVYXOA-LI66752
+[0m11:57:03.265335 [info ] [MainThread]:   user: CHOUP67
+[0m11:57:03.265432 [info ] [MainThread]:   database: DBT
+[0m11:57:03.265525 [info ] [MainThread]:   warehouse: QUERY
+[0m11:57:03.265621 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m11:57:03.265717 [info ] [MainThread]:   schema: STAGE
+[0m11:57:03.265816 [info ] [MainThread]:   authenticator: None
+[0m11:57:03.265912 [info ] [MainThread]:   oauth_client_id: None
+[0m11:57:03.266007 [info ] [MainThread]:   query_tag: None
+[0m11:57:03.266103 [info ] [MainThread]:   client_session_keep_alive: False
+[0m11:57:03.266202 [info ] [MainThread]:   host: None
+[0m11:57:03.266298 [info ] [MainThread]:   port: None
+[0m11:57:03.266394 [info ] [MainThread]:   proxy_host: None
+[0m11:57:03.266490 [info ] [MainThread]:   proxy_port: None
+[0m11:57:03.266584 [info ] [MainThread]:   protocol: None
+[0m11:57:03.266678 [info ] [MainThread]:   connect_retries: 1
+[0m11:57:03.266772 [info ] [MainThread]:   connect_timeout: None
+[0m11:57:03.266866 [info ] [MainThread]:   retry_on_database_errors: False
+[0m11:57:03.266963 [info ] [MainThread]:   retry_all: False
+[0m11:57:03.267056 [info ] [MainThread]:   insecure_mode: False
+[0m11:57:03.267150 [info ] [MainThread]:   reuse_connections: True
+[0m11:57:03.267243 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m11:57:03.267594 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:57:03.319531 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m11:57:03.337223 [debug] [MainThread]: Using snowflake connection "debug"
+[0m11:57:03.337403 [debug] [MainThread]: On debug: select 1 as id
+[0m11:57:03.337509 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:57:03.867918 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.530 seconds
+[0m11:57:03.870111 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:57:03.870499 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:57:03.876495 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.3324101, "process_in_blocks": "0", "process_kernel_time": 0.207947, "process_mem_max_rss": "192102400", "process_out_blocks": "0", "process_user_time": 0.797075}
+[0m11:57:03.877156 [debug] [MainThread]: Command `dbt debug` succeeded at 11:57:03.877026 after 1.33 seconds
+[0m11:57:03.877659 [debug] [MainThread]: Connection 'debug' was left open.
+[0m11:57:03.877961 [debug] [MainThread]: On debug: Close
+[0m11:57:03.942426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d5cc770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d78e8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf7f680>]}
+[0m11:57:03.943273 [debug] [MainThread]: Flushing usage events
+[0m11:57:04.361757 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:57:16.451977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106026510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074939d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107493c50>]}
+
+
+============================== 11:57:16.454325 | 6ff1bcd2-f2bf-480a-8aca-8f65b8d507d8 ==============================
+[0m11:57:16.454325 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:57:16.454579 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': './profiles', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run --select stg_coingecko__asset_info', 'send_anonymous_usage_stats': 'True'}
+[0m11:57:16.900184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6ff1bcd2-f2bf-480a-8aca-8f65b8d507d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067fda70>]}
+[0m11:57:16.919655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6ff1bcd2-f2bf-480a-8aca-8f65b8d507d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4586b0>]}
+[0m11:57:16.920146 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:57:16.977955 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:57:17.022963 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 2 files added, 1 files changed.
+[0m11:57:17.023186 [debug] [MainThread]: Partial parsing: added file: OPA://models/intermediate/binance/int_binance__exchange_info.sql
+[0m11:57:17.023312 [debug] [MainThread]: Partial parsing: added file: OPA://models/staging/coingecko/stg_coingecko__asset_info.sql
+[0m11:57:17.023448 [debug] [MainThread]: Partial parsing: deleted file: OPA://models/intermediate/int_binance__exchange_info.sql
+[0m11:57:17.023553 [debug] [MainThread]: Partial parsing: deleted file: OPA://models/staging/stg__hello.sql
+[0m11:57:17.023693 [debug] [MainThread]: Partial parsing: updated file: OPA://models/staging/binance/stg_binance__exchange_info.sql
+[0m11:57:17.111367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6ff1bcd2-f2bf-480a-8aca-8f65b8d507d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b78e050>]}
+[0m11:57:17.136270 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:57:17.137353 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:57:17.146345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6ff1bcd2-f2bf-480a-8aca-8f65b8d507d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b447c50>]}
+[0m11:57:17.146512 [info ] [MainThread]: Found 4 models, 6 sources, 478 macros
+[0m11:57:17.146650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ff1bcd2-f2bf-480a-8aca-8f65b8d507d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba065f0>]}
+[0m11:57:17.147194 [info ] [MainThread]: 
+[0m11:57:17.147331 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m11:57:17.147443 [info ] [MainThread]: 
+[0m11:57:17.147627 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:57:17.147940 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m11:57:17.168920 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m11:57:17.169105 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m11:57:17.169217 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:57:18.671977 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.503 seconds
+[0m11:57:18.678033 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_MART)
+[0m11:57:18.678553 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_STAGING'
+[0m11:57:18.685064 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m11:57:18.688416 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m11:57:18.689420 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m11:57:18.690383 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m11:57:18.690576 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m11:57:18.690769 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m11:57:18.691019 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m11:57:18.691416 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:57:18.691590 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:57:18.788635 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.097 seconds
+[0m11:57:18.935632 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.244 seconds
+[0m11:57:18.943242 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.252 seconds
+[0m11:57:18.945506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ff1bcd2-f2bf-480a-8aca-8f65b8d507d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3828f0>]}
+[0m11:57:18.974334 [debug] [Thread-1 (]: Began running node model.OPA.stg_coingecko__asset_info
+[0m11:57:18.975277 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg_coingecko__asset_info .................. [RUN]
+[0m11:57:18.975931 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_MART, now model.OPA.stg_coingecko__asset_info)
+[0m11:57:18.976474 [debug] [Thread-1 (]: Began compiling node model.OPA.stg_coingecko__asset_info
+[0m11:57:18.986555 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg_coingecko__asset_info"
+[0m11:57:18.988216 [debug] [Thread-1 (]: Began executing node model.OPA.stg_coingecko__asset_info
+[0m11:57:19.010579 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m11:57:19.010888 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: select * from (
+        with cleaned as (
+  select
+    coingecko_id::bigint              as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_plateform::varchar          as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+)
+select * from cleaned
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */;
+[0m11:57:19.098145 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be4bb5-0001-64b4-0001-5a5e0004caca
+[0m11:57:19.098483 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 23 at position 140 unexpected ';'.
+[0m11:57:19.105270 [debug] [Thread-1 (]: Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 140 unexpected ';'.
+[0m11:57:19.106581 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6ff1bcd2-f2bf-480a-8aca-8f65b8d507d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11100ee10>]}
+[0m11:57:19.106979 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model STAGING.stg_coingecko__asset_info ......... [[31mERROR[0m in 0.13s]
+[0m11:57:19.107298 [debug] [Thread-1 (]: Finished running node model.OPA.stg_coingecko__asset_info
+[0m11:57:19.107585 [debug] [Thread-11 ]: Marking all children of 'model.OPA.stg_coingecko__asset_info' to be skipped because of status 'error'.  Reason: Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 140 unexpected ';'..
+[0m11:57:19.108732 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:57:19.108947 [debug] [MainThread]: Connection 'model.OPA.stg_coingecko__asset_info' was left open.
+[0m11:57:19.109114 [debug] [MainThread]: On model.OPA.stg_coingecko__asset_info: Close
+[0m11:57:19.164636 [debug] [MainThread]: Connection 'list_DBT_STAGING' was left open.
+[0m11:57:19.164945 [debug] [MainThread]: On list_DBT_STAGING: Close
+[0m11:57:19.220481 [debug] [MainThread]: Connection 'list_DBT_INTERMEDIATE' was left open.
+[0m11:57:19.220933 [debug] [MainThread]: On list_DBT_INTERMEDIATE: Close
+[0m11:57:19.279488 [info ] [MainThread]: 
+[0m11:57:19.280137 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.13 seconds (2.13s).
+[0m11:57:19.280966 [debug] [MainThread]: Command end result
+[0m11:57:19.303268 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:57:19.304783 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:57:19.309247 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m11:57:19.309474 [info ] [MainThread]: 
+[0m11:57:19.309731 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:57:19.309984 [info ] [MainThread]: 
+[0m11:57:19.310242 [error] [MainThread]: [31mFailure in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)[0m
+[0m11:57:19.310484 [error] [MainThread]:   Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 140 unexpected ';'.
+[0m11:57:19.310667 [info ] [MainThread]: 
+[0m11:57:19.310876 [info ] [MainThread]:   compiled code at target/compiled/OPA/models/staging/coingecko/stg_coingecko__asset_info.sql
+[0m11:57:19.311050 [info ] [MainThread]: 
+[0m11:57:19.311259 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:57:19.314195 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.8915486, "process_in_blocks": "0", "process_kernel_time": 0.219399, "process_mem_max_rss": "205897728", "process_out_blocks": "0", "process_user_time": 1.128053}
+[0m11:57:19.314467 [debug] [MainThread]: Command `dbt run` failed at 11:57:19.314418 after 2.89 seconds
+[0m11:57:19.314707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111146a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111112cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111111270>]}
+[0m11:57:19.314918 [debug] [MainThread]: Flushing usage events
+[0m11:57:19.688023 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:58:00.708381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e72510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107537c50>]}
+
+
+============================== 11:58:00.710791 | 94503188-c4e8-42f6-bba4-88177808008f ==============================
+[0m11:58:00.710791 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:58:00.711042 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select stg_coingecko__asset_info', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:58:01.192864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '94503188-c4e8-42f6-bba4-88177808008f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064a1a70>]}
+[0m11:58:01.212267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '94503188-c4e8-42f6-bba4-88177808008f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cab86b0>]}
+[0m11:58:01.212806 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:58:01.275492 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:58:01.320368 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:58:01.320605 [debug] [MainThread]: Partial parsing: updated file: OPA://models/staging/binance/stg_binance__exchange_info.sql
+[0m11:58:01.405477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '94503188-c4e8-42f6-bba4-88177808008f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf7a150>]}
+[0m11:58:01.430346 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:58:01.431432 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:58:01.443569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '94503188-c4e8-42f6-bba4-88177808008f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10caa64e0>]}
+[0m11:58:01.443751 [info ] [MainThread]: Found 4 models, 6 sources, 478 macros
+[0m11:58:01.443894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94503188-c4e8-42f6-bba4-88177808008f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3327b0>]}
+[0m11:58:01.444469 [info ] [MainThread]: 
+[0m11:58:01.444612 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m11:58:01.444718 [info ] [MainThread]: 
+[0m11:58:01.444910 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:58:01.445231 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m11:58:01.467067 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m11:58:01.467257 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m11:58:01.467370 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:58:01.931566 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.464 seconds
+[0m11:58:01.938705 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_MART)
+[0m11:58:01.939336 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_STAGING'
+[0m11:58:01.946176 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m11:58:01.952574 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m11:58:01.954292 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m11:58:01.955737 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m11:58:01.956021 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m11:58:01.956274 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m11:58:01.956516 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m11:58:01.957041 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:58:01.957398 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:58:02.036649 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.080 seconds
+[0m11:58:02.198672 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.241 seconds
+[0m11:58:02.368365 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.411 seconds
+[0m11:58:02.372150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94503188-c4e8-42f6-bba4-88177808008f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9e28f0>]}
+[0m11:58:02.375974 [debug] [Thread-1 (]: Began running node model.OPA.stg_coingecko__asset_info
+[0m11:58:02.376694 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg_coingecko__asset_info .................. [RUN]
+[0m11:58:02.377145 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_MART, now model.OPA.stg_coingecko__asset_info)
+[0m11:58:02.377492 [debug] [Thread-1 (]: Began compiling node model.OPA.stg_coingecko__asset_info
+[0m11:58:02.384719 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg_coingecko__asset_info"
+[0m11:58:02.385692 [debug] [Thread-1 (]: Began executing node model.OPA.stg_coingecko__asset_info
+[0m11:58:02.411270 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m11:58:02.411603 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: select * from (
+        with cleaned as (
+  select
+    coingecko_id::bigint              as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_plateform::varchar          as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+)
+select * from cleaned
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */;
+[0m11:58:02.498872 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be4bb6-0001-646e-0001-5a5e0004bf9e
+[0m11:58:02.499217 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 23 at position 140 unexpected ';'.
+[0m11:58:02.507174 [debug] [Thread-1 (]: Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 140 unexpected ';'.
+[0m11:58:02.508469 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '94503188-c4e8-42f6-bba4-88177808008f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d906f90>]}
+[0m11:58:02.508938 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model STAGING.stg_coingecko__asset_info ......... [[31mERROR[0m in 0.13s]
+[0m11:58:02.509330 [debug] [Thread-1 (]: Finished running node model.OPA.stg_coingecko__asset_info
+[0m11:58:02.509677 [debug] [Thread-11 ]: Marking all children of 'model.OPA.stg_coingecko__asset_info' to be skipped because of status 'error'.  Reason: Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 140 unexpected ';'..
+[0m11:58:02.510897 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:58:02.511078 [debug] [MainThread]: Connection 'model.OPA.stg_coingecko__asset_info' was left open.
+[0m11:58:02.511243 [debug] [MainThread]: On model.OPA.stg_coingecko__asset_info: Close
+[0m11:58:02.574986 [debug] [MainThread]: Connection 'list_DBT_STAGING' was left open.
+[0m11:58:02.575339 [debug] [MainThread]: On list_DBT_STAGING: Close
+[0m11:58:02.637992 [debug] [MainThread]: Connection 'list_DBT_INTERMEDIATE' was left open.
+[0m11:58:02.638619 [debug] [MainThread]: On list_DBT_INTERMEDIATE: Close
+[0m11:58:02.707004 [info ] [MainThread]: 
+[0m11:58:02.707681 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.26 seconds (1.26s).
+[0m11:58:02.708597 [debug] [MainThread]: Command end result
+[0m11:58:02.731764 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:58:02.733264 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:58:02.737731 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m11:58:02.737974 [info ] [MainThread]: 
+[0m11:58:02.738254 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:58:02.738465 [info ] [MainThread]: 
+[0m11:58:02.738710 [error] [MainThread]: [31mFailure in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)[0m
+[0m11:58:02.738944 [error] [MainThread]:   Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 23 at position 140 unexpected ';'.
+[0m11:58:02.739116 [info ] [MainThread]: 
+[0m11:58:02.739320 [info ] [MainThread]:   compiled code at target/compiled/OPA/models/staging/coingecko/stg_coingecko__asset_info.sql
+[0m11:58:02.739492 [info ] [MainThread]: 
+[0m11:58:02.739695 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:58:02.743782 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.0631814, "process_in_blocks": "0", "process_kernel_time": 0.232808, "process_mem_max_rss": "206798848", "process_out_blocks": "0", "process_user_time": 1.170639}
+[0m11:58:02.744159 [debug] [MainThread]: Command `dbt run` failed at 11:58:02.744093 after 2.06 seconds
+[0m11:58:02.744429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da3a200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da10550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da10910>]}
+[0m11:58:02.744662 [debug] [MainThread]: Flushing usage events
+[0m11:58:03.121719 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:58:32.046652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056da510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b4b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b4bc50>]}
+
+
+============================== 11:58:32.048987 | 04d3adbd-2e72-4978-a9e8-f95c6d6c8f5b ==============================
+[0m11:58:32.048987 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:58:32.049244 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'profiles_dir': './profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_coingecko__asset_info', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:58:32.469117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '04d3adbd-2e72-4978-a9e8-f95c6d6c8f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105eb5a70>]}
+[0m11:58:32.488985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '04d3adbd-2e72-4978-a9e8-f95c6d6c8f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aafc6b0>]}
+[0m11:58:32.490039 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:58:32.546596 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:58:32.591061 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:58:32.591340 [debug] [MainThread]: Partial parsing: updated file: OPA://models/staging/coingecko/stg_coingecko__asset_info.sql
+[0m11:58:32.677003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '04d3adbd-2e72-4978-a9e8-f95c6d6c8f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae36150>]}
+[0m11:58:32.701847 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:58:32.702794 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:58:32.711144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '04d3adbd-2e72-4978-a9e8-f95c6d6c8f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aaea4e0>]}
+[0m11:58:32.711314 [info ] [MainThread]: Found 4 models, 6 sources, 478 macros
+[0m11:58:32.711447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '04d3adbd-2e72-4978-a9e8-f95c6d6c8f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b12a6d0>]}
+[0m11:58:32.711992 [info ] [MainThread]: 
+[0m11:58:32.712128 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m11:58:32.712233 [info ] [MainThread]: 
+[0m11:58:32.712416 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:58:32.712730 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m11:58:32.733696 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m11:58:32.733870 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m11:58:32.733972 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:58:33.357884 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.624 seconds
+[0m11:58:33.365315 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_STAGING)
+[0m11:58:33.365909 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m11:58:33.372433 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_MART'
+[0m11:58:33.379331 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m11:58:33.380990 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m11:58:33.382414 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m11:58:33.382707 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m11:58:33.382963 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m11:58:33.383194 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m11:58:33.383632 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:58:33.383949 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:58:33.454413 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.071 seconds
+[0m11:58:33.639905 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.256 seconds
+[0m11:58:33.643911 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.260 seconds
+[0m11:58:33.646177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '04d3adbd-2e72-4978-a9e8-f95c6d6c8f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4781f0>]}
+[0m11:58:33.650691 [debug] [Thread-1 (]: Began running node model.OPA.stg_coingecko__asset_info
+[0m11:58:33.651334 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg_coingecko__asset_info .................. [RUN]
+[0m11:58:33.651799 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now model.OPA.stg_coingecko__asset_info)
+[0m11:58:33.652154 [debug] [Thread-1 (]: Began compiling node model.OPA.stg_coingecko__asset_info
+[0m11:58:33.658948 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg_coingecko__asset_info"
+[0m11:58:33.659636 [debug] [Thread-1 (]: Began executing node model.OPA.stg_coingecko__asset_info
+[0m11:58:33.684025 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m11:58:33.684329 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: select * from (
+        with cleaned as (
+  select
+    coingecko_id::bigint              as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_plateform::varchar          as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+)
+select * from cleaned
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */
+[0m11:58:33.785316 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be4bb6-0001-646e-0001-5a5e0004bfa6
+[0m11:58:33.785710 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 8 at position 4
+invalid identifier 'ASSET_PLATEFORM'
+[0m11:58:33.794941 [debug] [Thread-1 (]: Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  000904 (42000): SQL compilation error: error line 8 at position 4
+  invalid identifier 'ASSET_PLATEFORM'
+[0m11:58:33.796358 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '04d3adbd-2e72-4978-a9e8-f95c6d6c8f5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b687110>]}
+[0m11:58:33.796818 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model STAGING.stg_coingecko__asset_info ......... [[31mERROR[0m in 0.14s]
+[0m11:58:33.797212 [debug] [Thread-1 (]: Finished running node model.OPA.stg_coingecko__asset_info
+[0m11:58:33.797560 [debug] [Thread-11 ]: Marking all children of 'model.OPA.stg_coingecko__asset_info' to be skipped because of status 'error'.  Reason: Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  000904 (42000): SQL compilation error: error line 8 at position 4
+  invalid identifier 'ASSET_PLATEFORM'.
+[0m11:58:33.798906 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:58:33.799101 [debug] [MainThread]: Connection 'model.OPA.stg_coingecko__asset_info' was left open.
+[0m11:58:33.799286 [debug] [MainThread]: On model.OPA.stg_coingecko__asset_info: Close
+[0m11:58:33.857943 [debug] [MainThread]: Connection 'list_DBT_INTERMEDIATE' was left open.
+[0m11:58:33.858345 [debug] [MainThread]: On list_DBT_INTERMEDIATE: Close
+[0m11:58:33.927595 [debug] [MainThread]: Connection 'list_DBT_MART' was left open.
+[0m11:58:33.928186 [debug] [MainThread]: On list_DBT_MART: Close
+[0m11:58:33.992739 [info ] [MainThread]: 
+[0m11:58:33.993299 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.28 seconds (1.28s).
+[0m11:58:33.993931 [debug] [MainThread]: Command end result
+[0m11:58:34.015520 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:58:34.017167 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:58:34.021754 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m11:58:34.022011 [info ] [MainThread]: 
+[0m11:58:34.022303 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:58:34.022542 [info ] [MainThread]: 
+[0m11:58:34.022824 [error] [MainThread]: [31mFailure in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)[0m
+[0m11:58:34.023092 [error] [MainThread]:   Database Error in model stg_coingecko__asset_info (models/staging/coingecko/stg_coingecko__asset_info.sql)
+  000904 (42000): SQL compilation error: error line 8 at position 4
+  invalid identifier 'ASSET_PLATEFORM'
+[0m11:58:34.023302 [info ] [MainThread]: 
+[0m11:58:34.023540 [info ] [MainThread]:   compiled code at target/compiled/OPA/models/staging/coingecko/stg_coingecko__asset_info.sql
+[0m11:58:34.023735 [info ] [MainThread]: 
+[0m11:58:34.023972 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:58:34.027111 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.008141, "process_in_blocks": "0", "process_kernel_time": 0.213468, "process_mem_max_rss": "205963264", "process_out_blocks": "0", "process_user_time": 1.142365}
+[0m11:58:34.027420 [debug] [MainThread]: Command `dbt run` failed at 11:58:34.027363 after 2.01 seconds
+[0m11:58:34.027684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110839e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110811770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110810910>]}
+[0m11:58:34.027927 [debug] [MainThread]: Flushing usage events
+[0m11:58:34.443359 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:59:11.785244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048fe510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106137c50>]}
+
+
+============================== 11:59:11.788210 | 402fa9f1-87e5-4baa-90db-cac93cb41afe ==============================
+[0m11:59:11.788210 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:59:11.788475 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'version_check': 'True', 'profiles_dir': './profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --select stg_coingecko__asset_info', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:59:12.268680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '402fa9f1-87e5-4baa-90db-cac93cb41afe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050a1a70>]}
+[0m11:59:12.288246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '402fa9f1-87e5-4baa-90db-cac93cb41afe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e23c6b0>]}
+[0m11:59:12.288839 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:59:12.344392 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:59:12.389555 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:59:12.389784 [debug] [MainThread]: Partial parsing: updated file: OPA://models/staging/coingecko/stg_coingecko__asset_info.sql
+[0m11:59:12.474900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '402fa9f1-87e5-4baa-90db-cac93cb41afe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e672150>]}
+[0m11:59:12.499622 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:59:12.500798 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:59:12.509890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '402fa9f1-87e5-4baa-90db-cac93cb41afe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e22a4e0>]}
+[0m11:59:12.510057 [info ] [MainThread]: Found 4 models, 6 sources, 478 macros
+[0m11:59:12.510193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '402fa9f1-87e5-4baa-90db-cac93cb41afe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fa2e7b0>]}
+[0m11:59:12.510751 [info ] [MainThread]: 
+[0m11:59:12.510895 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m11:59:12.511005 [info ] [MainThread]: 
+[0m11:59:12.511191 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:59:12.511495 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m11:59:12.533548 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m11:59:12.533739 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m11:59:12.533854 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:13.012359 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.478 seconds
+[0m11:59:13.019237 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_STAGING)
+[0m11:59:13.029200 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m11:59:13.029566 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m11:59:13.029798 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m11:59:13.030150 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_MART'
+[0m11:59:13.031364 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m11:59:13.032699 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m11:59:13.033087 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m11:59:13.033561 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m11:59:13.034041 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:13.034411 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:13.122083 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.090 seconds
+[0m11:59:13.279687 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.245 seconds
+[0m11:59:13.460486 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.426 seconds
+[0m11:59:13.464204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '402fa9f1-87e5-4baa-90db-cac93cb41afe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc22340>]}
+[0m11:59:13.468551 [debug] [Thread-1 (]: Began running node model.OPA.stg_coingecko__asset_info
+[0m11:59:13.469222 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg_coingecko__asset_info .................. [RUN]
+[0m11:59:13.469714 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now model.OPA.stg_coingecko__asset_info)
+[0m11:59:13.470093 [debug] [Thread-1 (]: Began compiling node model.OPA.stg_coingecko__asset_info
+[0m11:59:13.477431 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg_coingecko__asset_info"
+[0m11:59:13.478549 [debug] [Thread-1 (]: Began executing node model.OPA.stg_coingecko__asset_info
+[0m11:59:13.505034 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m11:59:13.505406 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: select * from (
+        with cleaned as (
+  select
+    coingecko_id::bigint              as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_platform::varchar          as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+)
+select * from cleaned
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */
+[0m11:59:13.616038 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.110 seconds
+[0m11:59:13.625788 [debug] [Thread-1 (]: Writing runtime sql for node "model.OPA.stg_coingecko__asset_info"
+[0m11:59:13.628776 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m11:59:13.629180 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: create or replace   view DBT.STAGING.stg_coingecko__asset_info
+  
+    
+    
+(
+  
+    "COINGECKO_ID" COMMENT $$$$, 
+  
+    "NAME" COMMENT $$$$, 
+  
+    "ASSET" COMMENT $$$$, 
+  
+    "MARKET_CAP_RANK" COMMENT $$$$, 
+  
+    "ASSET_PLATFORM" COMMENT $$$$, 
+  
+    "TOKEN_TYPE" COMMENT $$$$, 
+  
+    "HOMEPAGE" COMMENT $$$$, 
+  
+    "CATEGORIES" COMMENT $$$$, 
+  
+    "SUPPLY_CIRCULATING" COMMENT $$$$, 
+  
+    "SUPPLY_TOTAL" COMMENT $$$$, 
+  
+    "SUPPLY_MAX" COMMENT $$$$, 
+  
+    "CATEGORY_TYPE" COMMENT $$$$
+  
+)
+
+  
+  
+  
+  as (
+    with cleaned as (
+  select
+    coingecko_id::bigint              as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_platform::varchar          as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+)
+select * from cleaned
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */;
+[0m11:59:13.890854 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.261 seconds
+[0m11:59:13.914410 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '402fa9f1-87e5-4baa-90db-cac93cb41afe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d007050>]}
+[0m11:59:13.915045 [info ] [Thread-1 (]: 1 of 1 OK created sql view model STAGING.stg_coingecko__asset_info ............. [[32mSUCCESS 1[0m in 0.44s]
+[0m11:59:13.915552 [debug] [Thread-1 (]: Finished running node model.OPA.stg_coingecko__asset_info
+[0m11:59:13.916803 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:59:13.917028 [debug] [MainThread]: Connection 'model.OPA.stg_coingecko__asset_info' was left open.
+[0m11:59:13.917249 [debug] [MainThread]: On model.OPA.stg_coingecko__asset_info: Close
+[0m11:59:13.981066 [debug] [MainThread]: Connection 'list_DBT_INTERMEDIATE' was left open.
+[0m11:59:13.981611 [debug] [MainThread]: On list_DBT_INTERMEDIATE: Close
+[0m11:59:14.041915 [debug] [MainThread]: Connection 'list_DBT_MART' was left open.
+[0m11:59:14.042687 [debug] [MainThread]: On list_DBT_MART: Close
+[0m11:59:14.113097 [info ] [MainThread]: 
+[0m11:59:14.113708 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.60 seconds (1.60s).
+[0m11:59:14.114505 [debug] [MainThread]: Command end result
+[0m11:59:14.134423 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:59:14.136177 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:59:14.141290 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m11:59:14.141833 [info ] [MainThread]: 
+[0m11:59:14.142035 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:59:14.142170 [info ] [MainThread]: 
+[0m11:59:14.142315 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:59:14.145450 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.3957143, "process_in_blocks": "0", "process_kernel_time": 0.223377, "process_mem_max_rss": "205520896", "process_out_blocks": "0", "process_user_time": 1.168986}
+[0m11:59:14.145792 [debug] [MainThread]: Command `dbt run` succeeded at 11:59:14.145741 after 2.40 seconds
+[0m11:59:14.146061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d135f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d10d810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d10c870>]}
+[0m11:59:14.146292 [debug] [MainThread]: Flushing usage events
+[0m11:59:14.545986 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:59:27.295975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068a6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac37c50>]}
+
+
+============================== 11:59:27.298914 | e990c065-ecca-4bf8-8e18-92f92914c88b ==============================
+[0m11:59:27.298914 [info ] [MainThread]: Running with dbt=1.10.6
+[0m11:59:27.299165 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --select stg_binance__exchange_info', 'send_anonymous_usage_stats': 'True'}
+[0m11:59:27.780080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e990c065-ecca-4bf8-8e18-92f92914c88b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d9da70>]}
+[0m11:59:27.802531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e990c065-ecca-4bf8-8e18-92f92914c88b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b3c6b0>]}
+[0m11:59:27.803141 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m11:59:27.862174 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m11:59:27.904830 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:59:27.905010 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:59:27.917436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e990c065-ecca-4bf8-8e18-92f92914c88b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118f72250>]}
+[0m11:59:27.945260 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:59:27.946206 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:59:27.954891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e990c065-ecca-4bf8-8e18-92f92914c88b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b2a4e0>]}
+[0m11:59:27.955069 [info ] [MainThread]: Found 4 models, 6 sources, 478 macros
+[0m11:59:27.955207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e990c065-ecca-4bf8-8e18-92f92914c88b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118b73a10>]}
+[0m11:59:27.955781 [info ] [MainThread]: 
+[0m11:59:27.955919 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m11:59:27.956031 [info ] [MainThread]: 
+[0m11:59:27.956228 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:59:27.956562 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m11:59:27.979146 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m11:59:27.979344 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m11:59:27.979454 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:28.391743 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.412 seconds
+[0m11:59:28.399099 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_STAGING)
+[0m11:59:28.410144 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_MART'
+[0m11:59:28.411577 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m11:59:28.412921 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m11:59:28.413223 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m11:59:28.413486 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m11:59:28.413736 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m11:59:28.414995 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m11:59:28.415838 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:28.416315 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m11:59:28.416783 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:28.508063 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.093 seconds
+[0m11:59:28.647125 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.231 seconds
+[0m11:59:28.651637 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.235 seconds
+[0m11:59:28.653791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e990c065-ecca-4bf8-8e18-92f92914c88b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119297110>]}
+[0m11:59:28.657889 [debug] [Thread-1 (]: Began running node model.OPA.stg_binance__exchange_info
+[0m11:59:28.658470 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg_binance__exchange_info ................. [RUN]
+[0m11:59:28.658917 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now model.OPA.stg_binance__exchange_info)
+[0m11:59:28.659251 [debug] [Thread-1 (]: Began compiling node model.OPA.stg_binance__exchange_info
+[0m11:59:28.666298 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg_binance__exchange_info"
+[0m11:59:28.667187 [debug] [Thread-1 (]: Began executing node model.OPA.stg_binance__exchange_info
+[0m11:59:28.694872 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_binance__exchange_info"
+[0m11:59:28.695167 [debug] [Thread-1 (]: On model.OPA.stg_binance__exchange_info: select * from (
+        with cleaned as (
+  select
+    upper(symbol)::varchar              as symbol,
+    upper(baseAsset)::varchar           as base_asset,
+    upper(quoteAsset)::varchar          as quote_asset,
+    status::varchar                     as status,
+    minPrice::decimal(38,18)            as min_price,
+    maxPrice::decimal(38,18)            as max_price,
+    tickSize::decimal(38,18)            as tick_size,
+    minQty::decimal(38,18)              as min_qty,
+    maxQty::decimal(38,18)              as max_qty,
+    stepSize::decimal(38,18)            as step_size,
+    minNotional::decimal(38,18)         as min_notional,
+    maxNotional::decimal(38,18)         as max_notional
+  from "RAW_DATA"."BINANCE"."EXCHANGE_INFO"
+)
+select * from cleaned
+where status = 'TRADING'  -- on garde uniquement les paires actives
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_binance__exchange_info"} */
+[0m11:59:28.797798 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.102 seconds
+[0m11:59:28.807607 [debug] [Thread-1 (]: Writing runtime sql for node "model.OPA.stg_binance__exchange_info"
+[0m11:59:28.808956 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_binance__exchange_info"
+[0m11:59:28.809251 [debug] [Thread-1 (]: On model.OPA.stg_binance__exchange_info: create or replace   view DBT.STAGING.stg_binance__exchange_info
+  
+    
+    
+(
+  
+    "SYMBOL" COMMENT $$$$, 
+  
+    "BASE_ASSET" COMMENT $$$$, 
+  
+    "QUOTE_ASSET" COMMENT $$$$, 
+  
+    "STATUS" COMMENT $$$$, 
+  
+    "MIN_PRICE" COMMENT $$$$, 
+  
+    "MAX_PRICE" COMMENT $$$$, 
+  
+    "TICK_SIZE" COMMENT $$$$, 
+  
+    "MIN_QTY" COMMENT $$$$, 
+  
+    "MAX_QTY" COMMENT $$$$, 
+  
+    "STEP_SIZE" COMMENT $$$$, 
+  
+    "MIN_NOTIONAL" COMMENT $$$$, 
+  
+    "MAX_NOTIONAL" COMMENT $$$$
+  
+)
+
+  
+  
+  
+  as (
+    with cleaned as (
+  select
+    upper(symbol)::varchar              as symbol,
+    upper(baseAsset)::varchar           as base_asset,
+    upper(quoteAsset)::varchar          as quote_asset,
+    status::varchar                     as status,
+    minPrice::decimal(38,18)            as min_price,
+    maxPrice::decimal(38,18)            as max_price,
+    tickSize::decimal(38,18)            as tick_size,
+    minQty::decimal(38,18)              as min_qty,
+    maxQty::decimal(38,18)              as max_qty,
+    stepSize::decimal(38,18)            as step_size,
+    minNotional::decimal(38,18)         as min_notional,
+    maxNotional::decimal(38,18)         as max_notional
+  from "RAW_DATA"."BINANCE"."EXCHANGE_INFO"
+)
+select * from cleaned
+where status = 'TRADING'  -- on garde uniquement les paires actives
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_binance__exchange_info"} */;
+[0m11:59:29.063878 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.254 seconds
+[0m11:59:29.084195 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e990c065-ecca-4bf8-8e18-92f92914c88b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1197be2d0>]}
+[0m11:59:29.084519 [info ] [Thread-1 (]: 1 of 1 OK created sql view model STAGING.stg_binance__exchange_info ............ [[32mSUCCESS 1[0m in 0.42s]
+[0m11:59:29.084760 [debug] [Thread-1 (]: Finished running node model.OPA.stg_binance__exchange_info
+[0m11:59:29.085445 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:59:29.085589 [debug] [MainThread]: Connection 'model.OPA.stg_binance__exchange_info' was left open.
+[0m11:59:29.085712 [debug] [MainThread]: On model.OPA.stg_binance__exchange_info: Close
+[0m11:59:29.144768 [debug] [MainThread]: Connection 'list_DBT_MART' was left open.
+[0m11:59:29.145187 [debug] [MainThread]: On list_DBT_MART: Close
+[0m11:59:29.206185 [debug] [MainThread]: Connection 'list_DBT_INTERMEDIATE' was left open.
+[0m11:59:29.206801 [debug] [MainThread]: On list_DBT_INTERMEDIATE: Close
+[0m11:59:29.271585 [info ] [MainThread]: 
+[0m11:59:29.272210 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.32 seconds (1.32s).
+[0m11:59:29.273013 [debug] [MainThread]: Command end result
+[0m11:59:29.295078 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m11:59:29.296587 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m11:59:29.300729 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m11:59:29.300954 [info ] [MainThread]: 
+[0m11:59:29.301213 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:59:29.301406 [info ] [MainThread]: 
+[0m11:59:29.301618 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:59:29.304765 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.0373197, "process_in_blocks": "0", "process_kernel_time": 0.224849, "process_mem_max_rss": "202948608", "process_out_blocks": "0", "process_user_time": 1.141264}
+[0m11:59:29.305122 [debug] [MainThread]: Command `dbt run` succeeded at 11:59:29.305056 after 2.04 seconds
+[0m11:59:29.305388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e8f8d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1197eedf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1197ef610>]}
+[0m11:59:29.305629 [debug] [MainThread]: Flushing usage events
+[0m11:59:29.705524 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:00:07.911497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e9a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10930b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10930bc50>]}
+
+
+============================== 12:00:07.914011 | d3d5e7de-c034-4df4-ad95-ffa23027f3be ==============================
+[0m12:00:07.914011 [info ] [MainThread]: Running with dbt=1.10.6
+[0m12:00:07.914274 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': './profiles', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --select stg_coingecko__asset_info', 'send_anonymous_usage_stats': 'True'}
+[0m12:00:08.358477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd3d5e7de-c034-4df4-ad95-ffa23027f3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108675a70>]}
+[0m12:00:08.378510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd3d5e7de-c034-4df4-ad95-ffa23027f3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d2d06b0>]}
+[0m12:00:08.379036 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m12:00:08.433924 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m12:00:08.477471 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:00:08.477730 [debug] [MainThread]: Partial parsing: updated file: OPA://models/staging/coingecko/stg_coingecko__asset_info.sql
+[0m12:00:08.564718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd3d5e7de-c034-4df4-ad95-ffa23027f3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d606150>]}
+[0m12:00:08.589954 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m12:00:08.590902 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m12:00:08.599446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd3d5e7de-c034-4df4-ad95-ffa23027f3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d2be4e0>]}
+[0m12:00:08.599617 [info ] [MainThread]: Found 4 models, 6 sources, 478 macros
+[0m12:00:08.599752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3d5e7de-c034-4df4-ad95-ffa23027f3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d8be7b0>]}
+[0m12:00:08.600317 [info ] [MainThread]: 
+[0m12:00:08.600458 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m12:00:08.600569 [info ] [MainThread]: 
+[0m12:00:08.600750 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:00:08.601070 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m12:00:08.622021 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m12:00:08.622203 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m12:00:08.622309 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:00:09.219447 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.597 seconds
+[0m12:00:09.226199 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_STAGING)
+[0m12:00:09.226691 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m12:00:09.232987 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_MART'
+[0m12:00:09.236909 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m12:00:09.238051 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m12:00:09.239146 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m12:00:09.239347 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m12:00:09.239537 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m12:00:09.239717 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m12:00:09.240113 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:00:09.240373 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:00:09.326157 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.086 seconds
+[0m12:00:09.489145 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.249 seconds
+[0m12:00:09.674915 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.435 seconds
+[0m12:00:09.678157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3d5e7de-c034-4df4-ad95-ffa23027f3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d1fa8f0>]}
+[0m12:00:09.682121 [debug] [Thread-1 (]: Began running node model.OPA.stg_coingecko__asset_info
+[0m12:00:09.682798 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg_coingecko__asset_info .................. [RUN]
+[0m12:00:09.683307 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now model.OPA.stg_coingecko__asset_info)
+[0m12:00:09.683679 [debug] [Thread-1 (]: Began compiling node model.OPA.stg_coingecko__asset_info
+[0m12:00:09.690927 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg_coingecko__asset_info"
+[0m12:00:09.692243 [debug] [Thread-1 (]: Began executing node model.OPA.stg_coingecko__asset_info
+[0m12:00:09.718458 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m12:00:09.718826 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: select * from (
+        with cleaned as (
+  select
+    coingecko_id::varchar             as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_platform::varchar           as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+)
+select * from cleaned
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */
+[0m12:00:09.841810 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.122 seconds
+[0m12:00:09.854669 [debug] [Thread-1 (]: Writing runtime sql for node "model.OPA.stg_coingecko__asset_info"
+[0m12:00:09.857773 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m12:00:09.858210 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: create or replace   view DBT.STAGING.stg_coingecko__asset_info
+  
+    
+    
+(
+  
+    "COINGECKO_ID" COMMENT $$$$, 
+  
+    "NAME" COMMENT $$$$, 
+  
+    "ASSET" COMMENT $$$$, 
+  
+    "MARKET_CAP_RANK" COMMENT $$$$, 
+  
+    "ASSET_PLATFORM" COMMENT $$$$, 
+  
+    "TOKEN_TYPE" COMMENT $$$$, 
+  
+    "HOMEPAGE" COMMENT $$$$, 
+  
+    "CATEGORIES" COMMENT $$$$, 
+  
+    "SUPPLY_CIRCULATING" COMMENT $$$$, 
+  
+    "SUPPLY_TOTAL" COMMENT $$$$, 
+  
+    "SUPPLY_MAX" COMMENT $$$$, 
+  
+    "CATEGORY_TYPE" COMMENT $$$$
+  
+)
+
+  
+  
+  
+  as (
+    with cleaned as (
+  select
+    coingecko_id::varchar             as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_platform::varchar           as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+)
+select * from cleaned
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */;
+[0m12:00:10.095907 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.237 seconds
+[0m12:00:10.121735 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd3d5e7de-c034-4df4-ad95-ffa23027f3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de1b350>]}
+[0m12:00:10.122310 [info ] [Thread-1 (]: 1 of 1 OK created sql view model STAGING.stg_coingecko__asset_info ............. [[32mSUCCESS 1[0m in 0.44s]
+[0m12:00:10.122753 [debug] [Thread-1 (]: Finished running node model.OPA.stg_coingecko__asset_info
+[0m12:00:10.123892 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:00:10.124162 [debug] [MainThread]: Connection 'model.OPA.stg_coingecko__asset_info' was left open.
+[0m12:00:10.124384 [debug] [MainThread]: On model.OPA.stg_coingecko__asset_info: Close
+[0m12:00:10.191064 [debug] [MainThread]: Connection 'list_DBT_INTERMEDIATE' was left open.
+[0m12:00:10.191491 [debug] [MainThread]: On list_DBT_INTERMEDIATE: Close
+[0m12:00:10.261076 [debug] [MainThread]: Connection 'list_DBT_MART' was left open.
+[0m12:00:10.261660 [debug] [MainThread]: On list_DBT_MART: Close
+[0m12:00:10.334757 [info ] [MainThread]: 
+[0m12:00:10.335412 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.73 seconds (1.73s).
+[0m12:00:10.336339 [debug] [MainThread]: Command end result
+[0m12:00:10.359415 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m12:00:10.360866 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m12:00:10.365228 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m12:00:10.365465 [info ] [MainThread]: 
+[0m12:00:10.365749 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:00:10.365963 [info ] [MainThread]: 
+[0m12:00:10.366180 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m12:00:10.369218 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.4879074, "process_in_blocks": "0", "process_kernel_time": 0.223005, "process_mem_max_rss": "205340672", "process_out_blocks": "0", "process_user_time": 1.194179}
+[0m12:00:10.369535 [debug] [MainThread]: Command `dbt run` succeeded at 12:00:10.369476 after 2.49 seconds
+[0m12:00:10.369787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11303a2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113011950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1130107d0>]}
+[0m12:00:10.370026 [debug] [MainThread]: Flushing usage events
+[0m12:00:10.808908 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:16:39.338886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106056510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111337c50>]}
+
+
+============================== 14:16:39.341961 | c9cfb139-25e3-41d1-8efa-31ce3098c950 ==============================
+[0m14:16:39.341961 [info ] [MainThread]: Running with dbt=1.10.6
+[0m14:16:39.342255 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'profiles_dir': './profiles', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt test --select stg_binance__exchange_info', 'send_anonymous_usage_stats': 'True'}
+[0m14:16:39.813853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c9cfb139-25e3-41d1-8efa-31ce3098c950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067a1a70>]}
+[0m14:16:39.833372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c9cfb139-25e3-41d1-8efa-31ce3098c950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11673c6b0>]}
+[0m14:16:39.834073 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m14:16:39.889730 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m14:16:39.935888 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:16:39.936134 [debug] [MainThread]: Partial parsing: added file: OPA://models/staging/schema.yml
+[0m14:16:40.035816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c9cfb139-25e3-41d1-8efa-31ce3098c950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116f4c250>]}
+[0m14:16:40.067368 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:16:40.068537 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:16:40.128488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c9cfb139-25e3-41d1-8efa-31ce3098c950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120848b90>]}
+[0m14:16:40.128706 [info ] [MainThread]: Found 4 models, 7 data tests, 6 sources, 478 macros
+[0m14:16:40.128846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c9cfb139-25e3-41d1-8efa-31ce3098c950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ea8750>]}
+[0m14:16:40.129491 [info ] [MainThread]: 
+[0m14:16:40.129629 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m14:16:40.129736 [info ] [MainThread]: 
+[0m14:16:40.129925 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:16:40.131530 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_MART'
+[0m14:16:40.131724 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_STAGING'
+[0m14:16:40.138376 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m14:16:40.158982 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m14:16:40.159249 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m14:16:40.159444 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m14:16:40.159600 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m14:16:40.159741 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m14:16:40.159880 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m14:16:40.160014 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:16:40.160131 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:16:40.160248 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:16:40.694024 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.534 seconds
+[0m14:16:40.702599 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.542 seconds
+[0m14:16:40.779142 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.619 seconds
+[0m14:16:40.780164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c9cfb139-25e3-41d1-8efa-31ce3098c950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116f29300>]}
+[0m14:16:40.781527 [debug] [Thread-1 (]: Began running node test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71
+[0m14:16:40.781699 [debug] [Thread-3 (]: Began running node test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654
+[0m14:16:40.781861 [debug] [Thread-4 (]: Began running node test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7
+[0m14:16:40.782020 [debug] [Thread-2 (]: Began running node test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53
+[0m14:16:40.782192 [info ] [Thread-1 (]: 1 of 4 START test not_null_stg_binance__exchange_info_base_asset ............... [RUN]
+[0m14:16:40.782360 [info ] [Thread-3 (]: 3 of 4 START test not_null_stg_binance__exchange_info_symbol ................... [RUN]
+[0m14:16:40.782524 [info ] [Thread-4 (]: 4 of 4 START test unique_stg_binance__exchange_info_symbol ..................... [RUN]
+[0m14:16:40.782839 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_MART, now test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71)
+[0m14:16:40.782657 [info ] [Thread-2 (]: 2 of 4 START test not_null_stg_binance__exchange_info_quote_asset .............. [RUN]
+[0m14:16:40.783054 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DBT_INTERMEDIATE, now test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654)
+[0m14:16:40.783244 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7'
+[0m14:16:40.783391 [debug] [Thread-1 (]: Began compiling node test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71
+[0m14:16:40.783533 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53)
+[0m14:16:40.783674 [debug] [Thread-3 (]: Began compiling node test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654
+[0m14:16:40.783813 [debug] [Thread-4 (]: Began compiling node test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7
+[0m14:16:40.789040 [debug] [Thread-1 (]: Writing injected SQL for node "test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71"
+[0m14:16:40.789189 [debug] [Thread-2 (]: Began compiling node test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53
+[0m14:16:40.790683 [debug] [Thread-3 (]: Writing injected SQL for node "test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654"
+[0m14:16:40.793142 [debug] [Thread-4 (]: Writing injected SQL for node "test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7"
+[0m14:16:40.794588 [debug] [Thread-2 (]: Writing injected SQL for node "test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53"
+[0m14:16:40.795007 [debug] [Thread-4 (]: Began executing node test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7
+[0m14:16:40.803472 [debug] [Thread-4 (]: Writing runtime sql for node "test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7"
+[0m14:16:40.803690 [debug] [Thread-1 (]: Began executing node test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71
+[0m14:16:40.803892 [debug] [Thread-2 (]: Began executing node test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53
+[0m14:16:40.804058 [debug] [Thread-3 (]: Began executing node test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654
+[0m14:16:40.804957 [debug] [Thread-1 (]: Writing runtime sql for node "test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71"
+[0m14:16:40.807998 [debug] [Thread-2 (]: Writing runtime sql for node "test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53"
+[0m14:16:40.808773 [debug] [Thread-3 (]: Writing runtime sql for node "test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654"
+[0m14:16:40.809170 [debug] [Thread-4 (]: Using snowflake connection "test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7"
+[0m14:16:40.809371 [debug] [Thread-4 (]: On test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    symbol as unique_field,
+    count(*) as n_records
+
+from DBT.STAGING.stg_binance__exchange_info
+where symbol is not null
+group by symbol
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7"} */
+[0m14:16:40.809564 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:16:40.809861 [debug] [Thread-1 (]: Using snowflake connection "test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71"
+[0m14:16:40.810113 [debug] [Thread-2 (]: Using snowflake connection "test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53"
+[0m14:16:40.810269 [debug] [Thread-1 (]: On test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select base_asset
+from DBT.STAGING.stg_binance__exchange_info
+where base_asset is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71"} */
+[0m14:16:40.810451 [debug] [Thread-2 (]: On test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quote_asset
+from DBT.STAGING.stg_binance__exchange_info
+where quote_asset is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53"} */
+[0m14:16:40.810713 [debug] [Thread-3 (]: Using snowflake connection "test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654"
+[0m14:16:40.811566 [debug] [Thread-3 (]: On test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select symbol
+from DBT.STAGING.stg_binance__exchange_info
+where symbol is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654"} */
+[0m14:16:41.401858 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.591 seconds
+[0m14:16:41.402351 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.593 seconds
+[0m14:16:41.406173 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.595 seconds
+[0m14:16:41.405835 [info ] [Thread-2 (]: 2 of 4 PASS not_null_stg_binance__exchange_info_quote_asset .................... [[32mPASS[0m in 0.62s]
+[0m14:16:41.407043 [info ] [Thread-4 (]: 4 of 4 PASS unique_stg_binance__exchange_info_symbol ........................... [[32mPASS[0m in 0.62s]
+[0m14:16:41.407753 [info ] [Thread-1 (]: 1 of 4 PASS not_null_stg_binance__exchange_info_base_asset ..................... [[32mPASS[0m in 0.62s]
+[0m14:16:41.408050 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.596 seconds
+[0m14:16:41.408274 [debug] [Thread-2 (]: Finished running node test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53
+[0m14:16:41.408483 [debug] [Thread-4 (]: Finished running node test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7
+[0m14:16:41.408679 [debug] [Thread-1 (]: Finished running node test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71
+[0m14:16:41.409253 [info ] [Thread-3 (]: 3 of 4 PASS not_null_stg_binance__exchange_info_symbol ......................... [[32mPASS[0m in 0.63s]
+[0m14:16:41.409585 [debug] [Thread-3 (]: Finished running node test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654
+[0m14:16:41.410162 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:16:41.410292 [debug] [MainThread]: Connection 'test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71' was left open.
+[0m14:16:41.410408 [debug] [MainThread]: On test.OPA.not_null_stg_binance__exchange_info_base_asset.c5ce558b71: Close
+[0m14:16:41.474586 [debug] [MainThread]: Connection 'test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53' was left open.
+[0m14:16:41.474807 [debug] [MainThread]: On test.OPA.not_null_stg_binance__exchange_info_quote_asset.82425c3e53: Close
+[0m14:16:41.534078 [debug] [MainThread]: Connection 'test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654' was left open.
+[0m14:16:41.534271 [debug] [MainThread]: On test.OPA.not_null_stg_binance__exchange_info_symbol.04a8334654: Close
+[0m14:16:41.598017 [debug] [MainThread]: Connection 'test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7' was left open.
+[0m14:16:41.598210 [debug] [MainThread]: On test.OPA.unique_stg_binance__exchange_info_symbol.b12e1504b7: Close
+[0m14:16:41.658693 [info ] [MainThread]: 
+[0m14:16:41.658943 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 1.53 seconds (1.53s).
+[0m14:16:41.659658 [debug] [MainThread]: Command end result
+[0m14:16:41.669336 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:16:41.670199 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:16:41.673055 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m14:16:41.673210 [info ] [MainThread]: 
+[0m14:16:41.673369 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:16:41.673494 [info ] [MainThread]: 
+[0m14:16:41.673631 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m14:16:41.675917 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.3693066, "process_in_blocks": "0", "process_kernel_time": 0.232581, "process_mem_max_rss": "233865216", "process_out_blocks": "0", "process_user_time": 1.150353}
+[0m14:16:41.676129 [debug] [MainThread]: Command `dbt test` succeeded at 14:16:41.676091 after 2.37 seconds
+[0m14:16:41.676290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11124cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1174e0c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1174e0f70>]}
+[0m14:16:41.676441 [debug] [MainThread]: Flushing usage events
+[0m14:16:42.115594 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:17:07.422932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b1a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f8b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f8bc50>]}
+
+
+============================== 14:17:07.425249 | ee40cde4-17a8-42ce-8701-6108a305b944 ==============================
+[0m14:17:07.425249 [info ] [MainThread]: Running with dbt=1.10.6
+[0m14:17:07.425495 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'profiles_dir': './profiles', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test --select stg_coigeck__asset_info', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:17:07.832756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ee40cde4-17a8-42ce-8701-6108a305b944', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062f5a70>]}
+[0m14:17:07.852486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ee40cde4-17a8-42ce-8701-6108a305b944', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af506b0>]}
+[0m14:17:07.853549 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m14:17:07.909243 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m14:17:07.957889 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:17:07.958053 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:17:07.974233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ee40cde4-17a8-42ce-8701-6108a305b944', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b284650>]}
+[0m14:17:08.006288 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:17:08.007270 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:17:08.019300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ee40cde4-17a8-42ce-8701-6108a305b944', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4d1f40>]}
+[0m14:17:08.019487 [info ] [MainThread]: Found 4 models, 7 data tests, 6 sources, 478 macros
+[0m14:17:08.019629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ee40cde4-17a8-42ce-8701-6108a305b944', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b314e50>]}
+[0m14:17:08.019885 [warn ] [MainThread]: The selection criterion 'stg_coigeck__asset_info' does not match any enabled nodes
+[0m14:17:08.020328 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m14:17:08.021031 [debug] [MainThread]: Command end result
+[0m14:17:08.029656 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:17:08.030351 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:17:08.031519 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m14:17:08.033767 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.6363434, "process_in_blocks": "0", "process_kernel_time": 0.158886, "process_mem_max_rss": "185335808", "process_out_blocks": "0", "process_user_time": 0.864473}
+[0m14:17:08.033979 [debug] [MainThread]: Command `dbt test` succeeded at 14:17:08.033945 after 0.64 seconds
+[0m14:17:08.034127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b54fe10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ea0f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5384d0>]}
+[0m14:17:08.034255 [debug] [MainThread]: Flushing usage events
+[0m14:17:08.438611 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:17:21.748785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106da6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110237c50>]}
+
+
+============================== 14:17:21.750986 | f73a21cc-64da-4d36-b4bb-40d9ba2255c0 ==============================
+[0m14:17:21.750986 [info ] [MainThread]: Running with dbt=1.10.6
+[0m14:17:21.751237 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt test --select stg_coingecko__asset_info', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:17:22.179307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f73a21cc-64da-4d36-b4bb-40d9ba2255c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071a1a70>]}
+[0m14:17:22.198902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f73a21cc-64da-4d36-b4bb-40d9ba2255c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11693c6b0>]}
+[0m14:17:22.199983 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m14:17:22.257476 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m14:17:22.305942 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:17:22.306112 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:17:22.322357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f73a21cc-64da-4d36-b4bb-40d9ba2255c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116d70650>]}
+[0m14:17:22.354681 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:17:22.355673 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:17:22.368299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f73a21cc-64da-4d36-b4bb-40d9ba2255c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1170bdf40>]}
+[0m14:17:22.368478 [info ] [MainThread]: Found 4 models, 7 data tests, 6 sources, 478 macros
+[0m14:17:22.368610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f73a21cc-64da-4d36-b4bb-40d9ba2255c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116e10e50>]}
+[0m14:17:22.369221 [info ] [MainThread]: 
+[0m14:17:22.369370 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m14:17:22.369477 [info ] [MainThread]: 
+[0m14:17:22.369675 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:17:22.371256 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_MART'
+[0m14:17:22.378393 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m14:17:22.378634 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_STAGING'
+[0m14:17:22.403396 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m14:17:22.403603 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m14:17:22.403797 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m14:17:22.403935 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m14:17:22.404061 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m14:17:22.404190 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m14:17:22.404319 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:17:22.404457 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:17:22.404565 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:17:22.961971 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.557 seconds
+[0m14:17:22.965934 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.561 seconds
+[0m14:17:22.976243 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.572 seconds
+[0m14:17:22.979359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f73a21cc-64da-4d36-b4bb-40d9ba2255c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117139570>]}
+[0m14:17:22.982860 [debug] [Thread-2 (]: Began running node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:17:22.983282 [debug] [Thread-3 (]: Began running node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:17:22.983702 [debug] [Thread-1 (]: Began running node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:17:22.984225 [info ] [Thread-2 (]: 2 of 3 START test not_null_stg_coingecko__asset_info_asset ..................... [RUN]
+[0m14:17:22.984695 [info ] [Thread-3 (]: 3 of 3 START test unique_stg_coingecko__asset_info_asset ....................... [RUN]
+[0m14:17:22.985097 [info ] [Thread-1 (]: 1 of 3 START test accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto  [RUN]
+[0m14:17:22.985552 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DBT_INTERMEDIATE, now test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a)
+[0m14:17:22.985904 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b)
+[0m14:17:22.986220 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_MART, now test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468)
+[0m14:17:22.986558 [debug] [Thread-2 (]: Began compiling node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:17:22.986899 [debug] [Thread-3 (]: Began compiling node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:17:22.987250 [debug] [Thread-1 (]: Began compiling node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:17:23.005217 [debug] [Thread-3 (]: Writing injected SQL for node "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:17:23.006811 [debug] [Thread-2 (]: Writing injected SQL for node "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:17:23.012011 [debug] [Thread-1 (]: Writing injected SQL for node "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:17:23.012574 [debug] [Thread-3 (]: Began executing node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:17:23.019091 [debug] [Thread-2 (]: Began executing node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:17:23.019335 [debug] [Thread-1 (]: Began executing node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:17:23.024629 [debug] [Thread-3 (]: Writing runtime sql for node "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:17:23.025598 [debug] [Thread-2 (]: Writing runtime sql for node "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:17:23.026637 [debug] [Thread-1 (]: Writing runtime sql for node "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:17:23.027182 [debug] [Thread-3 (]: Using snowflake connection "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:17:23.027398 [debug] [Thread-3 (]: On test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    asset as unique_field,
+    count(*) as n_records
+
+from DBT.STAGING.stg_coingecko__asset_info
+where asset is not null
+group by asset
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"} */
+[0m14:17:23.027746 [debug] [Thread-2 (]: Using snowflake connection "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:17:23.028143 [debug] [Thread-1 (]: Using snowflake connection "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:17:23.028430 [debug] [Thread-2 (]: On test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select asset
+from DBT.STAGING.stg_coingecko__asset_info
+where asset is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"} */
+[0m14:17:23.028769 [debug] [Thread-1 (]: On test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        category_type as value_field,
+        count(*) as n_records
+
+    from DBT.STAGING.stg_coingecko__asset_info
+    group by category_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'fiat','stablecoin','crypto'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"} */
+[0m14:17:23.289161 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.261 seconds
+[0m14:17:23.290585 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.261 seconds
+[0m14:17:23.306127 [info ] [Thread-1 (]: 1 of 3 PASS accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto  [[32mPASS[0m in 0.32s]
+[0m14:17:23.308167 [debug] [Thread-1 (]: Finished running node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:17:23.307430 [error] [Thread-3 (]: 3 of 3 FAIL 1 unique_stg_coingecko__asset_info_asset ........................... [[31mFAIL 1[0m in 0.32s]
+[0m14:17:23.309233 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.280 seconds
+[0m14:17:23.309748 [debug] [Thread-3 (]: Finished running node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:17:23.311320 [info ] [Thread-2 (]: 2 of 3 PASS not_null_stg_coingecko__asset_info_asset ........................... [[32mPASS[0m in 0.33s]
+[0m14:17:23.312009 [debug] [Thread-2 (]: Finished running node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:17:23.313258 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:17:23.313514 [debug] [MainThread]: Connection 'test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468' was left open.
+[0m14:17:23.313751 [debug] [MainThread]: On test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468: Close
+[0m14:17:23.374426 [debug] [MainThread]: Connection 'test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a' was left open.
+[0m14:17:23.374971 [debug] [MainThread]: On test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a: Close
+[0m14:17:23.436338 [debug] [MainThread]: Connection 'test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b' was left open.
+[0m14:17:23.436839 [debug] [MainThread]: On test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b: Close
+[0m14:17:23.502635 [info ] [MainThread]: 
+[0m14:17:23.503236 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 1.13 seconds (1.13s).
+[0m14:17:23.504310 [debug] [MainThread]: Command end result
+[0m14:17:23.526256 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:17:23.527606 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:17:23.532336 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m14:17:23.532573 [info ] [MainThread]: 
+[0m14:17:23.532819 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:17:23.533015 [info ] [MainThread]: 
+[0m14:17:23.533242 [error] [MainThread]: [31mFailure in test unique_stg_coingecko__asset_info_asset (models/staging/schema.yml)[0m
+[0m14:17:23.533449 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m14:17:23.533607 [info ] [MainThread]: 
+[0m14:17:23.533794 [info ] [MainThread]:   compiled code at target/compiled/OPA/models/staging/schema.yml/unique_stg_coingecko__asset_info_asset.sql
+[0m14:17:23.533960 [info ] [MainThread]: 
+[0m14:17:23.534149 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:17:23.539348 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 1.8162313, "process_in_blocks": "0", "process_kernel_time": 0.208213, "process_mem_max_rss": "203718656", "process_out_blocks": "0", "process_user_time": 1.071079}
+[0m14:17:23.539692 [debug] [MainThread]: Command `dbt test` failed at 14:17:23.539628 after 1.82 seconds
+[0m14:17:23.539953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11014cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117a61020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117a61910>]}
+[0m14:17:23.540169 [debug] [MainThread]: Flushing usage events
+[0m14:17:23.915002 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:24:39.610311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1222b6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1275379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127537c50>]}
+
+
+============================== 14:24:39.613070 | 2541343b-42bb-4a42-8bfd-79227092f7db ==============================
+[0m14:24:39.613070 [info ] [MainThread]: Running with dbt=1.10.6
+[0m14:24:39.613354 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'debug': 'False', 'profiles_dir': './profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt test --select stg_coingecko__asset_info', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:24:40.162089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2541343b-42bb-4a42-8bfd-79227092f7db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1234a1a70>]}
+[0m14:24:40.181814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2541343b-42bb-4a42-8bfd-79227092f7db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x153a3c6b0>]}
+[0m14:24:40.182437 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m14:24:40.240269 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m14:24:40.293663 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:24:40.293994 [debug] [MainThread]: Partial parsing: updated file: OPA://models/staging/coingecko/stg_coingecko__asset_info.sql
+[0m14:24:40.435947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2541343b-42bb-4a42-8bfd-79227092f7db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x154a59450>]}
+[0m14:24:40.467964 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:24:40.469031 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:24:40.482343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2541343b-42bb-4a42-8bfd-79227092f7db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x154a36c60>]}
+[0m14:24:40.482538 [info ] [MainThread]: Found 4 models, 7 data tests, 6 sources, 478 macros
+[0m14:24:40.482680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2541343b-42bb-4a42-8bfd-79227092f7db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x153c1a270>]}
+[0m14:24:40.483309 [info ] [MainThread]: 
+[0m14:24:40.483450 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m14:24:40.483558 [info ] [MainThread]: 
+[0m14:24:40.483749 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:24:40.485343 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_STAGING'
+[0m14:24:40.491831 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m14:24:40.492075 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_MART'
+[0m14:24:40.512778 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m14:24:40.512998 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m14:24:40.513188 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m14:24:40.513332 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m14:24:40.513463 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m14:24:40.513594 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m14:24:40.513715 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:24:40.513832 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:24:40.513940 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:24:41.035519 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.522 seconds
+[0m14:24:41.036336 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.523 seconds
+[0m14:24:41.048113 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.534 seconds
+[0m14:24:41.051616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2541343b-42bb-4a42-8bfd-79227092f7db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x154c06dd0>]}
+[0m14:24:41.054993 [debug] [Thread-1 (]: Began running node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:24:41.055955 [debug] [Thread-3 (]: Began running node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:24:41.056395 [debug] [Thread-2 (]: Began running node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:24:41.056801 [info ] [Thread-1 (]: 1 of 3 START test accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto  [RUN]
+[0m14:24:41.057191 [info ] [Thread-3 (]: 3 of 3 START test unique_stg_coingecko__asset_info_asset ....................... [RUN]
+[0m14:24:41.057614 [info ] [Thread-2 (]: 2 of 3 START test not_null_stg_coingecko__asset_info_asset ..................... [RUN]
+[0m14:24:41.058083 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468)
+[0m14:24:41.058465 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DBT_MART, now test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b)
+[0m14:24:41.058781 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DBT_INTERMEDIATE, now test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a)
+[0m14:24:41.059092 [debug] [Thread-1 (]: Began compiling node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:24:41.059386 [debug] [Thread-3 (]: Began compiling node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:24:41.059677 [debug] [Thread-2 (]: Began compiling node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:24:41.065059 [debug] [Thread-1 (]: Writing injected SQL for node "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:24:41.067362 [debug] [Thread-3 (]: Writing injected SQL for node "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:24:41.070998 [debug] [Thread-2 (]: Writing injected SQL for node "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:24:41.071635 [debug] [Thread-1 (]: Began executing node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:24:41.071815 [debug] [Thread-3 (]: Began executing node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:24:41.071975 [debug] [Thread-2 (]: Began executing node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:24:41.080947 [debug] [Thread-1 (]: Writing runtime sql for node "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:24:41.081956 [debug] [Thread-3 (]: Writing runtime sql for node "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:24:41.082777 [debug] [Thread-2 (]: Writing runtime sql for node "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:24:41.083482 [debug] [Thread-1 (]: Using snowflake connection "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:24:41.083730 [debug] [Thread-2 (]: Using snowflake connection "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:24:41.083913 [debug] [Thread-1 (]: On test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        category_type as value_field,
+        count(*) as n_records
+
+    from DBT.STAGING.stg_coingecko__asset_info
+    group by category_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'fiat','stablecoin','crypto'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"} */
+[0m14:24:41.084213 [debug] [Thread-3 (]: Using snowflake connection "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:24:41.084355 [debug] [Thread-2 (]: On test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select asset
+from DBT.STAGING.stg_coingecko__asset_info
+where asset is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"} */
+[0m14:24:41.084755 [debug] [Thread-3 (]: On test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    asset as unique_field,
+    count(*) as n_records
+
+from DBT.STAGING.stg_coingecko__asset_info
+where asset is not null
+group by asset
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"} */
+[0m14:24:41.175731 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.091 seconds
+[0m14:24:41.180122 [info ] [Thread-1 (]: 1 of 3 PASS accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto  [[32mPASS[0m in 0.12s]
+[0m14:24:41.180402 [debug] [Thread-1 (]: Finished running node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:24:41.193405 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.108 seconds
+[0m14:24:41.194252 [error] [Thread-3 (]: 3 of 3 FAIL 1 unique_stg_coingecko__asset_info_asset ........................... [[31mFAIL 1[0m in 0.14s]
+[0m14:24:41.194498 [debug] [Thread-3 (]: Finished running node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:24:41.195701 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.111 seconds
+[0m14:24:41.196344 [info ] [Thread-2 (]: 2 of 3 PASS not_null_stg_coingecko__asset_info_asset ........................... [[32mPASS[0m in 0.14s]
+[0m14:24:41.196542 [debug] [Thread-2 (]: Finished running node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:24:41.197196 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:24:41.197325 [debug] [MainThread]: Connection 'test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468' was left open.
+[0m14:24:41.197436 [debug] [MainThread]: On test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468: Close
+[0m14:24:41.255789 [debug] [MainThread]: Connection 'test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a' was left open.
+[0m14:24:41.256173 [debug] [MainThread]: On test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a: Close
+[0m14:24:41.316086 [debug] [MainThread]: Connection 'test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b' was left open.
+[0m14:24:41.316715 [debug] [MainThread]: On test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b: Close
+[0m14:24:41.381153 [info ] [MainThread]: 
+[0m14:24:41.381770 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 0.90 seconds (0.90s).
+[0m14:24:41.382815 [debug] [MainThread]: Command end result
+[0m14:24:41.406281 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:24:41.407818 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:24:41.412613 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m14:24:41.412840 [info ] [MainThread]: 
+[0m14:24:41.413082 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:24:41.413280 [info ] [MainThread]: 
+[0m14:24:41.413522 [error] [MainThread]: [31mFailure in test unique_stg_coingecko__asset_info_asset (models/staging/schema.yml)[0m
+[0m14:24:41.413749 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m14:24:41.413918 [info ] [MainThread]: 
+[0m14:24:41.414120 [info ] [MainThread]:   compiled code at target/compiled/OPA/models/staging/schema.yml/unique_stg_coingecko__asset_info_asset.sql
+[0m14:24:41.414304 [info ] [MainThread]: 
+[0m14:24:41.414510 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:24:41.417624 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 1.8387493, "process_in_blocks": "0", "process_kernel_time": 0.246876, "process_mem_max_rss": "205963264", "process_out_blocks": "0", "process_user_time": 1.249119}
+[0m14:24:41.417973 [debug] [MainThread]: Command `dbt test` failed at 14:24:41.417913 after 1.84 seconds
+[0m14:24:41.418222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12744cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x155d22fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x155d231d0>]}
+[0m14:24:41.418453 [debug] [MainThread]: Flushing usage events
+[0m14:24:41.843124 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:24:55.831660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104226510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056979d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105697c50>]}
+
+
+============================== 14:24:55.833993 | 41efb652-5123-4281-a8d8-e8840da056ee ==============================
+[0m14:24:55.833993 [info ] [MainThread]: Running with dbt=1.10.6
+[0m14:24:55.834282 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'fail_fast': 'False', 'profiles_dir': './profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select stg_coingecko__asset_info', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:24:56.264848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '41efb652-5123-4281-a8d8-e8840da056ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a01a70>]}
+[0m14:24:56.284762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '41efb652-5123-4281-a8d8-e8840da056ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10965c6b0>]}
+[0m14:24:56.285238 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m14:24:56.340887 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m14:24:56.389491 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:24:56.389656 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:24:56.406088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '41efb652-5123-4281-a8d8-e8840da056ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109992c50>]}
+[0m14:24:56.438354 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:24:56.439287 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:24:56.447932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '41efb652-5123-4281-a8d8-e8840da056ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10964a4e0>]}
+[0m14:24:56.448108 [info ] [MainThread]: Found 4 models, 7 data tests, 6 sources, 478 macros
+[0m14:24:56.448252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41efb652-5123-4281-a8d8-e8840da056ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097403d0>]}
+[0m14:24:56.448868 [info ] [MainThread]: 
+[0m14:24:56.449006 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m14:24:56.449113 [info ] [MainThread]: 
+[0m14:24:56.449308 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:24:56.449631 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m14:24:56.469290 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m14:24:56.469481 [debug] [ThreadPool]: On list_DBT: show terse schemas in database DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT"} */
+[0m14:24:56.469592 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:24:56.988422 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.519 seconds
+[0m14:24:56.995899 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT, now list_DBT_MART)
+[0m14:24:56.996561 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m14:24:57.003009 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_STAGING'
+[0m14:24:57.009992 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m14:24:57.011694 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m14:24:57.013055 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m14:24:57.013319 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m14:24:57.013549 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m14:24:57.013772 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m14:24:57.014255 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:24:57.014568 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:24:57.101202 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.087 seconds
+[0m14:24:57.252809 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.238 seconds
+[0m14:24:57.419891 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.406 seconds
+[0m14:24:57.423494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41efb652-5123-4281-a8d8-e8840da056ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b9f520>]}
+[0m14:24:57.427058 [debug] [Thread-1 (]: Began running node model.OPA.stg_coingecko__asset_info
+[0m14:24:57.427808 [info ] [Thread-1 (]: 1 of 1 START sql view model STAGING.stg_coingecko__asset_info .................. [RUN]
+[0m14:24:57.428402 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_MART, now model.OPA.stg_coingecko__asset_info)
+[0m14:24:57.428818 [debug] [Thread-1 (]: Began compiling node model.OPA.stg_coingecko__asset_info
+[0m14:24:57.436449 [debug] [Thread-1 (]: Writing injected SQL for node "model.OPA.stg_coingecko__asset_info"
+[0m14:24:57.437698 [debug] [Thread-1 (]: Began executing node model.OPA.stg_coingecko__asset_info
+[0m14:24:57.467301 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m14:24:57.467529 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: select * from (
+        with cleaned as (
+  select
+    coingecko_id::varchar             as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_platform::varchar           as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+  where coingecko_id not in ('binance-peg-weth') -- l'asset WETH est en double, on supprime la version binance
+)
+select * from cleaned
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */
+[0m14:24:58.035872 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.568 seconds
+[0m14:24:58.047540 [debug] [Thread-1 (]: Writing runtime sql for node "model.OPA.stg_coingecko__asset_info"
+[0m14:24:58.049858 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m14:24:58.050340 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: create or replace   view DBT.STAGING.stg_coingecko__asset_info
+  
+    
+    
+(
+  
+    "COINGECKO_ID" COMMENT $$$$, 
+  
+    "NAME" COMMENT $$$$, 
+  
+    "ASSET" COMMENT $$$$, 
+  
+    "MARKET_CAP_RANK" COMMENT $$$$, 
+  
+    "ASSET_PLATFORM" COMMENT $$$$, 
+  
+    "TOKEN_TYPE" COMMENT $$$$, 
+  
+    "HOMEPAGE" COMMENT $$$$, 
+  
+    "CATEGORIES" COMMENT $$$$, 
+  
+    "SUPPLY_CIRCULATING" COMMENT $$$$, 
+  
+    "SUPPLY_TOTAL" COMMENT $$$$, 
+  
+    "SUPPLY_MAX" COMMENT $$$$, 
+  
+    "CATEGORY_TYPE" COMMENT $$$$
+  
+)
+
+  
+  
+  
+  as (
+    with cleaned as (
+  select
+    coingecko_id::varchar             as coingecko_id,
+    name::varchar                     as name,
+    upper(asset)::varchar             as asset,
+    market_cap_rank::int              as market_cap_rank,
+    asset_platform::varchar           as asset_platform,
+    token_type::varchar               as token_type,
+    homepage::varchar                 as homepage,
+    categories::varchar               as categories,
+    supply_circulating::decimal(38,9) as supply_circulating,
+    supply_total::decimal(38,9)       as supply_total,
+    supply_max::decimal(38,9)         as supply_max,
+    case
+      when categories ilike '%fiat%' then 'fiat'
+      when categories ilike '%stablecoin%' then 'stablecoin'
+      else 'crypto'
+    end                                as category_type
+  from  "RAW_DATA"."COINGECKO"."ASSET_INFO"
+  where coingecko_id not in ('binance-peg-weth') -- l'asset WETH est en double, on supprime la version binance
+)
+select * from cleaned
+  )
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */;
+[0m14:24:58.282508 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.232 seconds
+[0m14:24:58.304799 [debug] [Thread-1 (]: Using snowflake connection "model.OPA.stg_coingecko__asset_info"
+[0m14:24:58.305250 [debug] [Thread-1 (]: On model.OPA.stg_coingecko__asset_info: comment on view DBT.STAGING.stg_coingecko__asset_info IS $$Asset info with columns names and types updated$$
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "model.OPA.stg_coingecko__asset_info"} */;
+[0m14:24:58.385007 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.079 seconds
+[0m14:24:58.396241 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '41efb652-5123-4281-a8d8-e8840da056ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a006a50>]}
+[0m14:24:58.397248 [info ] [Thread-1 (]: 1 of 1 OK created sql view model STAGING.stg_coingecko__asset_info ............. [[32mSUCCESS 1[0m in 0.97s]
+[0m14:24:58.397904 [debug] [Thread-1 (]: Finished running node model.OPA.stg_coingecko__asset_info
+[0m14:24:58.399776 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:24:58.400051 [debug] [MainThread]: Connection 'model.OPA.stg_coingecko__asset_info' was left open.
+[0m14:24:58.400306 [debug] [MainThread]: On model.OPA.stg_coingecko__asset_info: Close
+[0m14:24:58.461645 [debug] [MainThread]: Connection 'list_DBT_INTERMEDIATE' was left open.
+[0m14:24:58.462151 [debug] [MainThread]: On list_DBT_INTERMEDIATE: Close
+[0m14:24:58.531485 [debug] [MainThread]: Connection 'list_DBT_STAGING' was left open.
+[0m14:24:58.532115 [debug] [MainThread]: On list_DBT_STAGING: Close
+[0m14:24:58.598464 [info ] [MainThread]: 
+[0m14:24:58.599103 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.15 seconds (2.15s).
+[0m14:24:58.599993 [debug] [MainThread]: Command end result
+[0m14:24:58.624073 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:24:58.625579 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:24:58.629649 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m14:24:58.629877 [info ] [MainThread]: 
+[0m14:24:58.630134 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:24:58.630325 [info ] [MainThread]: 
+[0m14:24:58.630537 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:24:58.634005 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.8281643, "process_in_blocks": "0", "process_kernel_time": 0.199278, "process_mem_max_rss": "204390400", "process_out_blocks": "0", "process_user_time": 1.140159}
+[0m14:24:58.634282 [debug] [MainThread]: Command `dbt run` succeeded at 14:24:58.634232 after 2.83 seconds
+[0m14:24:58.634514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1bec50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a151950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1500f0>]}
+[0m14:24:58.634728 [debug] [MainThread]: Flushing usage events
+[0m14:24:59.010835 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:25:06.978742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054f6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069679d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106967c50>]}
+
+
+============================== 14:25:06.980971 | 58a829d0-d285-4436-aef2-79c6771cf670 ==============================
+[0m14:25:06.980971 [info ] [MainThread]: Running with dbt=1.10.6
+[0m14:25:06.981236 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './profiles', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test --select stg_coingecko__asset_info', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:25:07.341317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '58a829d0-d285-4436-aef2-79c6771cf670', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cd1a70>]}
+[0m14:25:07.361162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '58a829d0-d285-4436-aef2-79c6771cf670', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9186b0>]}
+[0m14:25:07.362252 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m14:25:07.418543 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m14:25:07.467384 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:25:07.467559 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:25:07.484118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '58a829d0-d285-4436-aef2-79c6771cf670', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac4c650>]}
+[0m14:25:07.516338 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:25:07.517113 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:25:07.529199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '58a829d0-d285-4436-aef2-79c6771cf670', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae99f40>]}
+[0m14:25:07.529393 [info ] [MainThread]: Found 4 models, 7 data tests, 6 sources, 478 macros
+[0m14:25:07.529530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '58a829d0-d285-4436-aef2-79c6771cf670', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acece50>]}
+[0m14:25:07.530165 [info ] [MainThread]: 
+[0m14:25:07.530301 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m14:25:07.530409 [info ] [MainThread]: 
+[0m14:25:07.530605 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:25:07.532185 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_STAGING'
+[0m14:25:07.539368 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_MART'
+[0m14:25:07.541321 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_INTERMEDIATE'
+[0m14:25:07.556641 [debug] [ThreadPool]: Using snowflake connection "list_DBT_STAGING"
+[0m14:25:07.556860 [debug] [ThreadPool]: Using snowflake connection "list_DBT_MART"
+[0m14:25:07.557039 [debug] [ThreadPool]: Using snowflake connection "list_DBT_INTERMEDIATE"
+[0m14:25:07.557177 [debug] [ThreadPool]: On list_DBT_STAGING: show objects in DBT.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_STAGING"} */;
+[0m14:25:07.557316 [debug] [ThreadPool]: On list_DBT_MART: show objects in DBT.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_MART"} */;
+[0m14:25:07.557443 [debug] [ThreadPool]: On list_DBT_INTERMEDIATE: show objects in DBT.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "connection_name": "list_DBT_INTERMEDIATE"} */;
+[0m14:25:07.557567 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:25:07.557681 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:25:07.557788 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:25:08.034236 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.476 seconds
+[0m14:25:08.044900 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.487 seconds
+[0m14:25:08.097817 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.540 seconds
+[0m14:25:08.101765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '58a829d0-d285-4436-aef2-79c6771cf670', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af15640>]}
+[0m14:25:08.106313 [debug] [Thread-1 (]: Began running node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:25:08.106796 [debug] [Thread-3 (]: Began running node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:25:08.107930 [debug] [Thread-2 (]: Began running node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:25:08.108371 [info ] [Thread-1 (]: 1 of 3 START test accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto  [RUN]
+[0m14:25:08.108825 [info ] [Thread-3 (]: 3 of 3 START test unique_stg_coingecko__asset_info_asset ....................... [RUN]
+[0m14:25:08.109246 [info ] [Thread-2 (]: 2 of 3 START test not_null_stg_coingecko__asset_info_asset ..................... [RUN]
+[0m14:25:08.109790 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_DBT_STAGING, now test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468)
+[0m14:25:08.110186 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DBT_INTERMEDIATE, now test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b)
+[0m14:25:08.110621 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DBT_MART, now test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a)
+[0m14:25:08.111061 [debug] [Thread-1 (]: Began compiling node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:25:08.111403 [debug] [Thread-3 (]: Began compiling node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:25:08.111715 [debug] [Thread-2 (]: Began compiling node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:25:08.128803 [debug] [Thread-3 (]: Writing injected SQL for node "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:25:08.131241 [debug] [Thread-1 (]: Writing injected SQL for node "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:25:08.136123 [debug] [Thread-2 (]: Writing injected SQL for node "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:25:08.136664 [debug] [Thread-1 (]: Began executing node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:25:08.136927 [debug] [Thread-3 (]: Began executing node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:25:08.143237 [debug] [Thread-2 (]: Began executing node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:25:08.148908 [debug] [Thread-1 (]: Writing runtime sql for node "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:25:08.149914 [debug] [Thread-3 (]: Writing runtime sql for node "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:25:08.150978 [debug] [Thread-2 (]: Writing runtime sql for node "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:25:08.151638 [debug] [Thread-1 (]: Using snowflake connection "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"
+[0m14:25:08.152039 [debug] [Thread-3 (]: Using snowflake connection "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"
+[0m14:25:08.152359 [debug] [Thread-2 (]: Using snowflake connection "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"
+[0m14:25:08.152554 [debug] [Thread-1 (]: On test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        category_type as value_field,
+        count(*) as n_records
+
+    from DBT.STAGING.stg_coingecko__asset_info
+    group by category_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'fiat','stablecoin','crypto'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468"} */
+[0m14:25:08.152758 [debug] [Thread-3 (]: On test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    asset as unique_field,
+    count(*) as n_records
+
+from DBT.STAGING.stg_coingecko__asset_info
+where asset is not null
+group by asset
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b"} */
+[0m14:25:08.152948 [debug] [Thread-2 (]: On test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select asset
+from DBT.STAGING.stg_coingecko__asset_info
+where asset is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "OPA", "target_name": "dev", "node_id": "test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a"} */
+[0m14:25:08.582452 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.429 seconds
+[0m14:25:08.583583 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.430 seconds
+[0m14:25:08.584444 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.431 seconds
+[0m14:25:08.594708 [info ] [Thread-3 (]: 3 of 3 PASS unique_stg_coingecko__asset_info_asset ............................. [[32mPASS[0m in 0.48s]
+[0m14:25:08.596535 [info ] [Thread-1 (]: 1 of 3 PASS accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto  [[32mPASS[0m in 0.49s]
+[0m14:25:08.598059 [info ] [Thread-2 (]: 2 of 3 PASS not_null_stg_coingecko__asset_info_asset ........................... [[32mPASS[0m in 0.49s]
+[0m14:25:08.598745 [debug] [Thread-3 (]: Finished running node test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b
+[0m14:25:08.599333 [debug] [Thread-1 (]: Finished running node test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468
+[0m14:25:08.599823 [debug] [Thread-2 (]: Finished running node test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a
+[0m14:25:08.601689 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:25:08.602035 [debug] [MainThread]: Connection 'test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468' was left open.
+[0m14:25:08.602338 [debug] [MainThread]: On test.OPA.accepted_values_stg_coingecko__asset_info_category_type__fiat__stablecoin__crypto.93e4fde468: Close
+[0m14:25:08.661093 [debug] [MainThread]: Connection 'test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a' was left open.
+[0m14:25:08.661599 [debug] [MainThread]: On test.OPA.not_null_stg_coingecko__asset_info_asset.52b160df5a: Close
+[0m14:25:08.725856 [debug] [MainThread]: Connection 'test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b' was left open.
+[0m14:25:08.726517 [debug] [MainThread]: On test.OPA.unique_stg_coingecko__asset_info_asset.3855e6839b: Close
+[0m14:25:08.792838 [info ] [MainThread]: 
+[0m14:25:08.793554 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 1.26 seconds (1.26s).
+[0m14:25:08.794682 [debug] [MainThread]: Command end result
+[0m14:25:08.818780 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/manifest.json
+[0m14:25:08.820340 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/semantic_manifest.json
+[0m14:25:08.824937 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ellie/Documents/Dev/DataScientest/OPA/DBT_PROJECT/target/run_results.json
+[0m14:25:08.825177 [info ] [MainThread]: 
+[0m14:25:08.825429 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:25:08.825625 [info ] [MainThread]: 
+[0m14:25:08.825843 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:25:08.828731 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.8759581, "process_in_blocks": "0", "process_kernel_time": 0.186276, "process_mem_max_rss": "204685312", "process_out_blocks": "0", "process_user_time": 1.120935}
+[0m14:25:08.829044 [debug] [MainThread]: Command `dbt test` succeeded at 14:25:08.828988 after 1.88 seconds
+[0m14:25:08.829283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10687cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5d4940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5d5230>]}
+[0m14:25:08.829511 [debug] [MainThread]: Flushing usage events
+[0m14:25:09.225621 [debug] [MainThread]: An error was encountered while trying to flush usage events

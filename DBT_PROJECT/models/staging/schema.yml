@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: stg_coingecko__asset_info
+    tags: [stg]
+    description: "Asset info with columns names and types updated"
+    columns:
+      - name: asset
+        tests: [not_null, unique]
+      - name: category_type
+        tests:
+          - accepted_values: {values: ['fiat','stablecoin','crypto']}
+
+  - name: stg_binance__exchange_info
+    tags: [stg]
+    description: "Exchange info with columns names and types updated and filtered on active symbol"
+    columns:
+      - name: symbol
+        tests: [not_null, unique]
+      - name: base_asset
+        tests: [not_null]
+      - name: quote_asset
+        tests: [not_null]
