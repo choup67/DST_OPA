@@ -20,3 +20,34 @@ models:
         tests: [not_null]
       - name: quote_asset
         tests: [not_null]
+  
+  - name: stg_binance__kline
+    tags: [stg]
+    description: "Kline data with columns names and types updated"
+    columns:
+      - name: id
+        tests: [not_null, unique]
+      - name: symbol
+        tests: [not_null]
+      - name: open_time
+        tests: [not_null]
+      - name: close_time
+        tests: [not_null]
+      - name: open_price
+        tests: [not_null]
+      - name: high_price
+        tests: [not_null]
+      - name: low_price
+        tests: [not_null]
+      - name: close_price
+        tests: [not_null]
+      - name: volume
+        tests: [not_null]
+      - name: quote_asset_volume
+        tests: [not_null]
+      - name: number_of_trades
+        tests: [not_null]
+      - name: taker_buy_base_asset_volume
+        tests: [not_null]
+      - name: taker_buy_quote_asset_volume
+        tests: [not_null]
