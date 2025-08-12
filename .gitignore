@@ -4,3 +4,4 @@ DBT_PROJECT/.env
 target/
 DBT_PROJECT/target/
 DBT_PROJECT/logs/
+DBT_PROJECT/logs/dbt.log
