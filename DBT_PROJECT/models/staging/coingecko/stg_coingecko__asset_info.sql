@@ -12,9 +12,9 @@ with cleaned as (
     supply_total::decimal(38,9)       as supply_total,
     supply_max::decimal(38,9)         as supply_max,
     case
-      when categories ilike '%fiat%' then 'fiat'
       when categories ilike '%stablecoin%' then 'stablecoin'
-      else 'crypto'
+      when categories ilike '%btc%' or categories ilike '%bitcoin%' then 'bitcoin'
+      else 'altcoin'
     end                                as category_type
   from  {{ source('coingecko','ASSET_INFO') }}
   where coingecko_id not in ('binance-peg-weth') -- l'asset WETH est en double, on supprime la version binance

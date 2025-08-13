@@ -16,5 +16,4 @@ having count(*) > 1
 order by n desc;
 
 select *
-from STG_coingecko__asset_info
-where coingecko_id ilike '%binance%';
+from stg_gitrepo__fiat_info;
