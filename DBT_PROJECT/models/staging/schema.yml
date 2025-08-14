@@ -8,7 +8,7 @@ models:
         tests: [not_null, unique]
       - name: category_type
         tests:
-          - accepted_values: {values: ['fiat','stablecoin','crypto']}
+          - accepted_values: {values: ['altcoin','stablecoin','bitcoin']}
 
   - name: stg_binance__exchange_info
     tags: [stg]

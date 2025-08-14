@@ -7,7 +7,7 @@ USE SCHEMA calendar;
 
 CREATE OR REPLACE TABLE calendar AS
 WITH dates AS (
-  SELECT DATEADD(day, seq4(), DATE '2020-01-01') AS date_full
+  SELECT DATEADD(day, seq4(), DATE '2019-01-01') AS date_full
   FROM TABLE(GENERATOR(ROWCOUNT => 365 * 10))  -- 10 ans
 )
 SELECT
