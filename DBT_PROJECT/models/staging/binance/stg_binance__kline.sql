@@ -13,3 +13,5 @@ select
   taker_buy_base_asset_volume::decimal(38,18) as taker_buy_base_asset_volume,
   taker_buy_quote_asset_volume::decimal(38,18) as taker_buy_quote_asset_volume
 from {{ source('binance', 'KLINE') }}
+where volume >= 0
+  and quote_asset_volume >= 0

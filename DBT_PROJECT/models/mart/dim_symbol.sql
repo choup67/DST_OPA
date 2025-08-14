@@ -29,7 +29,9 @@ select
   -- flags utiles pour les filtres
   coalesce(b.base_is_btc or q.quote_is_btc, false) as is_btc_pair,
   coalesce(b.base_category = 'stablecoin' or q.quote_category = 'stablecoin', false) as is_stable_pair,
-  coalesce(b.base_category <> 'stablecoin' and q.quote_category <> 'stablecoin', false) as is_cross_crypto
+  coalesce(b.base_category <> 'stablecoin' and q.quote_category <> 'stablecoin', false) as is_cross_crypto,
+
+  current_timestamp() as last_updated
 
 from e
 left join b on e.base_asset = b.base_asset

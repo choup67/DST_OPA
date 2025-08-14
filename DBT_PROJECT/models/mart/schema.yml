@@ -1,0 +1,180 @@
+version: 2
+
+models:
+
+  - name: dim_calendar
+    description: "Dimension calendrier (1 ligne par jour)."
+    columns:
+      - name: date_full
+        tests: [not_null, unique]
+      - name: year
+        tests: [not_null]
+      - name: month
+        tests:
+          - not_null
+          - accepted_values: {values: [1,2,3,4,5,6,7,8,9,10,11,12]}
+
+  - name: dim_symbol
+    description: "Info sur les paires binance (grain = 1 ligne par symbole, actifs uniquement)."
+    columns:
+      - name: symbol
+        tests: [not_null, unique]
+      - name: base_asset
+        tests: [not_null]
+      - name: quote_asset
+        tests: [not_null]
+      - name: base_category
+      - name: quote_category
+      - name: symbol_type
+      - name: is_btc_pair
+      - name: is_stable_pair
+      - name: is_cross_crypto
+      - name: last_updated
+        tests: [not_null]
+
+
+  - name: dim_base_asset
+    description: "Information sur le base asset"
+    columns:
+      - name: coingecko_id
+        tests: [not_null, unique]
+      - name: name
+        tests: [not_null]
+      - name: asset
+        tests: [not_null, unique]
+      - name: market_cap_rank
+        tests: [non_negative]
+      - name: token_type
+      - name: supply_circulating
+        tests: [non_negative]
+      - name: supply_total
+        tests: [non_negative]
+      - name: supply_max
+        tests: [non_negative]
+      - name: category_type
+        tests:
+          - accepted_values:
+              values: ['altcoin','stablecoin','bitcoin']
+      - name: has_max_supply
+      - name: has_total_supply
+      - name: pct_of_max_supply
+        tests: [non_negative]
+      - name: pct_of_total_supply
+        tests: [non_negative]
+      - name: locked_supply
+        tests: [non_negative]
+      - name: pct_locked
+        tests: [non_negative]
+      - name: global_avg_pct_of_max_supply
+        tests: [non_negative]
+      - name: global_avg_pct_of_total_supply
+        tests: [non_negative]
+      - name: cat_avg_pct_of_max_supply
+        tests: [non_negative]
+      - name: cat_avg_pct_of_total_supply
+        tests: [non_negative]
+      - name: last_updated
+        tests: [not_null]
+
+
+  - name: dim_quote_asset
+    description: "Information sur le quote asset"
+    columns:
+      - name: coingecko_id
+        tests: [not_null, unique]
+      - name: name
+        tests: [not_null]
+      - name: asset
+        tests: [not_null, unique]
+      - name: market_cap_rank
+        tests: [non_negative]
+      - name: token_type
+      - name: supply_circulating
+        tests: [non_negative]
+      - name: supply_total
+        tests: [non_negative]
+      - name: supply_max
+        tests: [non_negative]
+      - name: category_type
+        tests:
+          - accepted_values:
+              values: ['altcoin','stablecoin','bitcoin']
+      - name: has_max_supply
+      - name: has_total_supply
+      - name: pct_of_max_supply
+        tests: [non_negative]
+      - name: pct_of_total_supply
+        tests: [non_negative]
+      - name: locked_supply
+        tests: [non_negative]
+      - name: pct_locked
+        tests: [non_negative]
+      - name: global_avg_pct_of_max_supply
+        tests: [non_negative]
+      - name: global_avg_pct_of_total_supply
+        tests: [non_negative]
+      - name: cat_avg_pct_of_max_supply
+        tests: [non_negative]
+      - name: cat_avg_pct_of_total_supply
+        tests: [non_negative]
+      - name: last_updated
+        tests: [not_null]
+
+
+  - name: fact_klines
+    description: "Bougies Binance agrégées par jour, une bougie représente l'aggrégation des trades (volume, prix, etc.) pour un sybmol sur une période de 24h."
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_symbol')
+              field: symbol
+      - name: base_asset
+        tests: [not_null]
+      - name: quote_asset
+        tests: [not_null]
+      - name: date_jour
+        tests: [not_null]
+      - name: close_price
+        tests: [non_negative]
+      - name: volume
+        tests: [non_negative]
+      - name: number_of_trades
+        tests: [non_negative]
+      - name: var_price_1d
+      - name: var_price_7d
+      - name: var_price_30d
+      - name: var_vol_1d
+      - name: var_vol_7d
+      - name: var_vol_30d
+      - name: var_trades_1d
+      - name: var_trades_7d
+      - name: var_trades_30d
+      - name: avg_vol_7d
+        tests: [non_negative]
+      - name: avg_vol_30d
+        tests: [non_negative]
+      - name: avg_trades_7d
+        tests: [non_negative]
+      - name: avg_trades_30d
+        tests: [non_negative]
+      - name: vol_ytd_total
+        tests: [non_negative]
+      - name: vol_ytd_avg
+        tests: [non_negative]
+      - name: trades_ytd_total
+        tests: [non_negative]
+      - name: trades_ytd_avg
+        tests: [non_negative]
+      - name: price_ytd_change
+      - name: vol_ytd_change
+      - name: trades_ytd_change
+      - name: pct_buy_base
+      - name: pct_sell_base
+      - name: pct_buy_quote
+      - name: symbol_type
+      - name: base_category
+      - name: quote_category
+      - name: last_updated
+        tests: [not_null]

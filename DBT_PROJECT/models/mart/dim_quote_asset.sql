@@ -20,6 +20,8 @@ select
   coalesce(global_avg_pct_of_max_supply, 0) as global_avg_pct_of_max_supply,
   coalesce(global_avg_pct_of_total_supply, 0) as global_avg_pct_of_total_supply,
   coalesce(cat_avg_pct_of_max_supply, 0) as cat_avg_pct_of_max_supply,
-  coalesce(cat_avg_pct_of_total_supply, 0) as cat_avg_pct_of_total_supply
+  coalesce(cat_avg_pct_of_total_supply, 0) as cat_avg_pct_of_total_supply,
+
+  current_timestamp() as last_updated
 
 from {{ ref('int_coingecko__asset_info') }}

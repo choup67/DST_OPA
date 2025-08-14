@@ -1,0 +1,85 @@
+version: 2
+
+models:
+
+  - name: int_calendar__calendar
+    description: "Dimension calendrier normalisée (grain = 1 ligne par jour)."
+    columns:
+      - name: date_full
+        description: "Date complète, clé primaire"
+        tests:
+          - not_null
+          - unique
+      - name: year
+        tests: [not_null]
+      - name: month
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1,2,3,4,5,6,7,8,9,10,11,12]
+
+  - name: int_binance__exchange_info
+    description: "Info sur les paires binance (grain = 1 ligne par symbole, actifs uniquement)."
+    columns:
+      - name: symbol
+        description: "Paire Binance composée de deux symboles (p.ex. BTCUSDT)."
+        tests:
+          - not_null
+          - unique
+      - name: base_asset
+        tests: [not_null]
+      - name: quote_asset
+        tests: [not_null]
+
+  - name: int_binance__kline
+    description: "Bougies Binance agrégées par jour"
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: open_time
+        description: "Début de la bougie (timestamp/utc)."
+        tests: [not_null]
+      - name: close_time
+        tests: [not_null]
+      - name: open_price
+        tests:
+          - not_null
+          - non_negative
+      - name: high_price
+        tests:
+          - not_null
+          - non_negative
+      - name: low_price
+        tests:
+          - not_null
+          - non_negative
+      - name: close_price
+        tests:
+          - not_null
+          - non_negative
+      - name: volume
+        tests:
+          - non_negative
+      - name: quote_asset_volume
+        tests:
+          - non_negative
+      - name: number_of_trades
+        tests:
+          - non_negative
+
+
+  - name: int_coingecko__asset_info
+    description: "Infos pour chaque crypto source coingecko (grain = 1 ligne par asset)."
+    columns:
+      - name: asset
+        description: "Nom de la crypto / de l'asset (exemple : bitcoin)."
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests: [not_null]
+      - name: category_type
+        tests:
+          - accepted_values:
+              values: ['bitcoin','stablecoin','altcoin']

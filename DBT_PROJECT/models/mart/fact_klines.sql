@@ -47,7 +47,9 @@ select
   -- Attributs de classification pour faciliter les filtres
   s.symbol_type,
   s.base_category,
-  s.quote_category
+  s.quote_category,
 
+  current_timestamp() as last_updated
+  
 from k
 join s using (symbol)
