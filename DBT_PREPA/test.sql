@@ -15,14 +15,18 @@ group by 1
 having count(*) > 1
 order by n desc;
 
+use SCHEMA staging;
+
+select *
+from stg_binance__exchange_info;
+select *
+from int_coingecko__asset_info;
+
 select *
 from stg_gitrepo__fiat_info;
 
 select *
-from int_binance__kline
-where volume < 0 or quote_asset_volume < 0
-order by open_time desc
-limit 50;
+from int_binance__kline;
 
 select distinct date_jour, date_full
 from fact_klines
@@ -33,6 +37,17 @@ order by date_jour asc;
 
 USE SCHEMA mart;
 
+select *
+from dim_quote_asset;
+
 select distinct date_full
 from dim_calendar
 where date_full = '2019-09-25';
+
+USE DATABASE RAW_DATA;
+USE SCHEMA stage;
+
+USE WAREHOUSE QUERY;
+
+select *
+from RAW_DATA.coingecko.asset_info;

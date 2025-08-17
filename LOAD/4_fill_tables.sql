@@ -63,7 +63,7 @@ VALIDATION_MODE = 'RETURN_ERRORS';
 COPY INTO RAW_DATA.coingecko.asset_info
 FROM @OPA_STAGE/coingecko_top1000_token_info.csv
 FILE_FORMAT = CLASSIC_CSV
-ON_ERROR = 'ABORT_STATEMENT'
+ON_ERROR = 'CONTINUE'
 FORCE = TRUE; 
 
 -- Verification avant chargement
