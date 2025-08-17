@@ -34,5 +34,5 @@ select
   current_timestamp() as last_updated
 
 from e
-left join b on e.base_asset = b.base_asset
-left join q on e.quote_asset = q.quote_asset
+join b on e.base_asset = b.base_asset
+join q on e.quote_asset = q.quote_asset
