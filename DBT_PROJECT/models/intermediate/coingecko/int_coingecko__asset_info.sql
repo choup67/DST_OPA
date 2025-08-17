@@ -16,7 +16,7 @@ with enriched as (
     (supply_total is not null) as has_total_supply,
 
     -- pourcentages
-    case when supply_max   > 0 then supply_circulating / supply_max   end as pct_of_max_supply,
+    case when supply_max > 0 then supply_circulating / supply_max end as pct_of_max_supply,
     case when supply_total > 0 then supply_circulating / supply_total end as pct_of_total_supply,
 
     -- dispo vs total
@@ -29,11 +29,14 @@ select
   e.*,
 
   -- stats globales 
-  avg(pct_of_max_supply)   over () as global_avg_pct_of_max_supply,
+  count(distinct asset) over () as total_asset,
+  avg(pct_of_max_supply) over () as global_avg_pct_of_max_supply,
   avg(pct_of_total_supply) over () as global_avg_pct_of_total_supply,
 
   -- stats par catégorie
-  avg(pct_of_max_supply)   over (partition by category_type) as cat_avg_pct_of_max_supply,
+  count(distinct asset) over (partition by category_type) as cat_total_asset,
+  count(distinct asset) over (partition by category_type) / nullif(count(distinct asset) over (), 0) as cat_pct_asset,
+  avg(pct_of_max_supply) over (partition by category_type) as cat_avg_pct_of_max_supply,
   avg(pct_of_total_supply) over (partition by category_type) as cat_avg_pct_of_total_supply
 
 from enriched e
