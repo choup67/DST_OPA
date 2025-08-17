@@ -22,11 +22,6 @@ select
   coalesce(cat_avg_pct_of_max_supply, 0) as cat_avg_pct_of_max_supply,
   coalesce(cat_avg_pct_of_total_supply, 0) as cat_avg_pct_of_total_supply,
 
-  -- nouvelles agg distinct
-  coalesce(total_asset, 0) as total_asset,
-  coalesce(cat_total_asset, 0) as cat_total_asset,
-  coalesce(cat_pct_asset, 0) as cat_pct_asset,
-
   current_timestamp() as last_updated
 
 from {{ ref('int_coingecko__asset_info') }}

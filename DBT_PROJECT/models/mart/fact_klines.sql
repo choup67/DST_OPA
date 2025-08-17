@@ -1,4 +1,3 @@
-
 with k as (
   -- Données enrichies de prix/volume/trades au jour le jour
   select *
@@ -48,6 +47,18 @@ select
   s.symbol_type,
   s.base_category,
   s.quote_category,
+
+  -- Mesures rapides pour powerbi
+  count(distinct s.base_asset) over () as total_base_asset,
+  count(distinct s.quote_asset) over () as total_quote_asset,
+
+  count(distinct s.base_asset) over (partition by s.base_category) as base_cat_total_asset,
+  count(distinct s.quote_asset) over (partition by s.quote_category) as quote_cat_total_asset,
+
+  count(distinct s.base_asset) over (partition by s.base_category)
+    / nullif(count(distinct s.base_asset) over (), 0) as base_cat_pct_asset,
+  count(distinct s.quote_asset) over (partition by s.quote_category)
+    / nullif(count(distinct s.quote_asset) over (), 0) as quote_cat_pct_asset,
 
   current_timestamp() as last_updated
   

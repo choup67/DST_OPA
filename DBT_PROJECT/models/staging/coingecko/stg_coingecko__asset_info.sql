@@ -17,6 +17,5 @@ with cleaned as (
       else 'altcoin'
     end                                as category_type
   from  {{ source('coingecko','ASSET_INFO') }}
-  where coingecko_id not in ('binance-peg-weth') -- l'asset WETH est en double, on supprime la version binance
 )
 select * from cleaned

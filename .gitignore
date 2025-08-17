@@ -5,3 +5,4 @@ target/
 DBT_PROJECT/target/
 DBT_PROJECT/logs/
 DBT_PROJECT/logs/dbt.log
+DBT_PREPA/celine.sql
