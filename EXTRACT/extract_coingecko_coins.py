@@ -3,25 +3,33 @@ import requests
 import pandas as pd
 from pathlib import Path
 
-SAVE_PATH = Path(__file__).resolve().parent.parent / "UTILS" / "DATA" / "coingecko_top100_token_info.csv"
+SAVE_PATH = Path(__file__).resolve().parent.parent / "UTILS" / "DATA" / "coingecko_top1000_token_info.csv"
 SAVE_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-BASE_DELAY = 6.0   # délai entre appels /coins/{id} (ajuste selon ta limite)
+BASE_DELAY = 6.0
 MAX_RETRIES = 5
 TIMEOUT = 30
 
-def get_top_100_tokens():
+def get_top_1000_tokens():
+    # -> récupère ~1000 tokens via 4 pages de 250
     url = "https://api.coingecko.com/api/v3/coins/markets"
-    params = {
-        "vs_currency": "usd",
-        "order": "market_cap_desc",
-        "per_page": 100,
-        "page": 1,
-        "sparkline": False,
-    }
-    resp = requests.get(url, params=params, timeout=TIMEOUT)
-    resp.raise_for_status()
-    return resp.json()
+    all_rows = []
+    for page in range(1, 5):  # 4 pages x 250 = 1000
+        params = {
+            "vs_currency": "usd",
+            "order": "market_cap_desc",
+            "per_page": 250,
+            "page": page,
+            "sparkline": False,
+        }
+        resp = requests.get(url, params=params, timeout=TIMEOUT)
+        resp.raise_for_status()
+        data = resp.json()
+        if not data:
+            break
+        all_rows.extend(data)
+        time.sleep(1.0) 
+    return all_rows
 
 def get_token_metadata(coin_id, max_retries=MAX_RETRIES):
     delay = 2.0
@@ -44,15 +52,16 @@ def get_token_metadata(coin_id, max_retries=MAX_RETRIES):
             delay *= 2
     return None
 
-def extract_coingecko_top100():
-    top_100 = get_top_100_tokens()
+def extract_coingecko_top1000():
+    top_tokens = get_top_1000_tokens()
+    total = len(top_tokens)
     rows = []
 
-    for idx, token in enumerate(top_100, start=1):
+    for idx, token in enumerate(top_tokens, start=1):
         coin_id = token["id"]
         meta = get_token_metadata(coin_id)
         if meta is None:
-            print(f"{idx}/100 : {coin_id} ignoré (erreur API)")
+            print(f"{idx}/{total} : {coin_id} ignoré (erreur API)")
         else:
             rows.append({
                 "coingecko_id": coin_id,
@@ -67,7 +76,7 @@ def extract_coingecko_top100():
                 "supply_total": meta.get("market_data", {}).get("total_supply"),
                 "supply_max": meta.get("market_data", {}).get("max_supply"),
             })
-            print(f"{idx}/100 : {coin_id} traité")
+            print(f"{idx}/{total} : {coin_id} traité")
 
         time.sleep(BASE_DELAY)
 
@@ -75,3 +84,4 @@ def extract_coingecko_top100():
     df.to_csv(SAVE_PATH, index=False)
     print(f"Fichier écrit : {SAVE_PATH}")
 
+extract_coingecko_top1000()

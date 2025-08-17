@@ -56,12 +56,12 @@ FILE_FORMAT = CLASSIC_CSV;
 -- Remplissage de la table asset_info depuis le fichier dans le stage
 -- Verification avant chargement
 COPY INTO RAW_DATA.coingecko.asset_info
-FROM @OPA_STAGE/coingecko_top100_token_info.csv
+FROM @OPA_STAGE/coingecko_top1000_token_info.csv
 FILE_FORMAT = CLASSIC_CSV
 VALIDATION_MODE = 'RETURN_ERRORS';
 -- chargement
 COPY INTO RAW_DATA.coingecko.asset_info
-FROM @OPA_STAGE/coingecko_top100_token_info.csv
+FROM @OPA_STAGE/coingecko_top1000_token_info.csv
 FILE_FORMAT = CLASSIC_CSV
 ON_ERROR = 'ABORT_STATEMENT'
 FORCE = TRUE; 
@@ -75,7 +75,7 @@ VALIDATION_MODE = 'RETURN_ERRORS';
 COPY INTO RAW_DATA.binance.exchange_info
 FROM @OPA_STAGE/binance_exchange_info.csv
 FILE_FORMAT = CLASSIC_CSV
-ON_ERROR = 'ABORT_STATEMENT'
+ON_ERROR = 'CONTINUE'
 FORCE = TRUE;
 
 -- Remplissage de la table kline depuis le fichier dans le stage
@@ -106,4 +106,4 @@ FILE_FORMAT = CLASSIC_CSV
 ON_ERROR = 'ABORT_STATEMENT'
 FORCE = TRUE;
 
-TRUNCATE TABLE RAW_DATA.BINANCE.KLINE;
+TRUNCATE TABLE RAW_DATA.COINGECKO.ASSET_INFO;
