@@ -12,7 +12,7 @@ if __name__ == "__main__":
     print("Extraction des données")
     # extract_binance_exchange_info()
     # extract_coingecko_top1000()
-    #extract_klines(interval="1d", limit=1000)
+    # extract_klines(interval="1d", limit=1000)
     print("Chargement des fichiers dans le stage OPA_STAGE")
     conn = connect_to_snowflake(schema="STAGE")
     try:
