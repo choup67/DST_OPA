@@ -58,23 +58,3 @@ models:
     columns:
       - name: date_full
         tests: [not_null, unique]
-  
-  - name: stg_gitrepo__fiat_info
-    tags: [tags]
-    description: "fiat data with no change since the stage table"
-    columns:
-      - name: fiat_name
-        tests: [not_null, unique]
-      - name: fiat_symbol
-        tests: [not_null, unique]
-  
-  - name: stg_gitrepo__market_feeling_score
-    tags: [tags]
-    description: "market_feeling_score data with columns type updated"
-    columns:
-      - name: symbol_type
-        tests: [not_null, unique]
-      - name: market_feeling_label
-        tests: [not_null, unique]
-      - name: market_feeling_score
-        tests: [not_null]

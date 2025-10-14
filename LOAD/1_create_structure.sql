@@ -1,3 +1,33 @@
+-- Création des utilisateurs et des rôles
+-- fait directement dans snowflake UI pour éviter les problèmes de permissions
+/* CREATE USER celine
+PASSWORD = 'D4taScientest!1234'
+DEFAULT_ROLE = SYSADMIN
+MUST_CHANGE_PASSWORD = TRUE;
+GRANT ROLE SYSADMIN TO USER celine;
+CREATE USER morgane
+PASSWORD = 'D4taScientest!'
+DEFAULT_ROLE = SYSADMIN
+MUST_CHANGE_PASSWORD = TRUE;
+GRANT ROLE SYSADMIN TO USER morgane; */
+
+
+-- Création des warehouse
+  -- Warehouse pour les requêtes
+CREATE WAREHOUSE QUERY 
+  WITH WAREHOUSE_SIZE = 'SMALL' 
+  INITIALLY_SUSPENDED = TRUE 
+  AUTO_SUSPEND = 300 
+  AUTO_RESUME = TRUE;
+
+  -- Warehouse pour le chargement des données
+CREATE WAREHOUSE LOAD 
+  WITH WAREHOUSE_SIZE = 'LARGE' 
+  INITIALLY_SUSPENDED = TRUE 
+  AUTO_SUSPEND = 300 
+  AUTO_RESUME = TRUE;
+
+
 -- Utilisation du datawarehouse QUERY
 USE WAREHOUSE QUERY;
 
@@ -8,6 +38,7 @@ CREATE SCHEMA IF NOT EXISTS RAW_DATA.stage;
 CREATE SCHEMA IF NOT EXISTS RAW_DATA.binance;
 CREATE SCHEMA IF NOT EXISTS RAW_DATA.coingecko;
 CREATE SCHEMA IF NOT EXISTS RAW_DATA.calendar;
+
 -- Création du fichier file format pour les fichiers CSV
 USE SCHEMA RAW_DATA.stage;
 CREATE OR REPLACE FILE FORMAT RAW_DATA.STAGE.CLASSIC_CSV
@@ -27,7 +58,7 @@ CREATE OR REPLACE FILE FORMAT RAW_DATA.STAGE.CLASSIC_CSV
 
 
 ---Création du stage interne pour le chargement des données
-USE SCHEMA stage;
+USE SCHEMA RAW_DATA.STAGE;
 
 -- création du stage interne
 CREATE OR REPLACE STAGE RAW_DATA.STAGE.OPA_STAGE
@@ -44,8 +75,3 @@ CREATE SCHEMA IF NOT EXISTS DBT.intermediate;
 CREATE SCHEMA IF NOT EXISTS DBT.mart;
 
 USE WAREHOUSE QUERY;
-
--- Création de la database RAW_DATA et des schémas nécessaires
-CREATE DATABASE IF NOT EXISTS TEST_ABO;
-
-DROP DATABASE IF EXISTS TEST_ABO;

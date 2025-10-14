@@ -1,10 +1,13 @@
 -- Utilisation du datawarehouse QUERY
 USE WAREHOUSE QUERY;
 
--- Utilisation de la database RAW_DATA et du schéma calendar
+-- Utilisation de la database RAW_DATA 
 USE DATABASE RAW_DATA;
-USE SCHEMA calendar;
 
+-- Utilisation du schéma calendar
+USE SCHEMA RAW_DATA.CALENDAR;
+
+-- Création et remplissage de la table calendar avec les dates de 2019 à 2028
 CREATE OR REPLACE TABLE calendar AS
 WITH dates AS (
   SELECT DATEADD(day, seq4(), DATE '2019-01-01') AS date_full
@@ -36,27 +39,8 @@ SELECT
   TO_CHAR(date_full, 'YYYY') || '-Q' || EXTRACT(QUARTER FROM date_full) AS quarter_year
 FROM dates;
 
---- Remplissage de la table FIAT_INFO
--- Utilisation du datawarehouse QUERY
-USE WAREHOUSE QUERY;
--- Utilisation de la database RAW_DATA et du schéma calendar
-USE DATABASE RAW_DATA;
-USE SCHEMA STAGE;
-
-TRUNCATE TABLE RAW_DATA.COINGECKO.ASSET_INFO;
-TRUNCATE TABLE RAW_DATA.BINANCE.EXCHANGE_INFO;
-TRUNCATE TABLE RAW_DATA.BINANCE.KLINE;
-TRUNCATE TABLE RAW_DATA.CALENDAR.CALENDAR;
-
--- Remplissage de la table depuis le fichier dans le stage
-COPY INTO RAW_DATA.GITREPO.FIAT_INFO
-FROM @OPA_STAGE/table_fiat.csv
-FILE_FORMAT = CLASSIC_CSV;
-
--- Remplissage de la table MARKET_FEELING_SCORE depuis le fichier dans le stage
-COPY INTO RAW_DATA.GITREPO.MARKET_FEELING_SCORE
-FROM @OPA_STAGE/market_feeling_score.csv
-FILE_FORMAT = CLASSIC_CSV;
+-- Utilisation du schéma stage
+USE SCHEMA RAW_DATA.STAGE;
 
 -- Remplissage de la table asset_info depuis le fichier dans le stage
 -- Verification avant chargement
@@ -71,6 +55,8 @@ FILE_FORMAT = CLASSIC_CSV
 ON_ERROR = 'CONTINUE'
 FORCE = TRUE; 
 
+
+-- Remplissage de la table exchange_info depuis le fichier dans le stage
 -- Verification avant chargement
 COPY INTO RAW_DATA.binance.exchange_info
 FROM @OPA_STAGE/binance_exchange_info.csv

@@ -1,4 +1,4 @@
-from FONCTIONS.fonction_connexion import connect_to_snowflake
+from UTILS.FONCTIONS.connexions import connect_to_snowflake
 import snowflake.connector
 
 # On remplace la vraie connexion par une simulation pour tester sans se connecter à Snowflake
