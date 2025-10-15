@@ -7,3 +7,4 @@ DBT_PROJECT/logs/
 DBT_PROJECT/logs/dbt.log
 
 DBT_PREPA/test_kline.sql
+DBT_PREPA/celine.sql

@@ -12,35 +12,37 @@ models:
       - name: month
         tests:
           - not_null
-          - accepted_values: {values: [1,2,3,4,5,6,7,8,9,10,11,12]}
+          - accepted_values:
+              values: [1,2,3,4,5,6,7,8,9,10,11,12]
 
   - name: dim_symbol
-    description: "Info sur les paires binance (grain = 1 ligne par symbole, actifs uniquement)."
+    description: "Info sur les paires Binance (grain = 1 ligne par symbole, actifs uniquement)."
     columns:
       - name: symbol
         tests: [not_null, unique]
       - name: base_asset
-        tests: [not_null]
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_base_asset')
+              field: base_asset
       - name: quote_asset
-        tests: [not_null]
-      - name: base_category
-      - name: quote_category
-      - name: symbol_type
-      - name: is_btc_pair
-      - name: is_stable_pair
-      - name: is_cross_crypto
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_quote_asset')
+              field: quote_asset
       - name: last_updated
         tests: [not_null]
-
 
   - name: dim_base_asset
-    description: "Information sur le base asset"
+    description: "Information sur le base asset (listés Binance et enrichis Coingecko)."
     columns:
-      - name: coingecko_id
+      - name: base_asset
         tests: [not_null, unique]
-      - name: name
+      - name: base_asset_name
         tests: [not_null]
-      - name: asset
+      - name: coingecko_id
         tests: [not_null, unique]
       - name: market_cap_rank
         tests: [non_negative]
@@ -65,26 +67,17 @@ models:
         tests: [non_negative]
       - name: pct_locked
         tests: [non_negative]
-      - name: global_avg_pct_of_max_supply
-        tests: [non_negative]
-      - name: global_avg_pct_of_total_supply
-        tests: [non_negative]
-      - name: cat_avg_pct_of_max_supply
-        tests: [non_negative]
-      - name: cat_avg_pct_of_total_supply
-        tests: [non_negative]
       - name: last_updated
         tests: [not_null]
-
 
   - name: dim_quote_asset
-    description: "Information sur le quote asset"
+    description: "Information sur le quote asset (listés Binance et enrichis Coingecko)."
     columns:
-      - name: coingecko_id
+      - name: quote_asset
         tests: [not_null, unique]
-      - name: name
+      - name: quote_asset_name
         tests: [not_null]
-      - name: asset
+      - name: coingecko_id
         tests: [not_null, unique]
       - name: market_cap_rank
         tests: [non_negative]
@@ -109,20 +102,11 @@ models:
         tests: [non_negative]
       - name: pct_locked
         tests: [non_negative]
-      - name: global_avg_pct_of_max_supply
-        tests: [non_negative]
-      - name: global_avg_pct_of_total_supply
-        tests: [non_negative]
-      - name: cat_avg_pct_of_max_supply
-        tests: [non_negative]
-      - name: cat_avg_pct_of_total_supply
-        tests: [non_negative]
       - name: last_updated
         tests: [not_null]
 
-
   - name: fact_klines
-    description: "Bougies Binance agrégées par jour, une bougie représente l'aggrégation des trades (volume, prix, etc.) pour un sybmol sur une période de 24h."
+    description: "Bougies Binance agrégées par jour (grain = 1 jour x symbole)."
     columns:
       - name: symbol
         tests:
@@ -131,26 +115,29 @@ models:
               to: ref('dim_symbol')
               field: symbol
       - name: base_asset
-        tests: [not_null]
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_base_asset')
+              field: base_asset
       - name: quote_asset
-        tests: [not_null]
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_quote_asset')
+              field: quote_asset
       - name: date_jour
-        tests: [not_null]
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_calendar')
+              field: date_full
       - name: close_price
         tests: [non_negative]
       - name: volume
         tests: [non_negative]
       - name: number_of_trades
         tests: [non_negative]
-      - name: var_price_1d
-      - name: var_price_7d
-      - name: var_price_30d
-      - name: var_vol_1d
-      - name: var_vol_7d
-      - name: var_vol_30d
-      - name: var_trades_1d
-      - name: var_trades_7d
-      - name: var_trades_30d
       - name: avg_vol_7d
         tests: [non_negative]
       - name: avg_vol_30d
@@ -167,14 +154,5 @@ models:
         tests: [non_negative]
       - name: trades_ytd_avg
         tests: [non_negative]
-      - name: price_ytd_change
-      - name: vol_ytd_change
-      - name: trades_ytd_change
-      - name: pct_buy_base
-      - name: pct_sell_base
-      - name: pct_buy_quote
-      - name: symbol_type
-      - name: base_category
-      - name: quote_category
       - name: last_updated
         tests: [not_null]

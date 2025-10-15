@@ -38,8 +38,8 @@ CREATE TABLE IF NOT EXISTS exchange_info (
     stepSize DECIMAL(20, 8) NOT NULL,
     minNotional DECIMAL(20, 8) NOT NULL,
     maxNotional DECIMAL(20, 8) NOT NULL,
-    FOREIGN KEY (baseAsset) REFERENCES RAW_DATA.coingecko.asset_info(symbol),
-    FOREIGN KEY (quoteAsset) REFERENCES RAW_DATA.coingecko.asset_info(symbol)
+    FOREIGN KEY (baseAsset) REFERENCES RAW_DATA.coingecko.asset_info(asset),
+    FOREIGN KEY (quoteAsset) REFERENCES RAW_DATA.coingecko.asset_info(asset)
 );
 
 -- Création de la table kline
@@ -59,25 +59,3 @@ CREATE TABLE IF NOT EXISTS kline (
     ignore VARCHAR,
     symbol VARCHAR(20) NOT NULL FOREIGN KEY REFERENCES exchange_info(symbol)
 );
-
--- Utilisation de la database RAW_DATA et du schéma gitrepo
-USE DATABASE RAW_DATA;
-CREATE SCHEMA gitrepo;
-USE SCHEMA gitrepo;
--- Création de la table fiat_info
-CREATE TABLE IF NOT EXISTS fiat_info (
-    fiat_name VARCHAR(50) NOT NULL,
-    fiat_symbol VARCHAR(10) NOT NULL PRIMARY KEY
-);
--- warning, les noms des colonnes présents dans le fichier sont différents
-
--- Création de la table market_feeling_score
-CREATE TABLE IF NOT EXISTS market_feeling_score (
-    symbol_type VARCHAR(20) NOT NULL PRIMARY KEY,
-    market_feeling_label VARCHAR(50) NOT NULL,
-    market_feeling_score VARCHAR(50) NOT NULL
-);
---modification de la table market_feeling_score pour modifier le type de la colonne symbol_type et augmenter le nombre de caractères
---besoin de faire ça suite à une erreur lors du remplissage de la table
-ALTER TABLE market_feeling_score
-    MODIFY COLUMN symbol_type VARCHAR(255);

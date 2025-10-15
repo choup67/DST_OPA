@@ -17,7 +17,9 @@ def load_csv_to_stage(conn, stage_name = "OPA_STAGE", data_root = None, keep_tre
 
     cs = conn.cursor()
     try:
-        cs.execute(f"CREATE STAGE IF NOT EXISTS {stage_name}")
+        cs.execute("USE DATABASE RAW_DATA")
+        cs.execute("USE SCHEMA RAW_DATA.STAGE")
+        cs.execute(f'CREATE STAGE IF NOT EXISTS "{stage_name}"')
         cs.execute(f"REMOVE @{stage_name}")
         print(f"Stage {stage_name} vidé.")
 

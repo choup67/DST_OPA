@@ -22,11 +22,3 @@ sources:
     quoting: {database: true, schema: true, identifier: true}
     tables:
       - name: CALENDAR
-
-  - name: gitrepo
-    database: RAW_DATA
-    schema: GITREPO
-    quoting: {database: true, schema: true, identifier: true}
-    tables:
-      - name: FIAT_INFO
-      - name: MARKET_FEELING_SCORE

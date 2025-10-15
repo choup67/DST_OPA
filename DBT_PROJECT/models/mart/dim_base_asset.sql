@@ -1,27 +1,26 @@
 {{ config(materialized='view') }} -- on configure en vue pour le rôle base_asset
+
+with listed as (
+  select distinct base_asset as asset
+  from {{ ref('int_binance__kline') }}
+)
+
 select
-  coingecko_id,
-  name,
-  asset,
-  coalesce(market_cap_rank, 0) as market_cap_rank,
-  token_type,
-  coalesce(supply_circulating, 0) as supply_circulating,
-  coalesce(supply_total, 0) as supply_total,
-  coalesce(supply_max, 0) as supply_max,
-  category_type,
-  has_max_supply,
-  has_total_supply,
-
-  coalesce(pct_of_max_supply, 0) as pct_of_max_supply,
-  coalesce(pct_of_total_supply, 0) as pct_of_total_supply,
-  coalesce(locked_supply, 0) as locked_supply,
-  coalesce(pct_locked, 0) as pct_locked,
-
-  coalesce(global_avg_pct_of_max_supply, 0) as global_avg_pct_of_max_supply,
-  coalesce(global_avg_pct_of_total_supply, 0) as global_avg_pct_of_total_supply,
-  coalesce(cat_avg_pct_of_max_supply, 0) as cat_avg_pct_of_max_supply,
-  coalesce(cat_avg_pct_of_total_supply, 0) as cat_avg_pct_of_total_supply,
-
+  i.coingecko_id,
+  i.name as base_asset_name,
+  l.asset as base_asset,
+  coalesce(i.market_cap_rank, 0) as market_cap_rank,
+  i.token_type,
+  coalesce(i.supply_circulating, 0) as supply_circulating,
+  coalesce(i.supply_total, 0) as supply_total,
+  coalesce(i.supply_max, 0) as supply_max,
+  i.category_type,
+  i.has_max_supply,
+  i.has_total_supply,
+  coalesce(i.pct_of_max_supply, 0.0)::float as pct_of_max_supply,
+  coalesce(i.pct_of_total_supply, 0.0)::float as pct_of_total_supply,
+  coalesce(i.locked_supply, 0.0)::float as locked_supply,
+  coalesce(i.pct_locked, 0.0)::float as pct_locked,
   current_timestamp() as last_updated
-
-from {{ ref('int_coingecko__asset_info') }}
+from listed l
+join {{ ref('int_coingecko__asset_info') }} i on i.asset = l.asset
