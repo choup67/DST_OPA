@@ -46,10 +46,5 @@ select
   (k.volume / nullif(first_value(k.volume) over (partition by k.symbol, date_trunc('year', k.open_time) order by k.open_time rows between unbounded preceding and current row), 0) - 1) as vol_ytd_change,
   (k.number_of_trades / nullif(first_value(k.number_of_trades) over (partition by k.symbol, date_trunc('year', k.open_time) order by k.open_time rows between unbounded preceding and current row), 0) - 1) as trades_ytd_change,
 
-  -- répartition acheteurs / vendeurs (protégée)
-  k.taker_buy_base_asset_volume  / nullif(k.volume, 0)            as pct_buy_base,
-  1 - (k.taker_buy_base_asset_volume / nullif(k.volume, 0))       as pct_sell_base,
-  k.taker_buy_quote_asset_volume / nullif(k.quote_asset_volume, 0) as pct_buy_quote
-
 from {{ ref('stg_binance__kline') }} k
 join {{ ref('stg_binance__exchange_info') }} e on k.symbol = e.symbol

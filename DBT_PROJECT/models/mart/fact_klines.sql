@@ -5,7 +5,7 @@ with k as (
 ),
 s as (
   -- Infos sur le symbol, avec base/quote
-  select symbol, base_asset, quote_asset, symbol_type, base_category, quote_category
+  select symbol, base_asset, quote_asset
   from {{ ref('dim_symbol') }}
 )
 
@@ -39,26 +39,6 @@ select
   coalesce(k.price_ytd_change, 0) as price_ytd_change,
   coalesce(k.vol_ytd_change, 0) as vol_ytd_change,
   coalesce(k.trades_ytd_change, 0) as trades_ytd_change,
-  coalesce(k.pct_buy_base, 0) as pct_buy_base,
-  coalesce(k.pct_sell_base, 0) as pct_sell_base,
-  coalesce(k.pct_buy_quote, 0) as pct_buy_quote,
-
-  -- Attributs de classification pour faciliter les filtres
-  s.symbol_type,
-  s.base_category,
-  s.quote_category,
-
-  -- Mesures rapides pour powerbi
-  count(distinct s.base_asset) over () as total_base_asset,
-  count(distinct s.quote_asset) over () as total_quote_asset,
-
-  count(distinct s.base_asset) over (partition by s.base_category) as base_cat_total_asset,
-  count(distinct s.quote_asset) over (partition by s.quote_category) as quote_cat_total_asset,
-
-  count(distinct s.base_asset) over (partition by s.base_category)
-    / nullif(count(distinct s.base_asset) over (), 0) as base_cat_pct_asset,
-  count(distinct s.quote_asset) over (partition by s.quote_category)
-    / nullif(count(distinct s.quote_asset) over (), 0) as quote_cat_pct_asset,
 
   current_timestamp() as last_updated
   
